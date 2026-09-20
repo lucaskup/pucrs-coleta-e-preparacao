@@ -1,0 +1,12 @@
+{
+    "nome": "marie curie",
+    "profissao": [
+        "químico",
+        "físico"
+    ],
+    "idade": 66,
+    "ganhou_nobel": true,
+    "conjuge": {
+        "nome": "Pierre Curie"
+    }
+}

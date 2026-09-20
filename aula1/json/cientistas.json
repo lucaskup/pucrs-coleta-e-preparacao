@@ -1,0 +1,37 @@
+[
+    {
+        "nome": "marie curie",
+        "profissao": [
+            "químico",
+            "físico"
+        ],
+        "idade": 66,
+        "ganhou_nobel": true,
+        "conjuge": {
+            "nome": "Pierre Curie",
+            "profissao": "físico"
+        }
+    },
+    {
+        "nome": "alan mathison turing",
+        "profissao": [
+            "matemático",
+            "cientista da computação"
+        ],
+        "idade": 41,
+        "ganhou_nobel": false,
+        "conjuge": null
+    },
+    {
+        "nome": "ada lovelace",
+        "profissao": [
+            "matemática"
+        ],
+        "idade": 36,
+        "ganhou_nobel": false,
+        "conjuge": {
+            "nome": "William King-Noel",
+            "profissao": "nobre"
+        }
+    }
+]

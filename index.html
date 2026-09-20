@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coleta e Preparação de Dados</title>
+  <meta name="description" content="Arquivos práticos da disciplina Coleta e Preparação de Dados — PUCRS Online.">
+  <style>
+    :root { --fundo:#f5f6f8; --cartao:#fff; --texto:#1b1f24; --suave:#5a636e; --borda:#dfe3e8; --marca:#8c1d40; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --fundo:#14171b; --cartao:#1d2126; --texto:#eceff3; --suave:#a4adb8; --borda:#2c323a; --marca:#e8879f;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--fundo); color:var(--texto); line-height:1.55;
+           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 820px; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+    h1 { font-size: 1.7rem; margin: 0 0 .3rem; }
+    .sub { color: var(--suave); margin: 0 0 2rem; }
+    section { background: var(--cartao); border: 1px solid var(--borda); border-radius: 10px;
+              padding: 1.25rem 1.25rem .5rem; margin-bottom: 1.25rem; }
+    h2 { font-size: 1.1rem; margin: 0 0 .25rem; }
+    h2 a { color: var(--marca); text-decoration: none; }
+    h2 a:hover { text-decoration: underline; }
+    p.tema { color: var(--suave); margin: 0 0 .75rem; font-size: .92rem; }
+    ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+    li { margin: .15rem 0; }
+    a { color: var(--marca); }
+    code { background: rgba(140,29,64,.08); padding: .1rem .3rem; border-radius: 4px; font-size: .85em; }
+    .pendente { color: var(--suave); font-style: italic; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Coleta e Preparação de Dados</h1>
+    <p class="sub">Arquivos práticos da disciplina · PUCRS Online · Prof. Lucas Kupssinskü</p>
+
+    <section>
+      <h2><a href="aula1/">Aula 1 — Arquivos de Texto, CSV, XML e JSON</a></h2>
+      <p class="tema">Codificação de caracteres, <code>open</code>, <code>read_csv</code>,
+         <code>read_xml</code>, <code>read_json</code> e normalização.</p>
+      <ul>
+        <li><a href="aula1/site/">Página estática de corpo docente</a> — alvo do exercício de <code>wget</code> + <code>grep</code></li>
+        <li><a href="aula1/">Índice dos arquivos da aula</a> — txt, csv, xml e json, com o que cada um exercita</li>
+      </ul>
+      <p class="tema"><a href="https://github.com/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula1/README.md">Descrição de cada arquivo e comandos da aula →</a></p>
+    </section>
+
+    <section>
+      <h2>Aulas 2 a 6</h2>
+      <p class="tema pendente">Em construção: expressões regulares; web scraping (CSS e XPath);
+         KDD e estatística descritiva; visualização e similaridade; limpeza, integração, redução
+         e transformação de dados.</p>
+    </section>
+  </main>
+</body>
+</html>

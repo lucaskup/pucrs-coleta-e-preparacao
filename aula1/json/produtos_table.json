@@ -1,0 +1,46 @@
+{
+    "schema": {
+        "fields": [
+            {
+                "name": "index",
+                "type": "integer"
+            },
+            {
+                "name": "produto",
+                "type": "string"
+            },
+            {
+                "name": "preco",
+                "type": "integer"
+            },
+            {
+                "name": "categoria",
+                "type": "string"
+            }
+        ],
+        "primaryKey": [
+            "index"
+        ],
+        "pandas_version": "1.4.0"
+    },
+    "data": [
+        {
+            "index": 0,
+            "produto": "teclado mecânico",
+            "preco": 450,
+            "categoria": "eletrônicos"
+        },
+        {
+            "index": 1,
+            "produto": "ssd 1tb",
+            "preco": 350,
+            "categoria": "eletrônicos"
+        },
+        {
+            "index": 2,
+            "produto": "harry potter",
+            "preco": 45,
+            "categoria": "livros"
+        }
+    ]
+}

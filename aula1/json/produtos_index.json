@@ -1,0 +1,17 @@
+{
+    "0": {
+        "produto": "teclado mecânico",
+        "preco": 450,
+        "categoria": "eletrônicos"
+    },
+    "1": {
+        "produto": "ssd 1tb",
+        "preco": 350,
+        "categoria": "eletrônicos"
+    },
+    "2": {
+        "produto": "harry potter",
+        "preco": 45,
+        "categoria": "livros"
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movie>
+  <name>The Fellowship of the Ring</name>
+  <year>2001</year>
+  <categories>
+    <category>action</category>
+    <category>fantasy</category>
+  </categories>
+  <director>Peter Jackson</director>
+</movie>

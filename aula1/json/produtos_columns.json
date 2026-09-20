@@ -1,0 +1,17 @@
+{
+    "produto": {
+        "0": "teclado mecânico",
+        "1": "ssd 1tb",
+        "2": "harry potter"
+    },
+    "preco": {
+        "0": 450,
+        "1": 350,
+        "2": 45
+    },
+    "categoria": {
+        "0": "eletrônicos",
+        "1": "eletrônicos",
+        "2": "livros"
+    }
+}

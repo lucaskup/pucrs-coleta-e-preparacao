@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "orgao": "Secretaria de Obras",
+    "resumo": "Processo 2024/00123-4 em 05/01/2026: pavimentação da rua Dom Pedro II, R$ 1.240.000,00.",
+    "contato": "obras@prefeitura.example.gov.br"
+  },
+  {
+    "id": 2,
+    "orgao": "Secretaria de Saúde",
+    "resumo": "Processo 2025/00987-1 aberto em 7/1/2026, sem parecer. Valor estimado R$ 89.900,00.",
+    "contato": "licitacoes+saude@prefeitura.example.gov.br"
+  },
+  {
+    "id": 3,
+    "orgao": "Secretaria de Educação",
+    "resumo": "Aditivo ao processo 2024/00456-9 assinado em 31/12/2027; latencia=134ms no sistema.",
+    "contato": "educacao@prefeitura.example.gov.br"
+  },
+  {
+    "id": 4,
+    "orgao": "Gabinete",
+    "resumo": "Sem número de processo. Protocolo interno 2026/00412 recebido em 12/03/2026.",
+    "contato": "gabinete@prefeitura.example.gov.br"
+  }
+]

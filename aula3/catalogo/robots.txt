@@ -1,0 +1,13 @@
+# Exemplo de robots.txt para a disciplina.
+# Em um site real este arquivo fica na RAIZ do domínio (https://dominio/robots.txt).
+# Aqui ele está dentro do catálogo só para que possa ser lido e interpretado no exercício.
+
+User-agent: *
+Disallow: /aula3/catalogo/admin/
+Disallow: /aula3/catalogo/livro/*?imprimir
+Crawl-delay: 1
+
+User-agent: BuscadorMalEducado
+Disallow: /
+
+Sitemap: https://lucaskup.github.io/pucrs-coleta-e-preparacao/aula3/catalogo/sitemap.xml

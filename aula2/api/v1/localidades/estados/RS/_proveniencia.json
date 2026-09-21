@@ -1,0 +1,8 @@
+{
+  "fonte": "IBGE — API de Localidades",
+  "url": "https://servicodados.ibge.gov.br/api/v1/localidades/estados/RS/municipios?orderBy=nome",
+  "coletado_em": "2026-09-20",
+  "versao_api": "v1",
+  "registros": 497,
+  "observacao": "Cópia estática, sem alterações no conteúdo. Exemplo do que o slide 41 chama de proveniência: guardar URL, parâmetros, data da coleta e versão da API junto do dado bruto."
+}

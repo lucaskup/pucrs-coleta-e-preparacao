@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Livraria Aurora — página 2</title>
+  <meta name="description" content="Catálogo fictício de livros para praticar web scraping.">
+  <style>
+    :root { --fundo:#f5f6f8; --cartao:#fff; --texto:#1b1f24; --suave:#5a636e; --borda:#dfe3e8; --marca:#8c1d40; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --fundo:#14171b; --cartao:#1d2126; --texto:#eceff3; --suave:#a4adb8; --borda:#2c323a; --marca:#e8879f;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--fundo); color:var(--texto); line-height:1.55;
+           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .conteudo { max-width: 980px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+    a { color: var(--marca); }
+    h1 { font-size: 1.5rem; margin: 0 0 .2rem; }
+    .sub { color: var(--suave); margin: 0 0 1.5rem; }
+    .aviso { background:#fff8e1; border:1px solid #e8d48b; color:#5c4700;
+             padding:.7rem .9rem; border-radius:8px; margin:0 0 1.5rem; font-size:.85rem; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .aviso { background:#33290d; border-color:#6b5716; color:#f2e2b0; }
+    }
+    .lista { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+    .product_pod { background: var(--cartao); border: 1px solid var(--borda); border-radius: 10px;
+                   padding: .9rem; display: flex; flex-direction: column; }
+    .image_container { text-align: center; margin-bottom: .6rem; }
+    .image_container img { width: 72px; height: 96px; }
+    .product_pod h3 { font-size: .95rem; margin: 0 0 .4rem; line-height: 1.3; }
+    .product_pod h3 a { text-decoration: none; }
+    .star-rating { margin: 0 0 .4rem; color: #d8a300; font-size: .8rem; letter-spacing: .1em; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .price_color { margin: 0; font-weight: 600; }
+    .availability { margin: .2rem 0 0; font-size: .8rem; color: var(--suave); }
+    .availability.outofstock { color: #b3261e; }
+    .pager { list-style: none; display: flex; gap: 1rem; align-items: center; justify-content: center;
+             padding: 0; margin: 2rem 0 0; font-size: .9rem; }
+    .pager .current { color: var(--suave); }
+    table.table-striped { width: 100%; border-collapse: collapse; background: var(--cartao);
+                          border: 1px solid var(--borda); border-radius: 8px; font-size: .9rem; }
+    table.table-striped th, table.table-striped td { padding: .5rem .7rem; border-bottom: 1px solid var(--borda); text-align: left; }
+    table.table-striped tr:last-child td, table.table-striped tr:last-child th { border-bottom: none; }
+    .breadcrumb { list-style: none; display: flex; gap: .5rem; padding: 0; font-size: .85rem; color: var(--suave); }
+    .breadcrumb li:not(:last-child)::after { content: " ›"; }
+  </style>
+</head>
+<body>
+  <main class="conteudo">
+    <h1>Livraria Aurora</h1>
+    <p class="sub">24 livros · página 2 de 3</p>
+    <p class="aviso"><strong>Catálogo fictício.</strong> Títulos, autores e preços foram inventados
+       para a disciplina Coleta e Preparação de Dados (PUCRS Online).</p>
+    <section class="lista">
+        <article class="product_pod">
+          <div class="image_container">
+            <a href="livro/a-ultima-estacao-de-radio.html"><img src="capa.svg" alt="Capa de A Última Estação de Rádio"></a>
+          </div>
+          <p class="star-rating Four"><span class="sr-only">Quatro de cinco estrelas</span>★★★★☆</p>
+          <h3><a href="livro/a-ultima-estacao-de-radio.html" title="A Última Estação de Rádio">A Última Estação de Rádio</a></h3>
+          <div class="product_price">
+            <p class="price_color">R$ 41,25</p>
+            <p class="availability outofstock">Esgotado</p>
+          </div>
+        </article>
+        <article class="product_pod">
+          <div class="image_container">
+            <a href="livro/receitas-para-dias-longos.html"><img src="capa.svg" alt="Capa de Receitas para Dias Longos"></a>
+          </div>
+          <p class="star-rating Three"><span class="sr-only">Três de cinco estrelas</span>★★★☆☆</p>
+          <h3><a href="livro/receitas-para-dias-longos.html" title="Receitas para Dias Longos">Receitas para Dias Longos</a></h3>
+          <div class="product_price">
+            <p class="price_color">R$ 89,99</p>
+            <p class="instock availability">Em estoque</p>
+          </div>
+        </article>
+        <article class="product_pod">
+          <div class="image_container">
+            <a href="livro/o-colecionador-de-relogios-parados.html"><img src="capa.svg" alt="Capa de O Colecionador de Relógios Parados"></a>
+          </div>
+          <p class="star-rating Five"><span class="sr-only">Cinco de cinco estrelas</span>★★★★★</p>
+          <h3><a href="livro/o-colecionador-de-relogios-parados.html" title="O Colecionador de Relógios Parados">O Colecionador de Relógio...</a></h3>
+          <div class="product_price">
+            <p class="price_color">R$ 55,40</p>
+            <p class="instock availability">Em estoque</p>
+          </div>
+        </article>
+        <article class="product_pod">
+          <div class="image_container">
+            <a href="livro/breve-historia-do-quase.html"><img src="capa.svg" alt="Capa de Breve História do Quase"></a>
+          </div>
+          <p class="star-rating Three"><span class="sr-only">Três de cinco estrelas</span>★★★☆☆</p>
+          <h3><a href="livro/breve-historia-do-quase.html" title="Breve História do Quase">Breve História do Quase</a></h3>
+          <div class="product_price">
+            <p class="price_color">R$ 67,80</p>
+            <p class="instock availability">Em estoque</p>
+          </div>
+        </article>
+        <article class="product_pod">
+          <div class="image_container">
+            <a href="livro/nem-todo-mapa-leva-a-algum-lugar.html"><img src="capa.svg" alt="Capa de Nem Todo Mapa Leva a Algum Lugar"></a>
+          </div>
+          <p class="star-rating Four"><span class="sr-only">Quatro de cinco estrelas</span>★★★★☆</p>
+          <h3><a href="livro/nem-todo-mapa-leva-a-algum-lugar.html" title="Nem Todo Mapa Leva a Algum Lugar">Nem Todo Mapa Leva a Algu...</a></h3>
+          <div class="product_price">
+            <p class="price_color">R$ 37,45</p>
+            <p class="instock availability">Em estoque</p>
+          </div>
+        </article>
+        <article class="product_pod">
+          <div class="image_container">
+            <a href="livro/a-gramatica-das-tempestades.html"><img src="capa.svg" alt="Capa de A Gramática das Tempestades"></a>
+          </div>
+          <p class="star-rating Two"><span class="sr-only">Duas de cinco estrelas</span>★★☆☆☆</p>
+          <h3><a href="livro/a-gramatica-das-tempestades.html" title="A Gramática das Tempestades">A Gramática das Tempestades</a></h3>
+          <div class="product_price">
+            <p class="price_color">R$ 49,00</p>
+            <p class="instock availability">Em estoque</p>
+          </div>
+        </article>
+        <article class="product_pod">
+          <div class="image_container">
+            <a href="livro/domingo-na-rua-de-baixo.html"><img src="capa.svg" alt="Capa de Domingo na Rua de Baixo"></a>
+          </div>
+          <p class="star-rating Five"><span class="sr-only">Cinco de cinco estrelas</span>★★★★★</p>
+          <h3><a href="livro/domingo-na-rua-de-baixo.html" title="Domingo na Rua de Baixo">Domingo na Rua de Baixo</a></h3>
+          <div class="product_price">
+            <p class="price_color">R$ 26,90</p>
+            <p class="instock availability">Em estoque</p>
+          </div>
+        </article>
+        <article class="product_pod">
+          <div class="image_container">
+            <a href="livro/o-que-sobrou-do-verao.html"><img src="capa.svg" alt="Capa de O Que Sobrou do Verão"></a>
+          </div>
+          <p class="star-rating Three"><span class="sr-only">Três de cinco estrelas</span>★★★☆☆</p>
+          <h3><a href="livro/o-que-sobrou-do-verao.html" title="O Que Sobrou do Verão">O Que Sobrou do Verão</a></h3>
+          <div class="product_price">
+            <p class="price_color">R$ 43,70</p>
+            <p class="availability outofstock">Esgotado</p>
+          </div>
+        </article>
+    </section>
+      <ul class="pager">
+        <li class="previous"><a href="index.html">← anterior</a></li>
+        <li class="current">Página 2 de 3</li>
+        <li class="next"><a href="pagina-3.html">próxima →</a></li>
+      </ul>
+  </main>
+</body>
+</html>

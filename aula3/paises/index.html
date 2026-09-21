@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Países — exemplo para XPath</title>
+  <meta name="description" content="Lista de países com capital, população e área, para exercitar XPath.">
+  <style>
+    :root { --fundo:#f5f6f8; --cartao:#fff; --texto:#1b1f24; --suave:#5a636e; --borda:#dfe3e8; --marca:#8c1d40; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --fundo:#14171b; --cartao:#1d2126; --texto:#eceff3; --suave:#a4adb8; --borda:#2c323a; --marca:#e8879f;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--fundo); color:var(--texto); line-height:1.55;
+           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .conteudo { max-width: 900px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+    a { color: var(--marca); }
+    h1 { font-size: 1.5rem; margin: 0 0 .2rem; }
+    .sub { color: var(--suave); margin: 0 0 1.5rem; }
+    .aviso { background:#fff8e1; border:1px solid #e8d48b; color:#5c4700;
+             padding:.7rem .9rem; border-radius:8px; margin:0 0 1.5rem; font-size:.85rem; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .aviso { background:#33290d; border-color:#6b5716; color:#f2e2b0; }
+    }
+    #paises { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+    .country { background: var(--cartao); border: 1px solid var(--borda); border-radius: 10px; padding: 1rem; }
+    .country-name { margin: 0 0 .5rem; font-size: 1.05rem; }
+    .country-info { font-size: .875rem; color: var(--suave); }
+    .country-info span { color: var(--texto); }
+    .flag-icon { font-style: normal; opacity: .5; font-size: .75rem; }
+  </style>
+</head>
+<body>
+  <main class="conteudo">
+    <h1>Países</h1>
+    <p class="sub">16 países · uma página para praticar XPath</p>
+    <p class="aviso"><strong>Página de exemplo.</strong> Conteúdo fictício, criado para a disciplina Coleta e Preparação de Dados (PUCRS Online).</p>
+    <div id="paises">
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-eu"></i>
+          Andorra
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">Andorra la Vella</span><br>
+          <strong>População:</strong> <span class="country-population">84000</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">468.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">EU</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-as"></i>
+          Emirados Árabes Unidos
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">Abu Dhabi</span><br>
+          <strong>População:</strong> <span class="country-population">4975593</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">82880.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">AS</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-as"></i>
+          Afeganistão
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">Cabul</span><br>
+          <strong>População:</strong> <span class="country-population">29121286</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">647500.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">AS</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-na"></i>
+          Antígua e Barbuda
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">St. John's</span><br>
+          <strong>População:</strong> <span class="country-population">86754</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">443.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">NA</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-na"></i>
+          Anguilla
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">The Valley</span><br>
+          <strong>População:</strong> <span class="country-population">13254</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">102.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">NA</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-eu"></i>
+          Albânia
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">Tirana</span><br>
+          <strong>População:</strong> <span class="country-population">2986952</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">28748.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">EU</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-as"></i>
+          Armênia
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">Yerevan</span><br>
+          <strong>População:</strong> <span class="country-population">2968000</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">29800.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">AS</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-af"></i>
+          Angola
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">Luanda</span><br>
+          <strong>População:</strong> <span class="country-population">13068161</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">1246700.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">AF</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-sa"></i>
+          Argentina
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">Buenos Aires</span><br>
+          <strong>População:</strong> <span class="country-population">41343201</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">2766890.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">SA</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-eu"></i>
+          Áustria
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">Viena</span><br>
+          <strong>População:</strong> <span class="country-population">8205000</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">83858.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">EU</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-oc"></i>
+          Austrália
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">Canberra</span><br>
+          <strong>População:</strong> <span class="country-population">21515754</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">7686850.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">OC</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-sa"></i>
+          Brasil
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">Brasília</span><br>
+          <strong>População:</strong> <span class="country-population">202656788</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">8511965.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">SA</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-na"></i>
+          Canadá
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">Ottawa</span><br>
+          <strong>População:</strong> <span class="country-population">33679000</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">9984670.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">NA</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-sa"></i>
+          Chile
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">Santiago</span><br>
+          <strong>População:</strong> <span class="country-population">16746491</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">756950.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">SA</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-eu"></i>
+          Portugal
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">Lisboa</span><br>
+          <strong>População:</strong> <span class="country-population">10676000</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">92391.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">EU</span>
+        </div>
+      </div>
+      <div class="col-md-4 country">
+        <h3 class="country-name">
+          <i class="flag-icon flag-icon-sa"></i>
+          Uruguai
+        </h3>
+        <div class="country-info">
+          <strong>Capital:</strong> <span class="country-capital">Montevidéu</span><br>
+          <strong>População:</strong> <span class="country-population">3477000</span><br>
+          <strong>Área (km²):</strong> <span class="country-area">176220.0</span><br>
+          <strong>Continente:</strong> <span class="country-continent">SA</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

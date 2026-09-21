@@ -1,0 +1,3 @@
+09:12:01 GET /municipios 200 latencia=134ms
+09:12:04 GET /estados    404 latencia=87ms
+09:12:09 GET /municipios 503 latencia=2041ms

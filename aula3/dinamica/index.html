@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estações meteorológicas — painel</title>
+  <meta name="description" content="Página cujo conteúdo é montado por JavaScript, para praticar a diferença entre HTML entregue e DOM renderizado.">
+  <style>
+    :root { --fundo:#f5f6f8; --cartao:#fff; --texto:#1b1f24; --suave:#5a636e; --borda:#dfe3e8; --marca:#8c1d40; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --fundo:#14171b; --cartao:#1d2126; --texto:#eceff3; --suave:#a4adb8; --borda:#2c323a; --marca:#e8879f;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--fundo); color:var(--texto); line-height:1.55;
+           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .conteudo { max-width: 900px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+    h1 { font-size: 1.5rem; margin: 0 0 .2rem; }
+    .sub { color: var(--suave); margin: 0 0 1.5rem; }
+    .aviso { background:#fff8e1; border:1px solid #e8d48b; color:#5c4700;
+             padding:.7rem .9rem; border-radius:8px; margin:0 0 1.5rem; font-size:.85rem; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .aviso { background:#33290d; border-color:#6b5716; color:#f2e2b0; }
+    }
+    table { width: 100%; border-collapse: collapse; background: var(--cartao);
+            border: 1px solid var(--borda); border-radius: 8px; font-size: .9rem; }
+    th, td { padding: .5rem .7rem; border-bottom: 1px solid var(--borda); text-align: left; }
+    th { background: rgba(140,29,64,.06); }
+    tbody tr:last-child td { border-bottom: none; }
+    td.temperatura { font-variant-numeric: tabular-nums; }
+    #estado { color: var(--suave); font-size: .85rem; margin-top: .8rem; }
+    a { color: var(--marca); }
+  </style>
+</head>
+<body>
+  <main class="conteudo">
+    <h1>Estações meteorológicas</h1>
+    <p class="sub">Painel de leituras — rede fictícia</p>
+    <p class="aviso"><strong>Esta página monta a tabela com JavaScript.</strong> O HTML entregue pelo
+       servidor chega praticamente vazio: <code>requests</code> + BeautifulSoup não veem nenhuma leitura.
+       Procure na aba <em>Network</em> qual requisição traz os dados.</p>
+
+    <table id="leituras">
+      <thead>
+        <tr><th>Estação</th><th>Cidade</th><th>Bairro</th><th>Temperatura</th><th>Umidade</th></tr>
+      </thead>
+      <tbody id="corpo">
+        <tr><td colspan="5">Carregando leituras…</td></tr>
+      </tbody>
+    </table>
+    <p id="estado">Aguardando dados.</p>
+    <noscript>
+      <p class="aviso">Sem JavaScript, esta página não tem conteúdo. Os dados estão em
+         <a href="dados.json">dados.json</a>.</p>
+    </noscript>
+  </main>
+
+  <script>
+    async function carregar() {
+      const corpo = document.getElementById('corpo');
+      const estado = document.getElementById('estado');
+      try {
+        const resposta = await fetch('dados.json');
+        if (!resposta.ok) throw new Error('HTTP ' + resposta.status);
+        const dados = await resposta.json();
+        corpo.innerHTML = '';
+        for (const l of dados.leituras) {
+          const tr = document.createElement('tr');
+          tr.className = 'leitura';
+          tr.dataset.estacao = l.id;
+          tr.innerHTML =
+            '<td class="estacao">' + l.id + '</td>' +
+            '<td class="cidade">' + l.cidade + '</td>' +
+            '<td class="bairro">' + l.bairro + '</td>' +
+            '<td class="temperatura">' + l.temperatura_c.toFixed(1) + ' °C</td>' +
+            '<td class="umidade">' + l.umidade_pct + '%</td>';
+          corpo.appendChild(tr);
+        }
+        estado.textContent = dados.total + ' leituras · atualizado em ' + dados.atualizado_em;
+      } catch (erro) {
+        corpo.innerHTML = '<tr><td colspan="5">Falha ao carregar: ' + erro.message + '</td></tr>';
+        estado.textContent = 'Erro.';
+      }
+    }
+    setTimeout(carregar, 400);
+  </script>
+</body>
+</html>

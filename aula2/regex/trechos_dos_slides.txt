@@ -1,0 +1,36 @@
+# Trechos usados nos exemplos dos slides 8 a 13.
+# Cole um bloco por vez no regex101.com (flavor Python) e teste o padrão indicado.
+
+## Âncoras (slide 8) — ^teste$ | \bcasa\b | ^From\s\S+
+teste
+um teste
+a casa azul
+o casamento
+From stephen.marquard@uct.ac.za Sat
+From: stephen.marquard@uct.ac.za
+
+## Classes (slide 9) — mam[aã]o | \d\d | luc[^a]s | [A-Z]\w+
+comprei mamao e mamão
+Sat Jan  5 09:14:16 2008
+lucos luces lucas
+Sat Jan 5, Innocent
+
+## Quantificadores (slide 10) — \d+ | l{1,3} | <.*> | <.*?>
+Sat Jan 5 09:14:16 2008
+alo  allo  alllo  alll lo
+<b>oi</b> tudo bem
+
+## Grupos e alternância (slide 11) — (super|hiper)?mercado | super|hipermercado | (\d{2}:){2}\d{2}
+fui ao mercado, ao supermercado e ao hipermercado
+minimercado
+Sat Jan  5 09:14:16 2008
+
+## Escape (slide 12) — www\.[^.]+\.com | R\$\s?\d+,\d{2}
+www.pucrs.com  wwwXpucrsYcom
+total: R$ 19,90 e R$1234,50
+
+## Look-around (slide 13) — lucas(?=\skupssinskü) | (?<=Confidence:\s)[\d.]+
+lucas kupssinskü
+lucas silveira
+X-DSPAM-Confidence: 0.8475
+X-DSPAM-Probability: 0.0000

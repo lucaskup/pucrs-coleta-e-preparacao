@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aula 3 — Web scraping</title>
+  <meta name="description" content="Páginas da aula 3 da disciplina Coleta e Preparação de Dados.">
+  <style>
+    :root { --fundo:#f5f6f8; --cartao:#fff; --texto:#1b1f24; --suave:#5a636e; --borda:#dfe3e8; --marca:#8c1d40; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --fundo:#14171b; --cartao:#1d2126; --texto:#eceff3; --suave:#a4adb8; --borda:#2c323a; --marca:#e8879f;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--fundo); color:var(--texto); line-height:1.55;
+           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 860px; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+    a { color: var(--marca); }
+    h1 { font-size: 1.6rem; margin: 0 0 .3rem; }
+    .sub { color: var(--suave); margin: 0 0 2rem; }
+    section { background: var(--cartao); border: 1px solid var(--borda); border-radius: 10px;
+              padding: 1.1rem 1.25rem; margin-bottom: 1.1rem; }
+    h2 { font-size: 1.05rem; margin: 0 0 .2rem; }
+    p.tema { color: var(--suave); margin: 0 0 .8rem; font-size: .92rem; }
+    table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+    td { padding: .35rem .5rem .35rem 0; border-bottom: 1px solid var(--borda); vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    td.arq { white-space: nowrap; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    td.obs { color: var(--suave); }
+    pre { background: var(--fundo); border: 1px solid var(--borda); border-radius: 8px;
+          padding: .8rem; overflow-x: auto; font-size: .85rem; }
+    .voltar { display: inline-block; margin-bottom: 1.2rem; font-size: .9rem; }
+    @media (max-width: 520px) { td.arq { white-space: normal; word-break: break-all; } }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../">← Todas as aulas</a>
+    <h1>Aula 3 — Web scraping: HTML, CSS, seletores e BeautifulSoup</h1>
+    <p class="sub">Coleta e Preparação de Dados · PUCRS Online · todas as páginas são fictícias e autocontidas</p>
+
+    <section>
+      <h2>Páginas de exemplo</h2>
+      <p class="tema">Os documentos que aparecem na apresentação, prontos para inspecionar no navegador.</p>
+      <table>
+        <tr><td class="arq"><a href="livraria/">livraria/</a></td><td class="obs">o HTML mínimo dos slides 19 e 25: <code>p.nota</code>, dois <code>&lt;a&gt;</code> irmãos, <code>ul#livros</code></td></tr>
+        <tr><td class="arq"><a href="produtos/">produtos/</a></td><td class="obs">o exercício dos slides 43–44: <code>p.preco</code> em CSS e em XPath</td></tr>
+        <tr><td class="arq"><a href="tabela/">tabela/</a></td><td class="obs">uma tabela regular e uma com <code>rowspan</code>/<code>colspan</code>, para <code>pd.read_html</code> (slide 21)</td></tr>
+        <tr><td class="arq"><a href="paises/">paises/</a></td><td class="obs">16 países para XPath: predicados, funções e o eixo <code>following-sibling</code> (slides 39–41)</td></tr>
+      </table>
+    </section>
+    <section>
+      <h2>catalogo/ — o pipeline completo</h2>
+      <p class="tema">Livraria Aurora: 24 livros fictícios, 3 páginas de listagem e uma página de detalhe por livro. Marcação igual à dos slides: <code>article.product_pod</code>, <code>p.price_color</code>, <code>li.next &gt; a</code>.</p>
+      <table>
+        <tr><td class="arq"><a href="catalogo/">catalogo/</a></td><td class="obs">página 1 do catálogo — comece por aqui</td></tr>
+        <tr><td class="arq"><a href="catalogo/pagina-2.html">catalogo/pagina-2.html</a></td><td class="obs">página 2 (a paginação é seguida por <code>li.next &gt; a</code>)</td></tr>
+        <tr><td class="arq"><a href="catalogo/sitemap.xml">catalogo/sitemap.xml</a></td><td class="obs">27 URLs em XML, para ler com <code>lxml-xml</code> (slide 60)</td></tr>
+        <tr><td class="arq"><a href="catalogo/robots.txt">catalogo/robots.txt</a></td><td class="obs">exemplo para <code>urllib.robotparser</code> (slide 59)</td></tr>
+      </table>
+      <pre>for pod in soup.select('article.product_pod'):
+    pod.select_one('h3 a')['title']
+    pod.select_one('p.price_color').text     # 'R$ 4.299,00'</pre>
+    </section>
+    <section>
+      <h2>dinamica/ — onde o BeautifulSoup para</h2>
+      <p class="tema">A tabela é montada por JavaScript. O HTML entregue pelo servidor vem vazio: é o slide 27 na prática.</p>
+      <table>
+        <tr><td class="arq"><a href="dinamica/">dinamica/</a></td><td class="obs">painel de 12 estações meteorológicas (abra com e sem JavaScript)</td></tr>
+        <tr><td class="arq"><a href="dinamica/dados.json">dinamica/dados.json</a></td><td class="obs">o endpoint que alimenta a página — o que se procura na aba Network</td></tr>
+      </table>
+      <pre>len(BeautifulSoup(r.text, 'lxml').select('tr.leitura'))   # 0
+requests.get(URL + 'dinamica/dados.json').json()['total']  # 12</pre>
+    </section>
+
+    <section>
+      <h2>Baixar tudo de uma vez</h2>
+      <pre>git clone https://github.com/lucaskup/pucrs-coleta-e-preparacao.git</pre>
+    </section>
+  </main>
+</body>
+</html>

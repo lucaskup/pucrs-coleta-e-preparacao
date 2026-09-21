@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Testador de Expressões Regulares</title>
+<meta name="description" content="Escreva uma regex, veja os casamentos destacados no texto e compare o motor JavaScript com o re do Python.">
+<style>
+  :root {
+    --fundo:#f5f6f8; --cartao:#fff; --texto:#1b1f24; --suave:#5a636e; --borda:#dfe3e8;
+    --marca:#8c1d40; --erro:#b3261e; --aviso-fundo:#fff8e1; --aviso-borda:#e8d48b; --aviso-texto:#5c4700;
+    --realce-a:#fde68a; --realce-b:#a7f3d0; --realce-texto:#1b1f24; --codigo-fundo:#eef0f3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fundo:#14171b; --cartao:#1d2126; --texto:#eceff3; --suave:#a4adb8; --borda:#2c323a;
+      --marca:#e8879f; --erro:#f2b8b5; --aviso-fundo:#33290d; --aviso-borda:#6b5716; --aviso-texto:#f2e2b0;
+      --realce-a:#8a6300; --realce-b:#14532d; --realce-texto:#f7fafc; --codigo-fundo:#252a31;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; background:var(--fundo); color:var(--texto); line-height:1.55;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  a { color: var(--marca); }
+  h1 { font-size: 1.5rem; margin: 0 0 .2rem; }
+  h2 { font-size: 1.05rem; margin: 0 0 .6rem; }
+  .sub { color: var(--suave); margin: 0 0 1.5rem; }
+  .voltar { display:inline-block; margin-bottom:1.2rem; font-size:.9rem; }
+  section { background: var(--cartao); border: 1px solid var(--borda); border-radius: 10px;
+            padding: 1.1rem 1.25rem; margin-bottom: 1.1rem; }
+  label.rotulo { display:block; font-size:.8rem; text-transform:uppercase; letter-spacing:.06em;
+                 color:var(--suave); margin-bottom:.4rem; }
+  code, pre, textarea, input#padrao, .destaque, .mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  .campo-padrao { display:flex; align-items:center; gap:.2rem; background:var(--codigo-fundo);
+                  border:1px solid var(--borda); border-radius:8px; padding:.2rem .6rem; }
+  .campo-padrao.invalido { border-color: var(--erro); }
+  .delim { color: var(--suave); font-size:1rem; }
+  input#padrao { flex:1; border:none; background:transparent; color:var(--texto);
+                 font-size:1rem; padding:.55rem .2rem; min-width:0; }
+  input#padrao:focus { outline:none; }
+  .linha { display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-top:.7rem; }
+  .flags { display:flex; flex-wrap:wrap; gap:.8rem; font-size:.85rem; }
+  .flags label { display:flex; align-items:center; gap:.3rem; cursor:pointer; }
+  .flags label.desativada { opacity:.45; cursor:not-allowed; }
+  .flags code { background:var(--codigo-fundo); padding:.05rem .3rem; border-radius:4px; }
+  select, button { font: inherit; font-size:.85rem; color:var(--texto); background:var(--cartao);
+                   border:1px solid var(--borda); border-radius:6px; padding:.35rem .6rem; cursor:pointer; }
+  button:hover, select:hover { border-color: var(--marca); }
+  .chips { display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.8rem; }
+  .chip { font-size:.78rem; padding:.3rem .55rem; border-radius:999px; }
+  .chip code { font-size:.95em; }
+  #erro { display:none; margin-top:.7rem; color:var(--erro); font-size:.85rem; }
+  #erro.visivel { display:block; }
+  .avisos { margin-top:.7rem; display:flex; flex-direction:column; gap:.4rem; }
+  .avisos p { margin:0; background:var(--aviso-fundo); border:1px solid var(--aviso-borda);
+              color:var(--aviso-texto); padding:.5rem .7rem; border-radius:8px; font-size:.82rem; }
+  textarea { width:100%; min-height:190px; resize:vertical; background:var(--codigo-fundo);
+             color:var(--texto); border:1px solid var(--borda); border-radius:8px;
+             padding:.7rem; font-size:.85rem; line-height:1.5; }
+  .barra { display:flex; flex-wrap:wrap; gap:.8rem; align-items:center; justify-content:space-between;
+           margin-bottom:.8rem; }
+  #contagem { font-size:1rem; }
+  #estado { font-size:.8rem; color:var(--suave); }
+  .resultado { display:grid; gap:1rem; grid-template-columns: 1.5fr 1fr; align-items:start; }
+  @media (max-width: 760px) { .resultado { grid-template-columns: 1fr; } }
+  .destaque { background:var(--codigo-fundo); border:1px solid var(--borda); border-radius:8px;
+              padding:.7rem; font-size:.85rem; line-height:1.6; white-space:pre-wrap; word-break:break-word;
+              max-height:420px; overflow:auto; }
+  mark { border-radius:3px; padding:.05em 0; color:var(--realce-texto); }
+  mark.c0 { background: var(--realce-a); }
+  mark.c1 { background: var(--realce-b); }
+  .vazio { display:inline-block; width:2px; height:1em; vertical-align:-.15em;
+           background:var(--marca); margin:0 1px; }
+  ol#lista { margin:0; padding-left:1.4rem; font-size:.82rem; max-height:420px; overflow:auto; }
+  ol#lista li { margin-bottom:.45rem; }
+  ol#lista .pos { color:var(--suave); }
+  ol#lista .grupo { display:block; color:var(--suave); }
+  ol#lista .grupo b { color:var(--texto); font-weight:600; }
+  .vazio-lista { color:var(--suave); font-size:.85rem; }
+  pre { background:var(--codigo-fundo); border:1px solid var(--borda); border-radius:8px;
+        padding:.7rem; overflow-x:auto; font-size:.82rem; margin:0; }
+  details { margin-top:.6rem; }
+  details summary { cursor:pointer; font-size:.9rem; color:var(--marca); }
+  table { width:100%; border-collapse:collapse; font-size:.82rem; margin-top:.7rem; }
+  td, th { padding:.3rem .5rem .3rem 0; border-bottom:1px solid var(--borda); text-align:left; vertical-align:top; }
+  tr:last-child td { border-bottom:none; }
+  td.simbolo { white-space:nowrap; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color:var(--marca); }
+  .grade-ref { display:grid; gap:0 1.5rem; grid-template-columns: 1fr 1fr; }
+  @media (max-width: 700px) { .grade-ref { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <a class="voltar" href="../">← Aula 2</a>
+  <h1>Testador de expressões regulares</h1>
+  <p class="sub">Escreva o padrão, veja os casamentos destacados e compare o motor do navegador com o <code>re</code> do Python.</p>
+
+  <section>
+    <label class="rotulo" for="padrao">Expressão regular</label>
+    <div class="campo-padrao" id="campo-padrao">
+      <span class="delim">r"</span>
+      <input id="padrao" spellcheck="false" autocomplete="off" autocapitalize="off"
+             placeholder="\b\d{1,2}/\d{1,2}/\d{4}\b" aria-describedby="erro">
+      <span class="delim">"</span>
+    </div>
+    <div class="linha">
+      <div class="flags">
+        <label><input type="checkbox" id="f-i"> <code>re.I</code> ignora maiúsculas</label>
+        <label><input type="checkbox" id="f-m"> <code>re.M</code> ^ e $ por linha</label>
+        <label><input type="checkbox" id="f-s"> <code>re.S</code> . casa quebra</label>
+        <label id="rotulo-x"><input type="checkbox" id="f-x"> <code>re.X</code> ignora espaços</label>
+      </div>
+    </div>
+    <div id="erro" role="alert"></div>
+    <div class="avisos" id="avisos"></div>
+    <div class="chips" id="chips"></div>
+  </section>
+
+  <section>
+    <div class="barra">
+      <label class="rotulo" for="texto" style="margin:0">Texto de teste</label>
+      <div class="chips" id="amostras" style="margin:0"></div>
+    </div>
+    <textarea id="texto" spellcheck="false"></textarea>
+  </section>
+
+  <section>
+    <div class="barra">
+      <strong id="contagem">0 casamentos</strong>
+      <div class="linha" style="margin:0">
+        <span id="estado"></span>
+        <label class="rotulo" for="motor" style="margin:0">Motor</label>
+        <select id="motor">
+          <option value="js">JavaScript (instantâneo)</option>
+          <option value="python">Python re (baixa ~10 MB)</option>
+        </select>
+      </div>
+    </div>
+    <div class="resultado">
+      <div class="destaque" id="destaque" aria-live="polite"></div>
+      <div>
+        <h2>Casamentos</h2>
+        <ol id="lista"></ol>
+        <p class="vazio-lista" id="sem-casos">Nenhum casamento ainda.</p>
+      </div>
+    </div>
+    <details>
+      <summary>O mesmo padrão em Python</summary>
+      <pre id="codigo-python"></pre>
+    </details>
+  </section>
+
+  <section>
+    <h2>Referência rápida</h2>
+    <p class="sub" style="margin:0 0 .5rem">Os símbolos dos slides 7 a 13, para consulta enquanto você escreve.</p>
+    <div class="grade-ref">
+      <div>
+        <details open>
+          <summary>Âncoras</summary>
+          <table>
+            <tr><td class="simbolo">^</td><td>Início da linha</td></tr>
+            <tr><td class="simbolo">$</td><td>Fim da linha</td></tr>
+            <tr><td class="simbolo">\b</td><td>Fronteira de palavra</td></tr>
+            <tr><td class="simbolo">\B</td><td>Não é fronteira de palavra</td></tr>
+          </table>
+        </details>
+        <details open>
+          <summary>Classes de caracteres</summary>
+          <table>
+            <tr><td class="simbolo">.</td><td>Qualquer caractere, exceto quebra de linha</td></tr>
+            <tr><td class="simbolo">[…]</td><td>Um caractere da lista: <code>[aã]</code>, <code>[a-z]</code></td></tr>
+            <tr><td class="simbolo">[^…]</td><td>Um caractere fora da lista</td></tr>
+            <tr><td class="simbolo">\s \S</td><td>Espaço em branco / não branco</td></tr>
+            <tr><td class="simbolo">\d \D</td><td>Dígito / não dígito</td></tr>
+            <tr><td class="simbolo">\w \W</td><td>Letra, dígito ou <code>_</code> / o contrário</td></tr>
+          </table>
+        </details>
+        <details open>
+          <summary>Quantificadores</summary>
+          <table>
+            <tr><td class="simbolo">?</td><td>Zero ou uma</td></tr>
+            <tr><td class="simbolo">*</td><td>Zero ou mais</td></tr>
+            <tr><td class="simbolo">+</td><td>Uma ou mais</td></tr>
+            <tr><td class="simbolo">{n,m}</td><td>De n a m ocorrências</td></tr>
+            <tr><td class="simbolo">*? +?</td><td>Versão <em>non-greedy</em>: casa o mínimo</td></tr>
+          </table>
+        </details>
+      </div>
+      <div>
+        <details open>
+          <summary>Grupos e alternância</summary>
+          <table>
+            <tr><td class="simbolo">(…)</td><td>Grupo, e captura o trecho</td></tr>
+            <tr><td class="simbolo">(?:…)</td><td>Grupo que não captura</td></tr>
+            <tr><td class="simbolo">|</td><td>Alternância: uma opção ou a outra</td></tr>
+            <tr><td class="simbolo">(?P&lt;nome&gt;…)</td><td>Grupo nomeado — só no motor Python</td></tr>
+          </table>
+        </details>
+        <details open>
+          <summary>Escape</summary>
+          <table>
+            <tr><td class="simbolo">\.</td><td>Ponto literal</td></tr>
+            <tr><td class="simbolo">\?</td><td>Interrogação literal</td></tr>
+            <tr><td class="simbolo">\[</td><td>Colchete literal</td></tr>
+            <tr><td class="simbolo">\\</td><td>Barra invertida literal</td></tr>
+          </table>
+        </details>
+        <details open>
+          <summary>Olhar em volta</summary>
+          <table>
+            <tr><td class="simbolo">(?=…)</td><td>Lookahead positivo</td></tr>
+            <tr><td class="simbolo">(?!…)</td><td>Lookahead negativo</td></tr>
+            <tr><td class="simbolo">(?&lt;=…)</td><td>Lookbehind positivo</td></tr>
+            <tr><td class="simbolo">(?&lt;!…)</td><td>Lookbehind negativo</td></tr>
+          </table>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Os dois motores não são idênticos</h2>
+    <table>
+      <tr><th>Situação</th><th>JavaScript</th><th>Python <code>re</code></th></tr>
+      <tr><td><code>\w</code> e <code>\b</code> com acento</td><td>só ASCII: <code>ç</code> e <code>á</code> ficam de fora</td><td>Unicode: casam letras acentuadas</td></tr>
+      <tr><td>Lookbehind de largura variável</td><td>permitido</td><td><code>re.error</code></td></tr>
+      <tr><td>Grupo nomeado</td><td><code>(?&lt;nome&gt;…)</code></td><td><code>(?P&lt;nome&gt;…)</code></td></tr>
+      <tr><td>Flag <code>re.X</code></td><td>não existe</td><td>ignora espaços e comentários</td></tr>
+      <tr><td><code>\A</code> e <code>\Z</code></td><td>não existem</td><td>início e fim da string</td></tr>
+    </table>
+    <p class="sub" style="margin:.8rem 0 0">A disciplina usa Python. O motor JavaScript está aqui porque é
+       instantâneo e funciona sem rede; quando o resultado importar, confirme no motor Python.</p>
+  </section>
+</main>
+
+<script id="fonte-worker" type="text/js-worker">
+const LIMITE = 5000;
+const URL_PYODIDE = 'https://cdn.jsdelivr.net/pyodide/v0.28.3/full/';
+let pyodide = null;
+
+const CODIGO_PY = `
+import re, json
+
+def _casar(padrao, flags_txt, texto, limite):
+    flags = 0
+    if 'i' in flags_txt: flags |= re.I
+    if 'm' in flags_txt: flags |= re.M
+    if 's' in flags_txt: flags |= re.S
+    if 'x' in flags_txt: flags |= re.X
+    compilada = re.compile(padrao, flags)
+    saida = []
+    for m in compilada.finditer(texto):
+        saida.append({
+            "inicio": m.start(),
+            "fim": m.end(),
+            "texto": m.group(0),
+            "grupos": [{"n": i, "texto": m.group(i)} for i in range(1, compilada.groups + 1)],
+            "nomeados": m.groupdict(),
+        })
+        if len(saida) >= limite:
+            break
+    return json.dumps(saida)
+`;
+
+function casarJS(padrao, flags, texto) {
+  let f = 'g';
+  if (flags.includes('i')) f += 'i';
+  if (flags.includes('m')) f += 'm';
+  if (flags.includes('s')) f += 's';
+  const re = new RegExp(padrao, f);
+  const casos = [];
+  let m;
+  while ((m = re.exec(texto)) !== null) {
+    casos.push({
+      inicio: m.index,
+      fim: m.index + m[0].length,
+      texto: m[0],
+      grupos: m.slice(1).map((g, i) => ({ n: i + 1, texto: g === undefined ? null : g })),
+      nomeados: m.groups ? Object.assign({}, m.groups) : {},
+    });
+    if (m[0].length === 0) re.lastIndex++;
+    if (casos.length >= LIMITE) break;
+  }
+  return casos;
+}
+
+async function garantirPyodide() {
+  if (pyodide) return;
+  self.postMessage({ tipo: 'status', texto: 'Baixando o Python (só na primeira vez)…' });
+  importScripts(URL_PYODIDE + 'pyodide.js');
+  pyodide = await loadPyodide({ indexURL: URL_PYODIDE });
+  pyodide.runPython(CODIGO_PY);
+  self.postMessage({ tipo: 'status', texto: 'Python pronto.', pronto: true });
+}
+
+self.onmessage = async (evento) => {
+  const { id, motor, padrao, flags, texto } = evento.data;
+  try {
+    let casos;
+    if (motor === 'python') {
+      await garantirPyodide();
+      const fn = pyodide.globals.get('_casar');
+      const bruto = fn(padrao, flags, texto, LIMITE);
+      fn.destroy();
+      casos = JSON.parse(bruto);
+    } else {
+      casos = casarJS(padrao, flags, texto);
+    }
+    self.postMessage({ tipo: 'resultado', id, ok: true, casos, limitado: casos.length >= LIMITE });
+  } catch (erro) {
+    let msg = String((erro && erro.message) || erro);
+    const linhas = msg.trim().split('\n').filter(Boolean);
+    msg = linhas[linhas.length - 1] || msg;
+    self.postMessage({
+      tipo: 'resultado', id, ok: false, erro: msg,
+      falhaPyodide: motor === 'python' && !pyodide,
+    });
+  }
+};
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  var LIMITE = 5000;
+  var TEMPO_LIMITE = 4000;      // matching travado = backtracking
+  var TEMPO_PYODIDE = 120000;   // download do Python
+
+  // ---------------------------------------------------------------- amostras
+  var AMOSTRAS = {
+    datas: {
+      rotulo: 'datas.txt',
+      texto: 'Contrato assinado em 05/01/2026, com vigência\naté 31/12/2027. O protocolo 2026/00412 foi\nrecebido em 7/1/2026.\n'
+    },
+    emails: {
+      rotulo: 'emails.txt',
+      texto: 'Contato: ana.souza@pucrs.br (coordenação)\nSuporte: suporte+api@dados.gov.br\nSite: www.pucrs.br não é um endereço\n'
+    },
+    latencia: {
+      rotulo: 'latencia.log',
+      texto: '09:12:01 GET /municipios 200 latencia=134ms\n09:12:04 GET /estados    404 latencia=87ms\n09:12:09 GET /municipios 503 latencia=2041ms\n'
+    },
+    trechos: {
+      rotulo: 'trechos dos slides',
+      texto: 'teste\num teste\na casa azul\no casamento\nFrom stephen.marquard@uct.ac.za Sat\nFrom: stephen.marquard@uct.ac.za\ncomprei mamao e mamão\nSat Jan  5 09:14:16 2008\nlucos luces lucas\nalo  allo  alllo  alll lo\n<b>oi</b> tudo bem\nfui ao mercado, ao supermercado e ao hipermercado\nminimercado\nwww.pucrs.com  wwwXpucrsYcom\ntotal: R$ 19,90 e R$1234,50\nlucas kupssinskü\nlucas silveira\nX-DSPAM-Confidence: 0.8475\nX-DSPAM-Probability: 0.0000\n'
+    },
+    mbox: { rotulo: 'mbox-short.txt', url: '../regex/mbox-short.txt', texto: null }
+  };
+
+  var EXEMPLOS = [
+    { rotulo: 'cabeçalhos X-', padrao: '^X.*:', flags: 'm', amostra: 'mbox' },
+    { rotulo: 'e-mails', padrao: '[\\w.+-]+@[\\w.-]+\\.\\w+', flags: '', amostra: 'emails' },
+    { rotulo: 'horários', padrao: '\\b\\d{2}:\\d{2}:\\d{2}\\b', flags: '', amostra: 'mbox' },
+    { rotulo: 'confiança do DSPAM', padrao: '^X-DSPAM-Confidence:\\s[\\d.]+$', flags: 'm', amostra: 'mbox' },
+    { rotulo: 'só o número (lookbehind)', padrao: '(?<=X-DSPAM-Confidence:\\s)[\\d.]+', flags: '', amostra: 'mbox' },
+    { rotulo: 'datas, estrito demais', padrao: '\\d{2}/\\d{2}/\\d{4}', flags: '', amostra: 'datas' },
+    { rotulo: 'datas, correto', padrao: '\\b\\d{1,2}/\\d{1,2}/\\d{4}\\b', flags: '', amostra: 'datas' },
+    { rotulo: 'latência', padrao: '(?<=latencia=)\\d+', flags: '', amostra: 'latencia' },
+    { rotulo: 'guloso', padrao: '<.*>', flags: '', amostra: 'trechos' },
+    { rotulo: 'non-greedy', padrao: '<.*?>', flags: '', amostra: 'trechos' },
+    { rotulo: 'alternância', padrao: '(super|hiper)?mercado', flags: '', amostra: 'trechos' },
+    { rotulo: 'acento na classe', padrao: 'mam[aã]o', flags: '', amostra: 'trechos' },
+    { rotulo: 'valor em reais', padrao: 'R\\$\\s?\\d+,\\d{2}', flags: '', amostra: 'trechos' }
+  ];
+
+  // ---------------------------------------------------------------- elementos
+  var $ = function (id) { return document.getElementById(id); };
+  var elPadrao = $('padrao'), elTexto = $('texto'), elDestaque = $('destaque'),
+      elLista = $('lista'), elSemCasos = $('sem-casos'), elContagem = $('contagem'),
+      elErro = $('erro'), elAvisos = $('avisos'), elEstado = $('estado'),
+      elMotor = $('motor'), elCampo = $('campo-padrao'), elCodigo = $('codigo-python');
+  var caixas = { i: $('f-i'), m: $('f-m'), s: $('f-s'), x: $('f-x') };
+
+  var worker = null, semWorker = false, seq = 0, aguardando = 0, cronometro = null;
+  var pythonPronto = false;
+
+  // ---------------------------------------------------------------- worker
+  function criarWorker() {
+    try {
+      var fonte = document.getElementById('fonte-worker').textContent;
+      var url = URL.createObjectURL(new Blob([fonte], { type: 'text/javascript' }));
+      worker = new Worker(url);
+      worker.onmessage = aoReceber;
+      worker.onerror = function () { cairParaModoDireto(); };
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function cairParaModoDireto() {
+    semWorker = true;
+    if (worker) { try { worker.terminate(); } catch (e) {} worker = null; }
+    elMotor.value = 'js';
+    elMotor.disabled = true;
+    elEstado.textContent = 'motor Python indisponível neste modo';
+    executar();
+  }
+
+  function reiniciarWorker() {
+    if (worker) { try { worker.terminate(); } catch (e) {} worker = null; }
+    if (!criarWorker()) cairParaModoDireto();
+  }
+
+  // mesma lógica do worker, para quando ele não estiver disponível (arquivo local)
+  function casarDireto(padrao, flags, texto) {
+    var f = 'g';
+    if (flags.indexOf('i') >= 0) f += 'i';
+    if (flags.indexOf('m') >= 0) f += 'm';
+    if (flags.indexOf('s') >= 0) f += 's';
+    var re = new RegExp(padrao, f), casos = [], m;
+    while ((m = re.exec(texto)) !== null) {
+      casos.push({
+        inicio: m.index, fim: m.index + m[0].length, texto: m[0],
+        grupos: Array.prototype.slice.call(m, 1).map(function (g, i) {
+          return { n: i + 1, texto: g === undefined ? null : g };
+        }),
+        nomeados: m.groups ? m.groups : {}
+      });
+      if (m[0].length === 0) re.lastIndex++;
+      if (casos.length >= LIMITE) break;
+    }
+    return casos;
+  }
+
+  // ---------------------------------------------------------------- execução
+  function flagsAtuais() {
+    var f = '';
+    Object.keys(caixas).forEach(function (k) { if (caixas[k].checked) f += k; });
+    return f;
+  }
+
+  function executar() {
+    var padrao = elPadrao.value;
+    var texto = elTexto.value;
+    var flags = flagsAtuais();
+    atualizarCodigoPython(padrao, flags);
+    atualizarAvisos(padrao, texto, flags);
+    salvarNaURL(padrao, flags);
+
+    if (!padrao) {
+      mostrarErro('');
+      render([], texto, false);
+      return;
+    }
+
+    if (semWorker || !worker) {
+      try {
+        var casos = casarDireto(padrao, flags, texto);
+        mostrarErro('');
+        render(casos, texto, casos.length >= LIMITE);
+      } catch (e) {
+        mostrarErro(String(e.message || e));
+      }
+      return;
+    }
+
+    var id = ++seq;
+    aguardando = id;
+    elEstado.textContent = 'processando…';
+    clearTimeout(cronometro);
+    cronometro = setTimeout(function () {
+      if (aguardando !== id) return;
+      reiniciarWorker();
+      mostrarErro('A expressão travou o motor e foi interrompida depois de ' +
+                  (TEMPO_LIMITE / 1000) + 's. Isso costuma ser retrocesso (backtracking) ' +
+                  'catastrófico: quantificadores aninhados como (a+)+ sobre um texto longo.',
+                  'interrompida');
+      elEstado.textContent = '';
+    }, (elMotor.value === 'python' && !pythonPronto) ? TEMPO_PYODIDE : TEMPO_LIMITE);
+
+    worker.postMessage({ id: id, motor: elMotor.value, padrao: padrao, flags: flags, texto: texto });
+  }
+
+  function aoReceber(evento) {
+    var d = evento.data;
+    if (d.tipo === 'status') {
+      elEstado.textContent = d.texto;
+      if (d.pronto) pythonPronto = true;
+      return;
+    }
+    if (d.id !== aguardando) return;
+    clearTimeout(cronometro);
+    elEstado.textContent = '';
+    if (d.ok) {
+      mostrarErro('');
+      render(d.casos, elTexto.value, d.limitado);
+    } else if (d.falhaPyodide) {
+      elMotor.value = 'js';
+      pythonPronto = false;
+      elAvisos.innerHTML = '<p>Não foi possível carregar o Python (' + esc(d.erro) +
+        '). Isso costuma ser falta de rede ou bloqueio do CDN. Voltei para o motor JavaScript; ' +
+        'os resultados podem divergir do <code>re</code> em <code>\\w</code>, <code>\\b</code> e look-behind.</p>';
+      mostrarErro('');
+      executar();
+    } else {
+      mostrarErro(d.erro);
+    }
+  }
+
+  // ---------------------------------------------------------------- saída
+  function esc(s) {
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function mostrarErro(msg, titulo) {
+    if (msg) {
+      elErro.textContent = msg;
+      elErro.classList.add('visivel');
+      elCampo.classList.add('invalido');
+      elContagem.textContent = titulo || 'expressão inválida';
+      elDestaque.textContent = elTexto.value;
+      elLista.innerHTML = '';
+      elSemCasos.style.display = 'block';
+      elSemCasos.textContent = 'Corrija a expressão para ver os casamentos.';
+    } else {
+      elErro.textContent = '';
+      elErro.classList.remove('visivel');
+      elCampo.classList.remove('invalido');
+    }
+  }
+
+  function render(casos, texto, limitado) {
+    var html = '', pos = 0;
+    for (var i = 0; i < casos.length; i++) {
+      var c = casos[i];
+      html += esc(texto.slice(pos, c.inicio));
+      if (c.fim === c.inicio) html += '<span class="vazio" title="casamento vazio"></span>';
+      else html += '<mark class="c' + (i % 2) + '">' + esc(texto.slice(c.inicio, c.fim)) + '</mark>';
+      pos = c.fim;
+    }
+    html += esc(texto.slice(pos));
+    elDestaque.innerHTML = html || '<span class="vazio-lista">Cole um texto para testar.</span>';
+
+    var n = casos.length;
+    elContagem.textContent = n === 1 ? '1 casamento' : n + ' casamentos';
+    if (limitado) elContagem.textContent += ' (limite de ' + LIMITE + ')';
+
+    var itens = casos.slice(0, 200).map(function (c) {
+      var linha = '<li><span class="pos">' + c.inicio + '–' + c.fim + '</span> <code>' +
+                  (c.texto === '' ? '(vazio)' : esc(c.texto)) + '</code>';
+      c.grupos.forEach(function (g) {
+        linha += '<span class="grupo"><b>' + g.n + ':</b> ' +
+                 (g.texto === null ? '<em>None</em>' : '<code>' + esc(g.texto) + '</code>') + '</span>';
+      });
+      Object.keys(c.nomeados || {}).forEach(function (nome) {
+        var v = c.nomeados[nome];
+        linha += '<span class="grupo"><b>' + esc(nome) + ':</b> ' +
+                 (v === null || v === undefined ? '<em>None</em>' : '<code>' + esc(String(v)) + '</code>') + '</span>';
+      });
+      return linha + '</li>';
+    });
+    elLista.innerHTML = itens.join('');
+    if (casos.length > 200) {
+      elLista.innerHTML += '<li class="vazio-lista">… e mais ' + (casos.length - 200) + '</li>';
+    }
+    elSemCasos.style.display = n ? 'none' : 'block';
+    elSemCasos.textContent = 'Nenhum casamento.';
+  }
+
+  function atualizarCodigoPython(padrao, flags) {
+    var mapa = { i: 're.I', m: 're.M', s: 're.S', x: 're.X' };
+    var lista = flags.split('').map(function (f) { return mapa[f]; }).filter(Boolean);
+    var arg = lista.length ? ', ' + lista.join(' | ') : '';
+    elCodigo.textContent =
+      'import re\n\n' +
+      'padrao = re.compile(r"' + (padrao || '') + '"' + arg + ')\n' +
+      'padrao.findall(texto)      # todos os casamentos\n' +
+      'padrao.search(texto)       # o primeiro, como objeto Match\n' +
+      'padrao.finditer(texto)     # itera com posição e grupos';
+  }
+
+  // ---------------------------------------------------------------- avisos
+  function atualizarAvisos(padrao, texto, flags) {
+    var avisos = [];
+    var motorJS = elMotor.value !== 'python';
+
+    if (motorJS) {
+      if (/\(\?P[<=]/.test(padrao))
+        avisos.push('<code>(?P&lt;nome&gt;…)</code> é sintaxe do Python. No motor JavaScript, escreva <code>(?&lt;nome&gt;…)</code>.');
+      if (/\\[AZ]/.test(padrao))
+        avisos.push('<code>\\A</code> e <code>\\Z</code> não existem em JavaScript. Use <code>^</code> e <code>$</code>, ou troque para o motor Python.');
+      if (/\(\?[imsxa]+\)/.test(padrao))
+        avisos.push('Flags embutidas no padrão, como <code>(?i)</code>, só funcionam no motor Python. Aqui, use as caixas acima.');
+      if (caixas.x.checked)
+        avisos.push('<code>re.X</code> não existe em JavaScript: no motor atual esta flag é ignorada. Troque para o motor Python para vê-la funcionando.');
+      if (/\(\?<[=!][^)]*[+*{]/.test(padrao))
+        avisos.push('Este look-behind tem largura variável. O JavaScript aceita, mas o Python levanta <code>re.error</code> — confirme no motor Python antes de levar para o código.');
+      if (/\\[wbWB]/.test(padrao) && /[^\u0000-\u007F]/.test(texto))
+        avisos.push('O texto tem letras acentuadas e o padrão usa <code>\\w</code> ou <code>\\b</code>. ' +
+                    'Em Python 3 esses símbolos enxergam <code>ç</code>, <code>ã</code> e <code>é</code> como letras; ' +
+                    'em JavaScript, não. Se o acento estiver perto do que você quer casar, o resultado muda — ' +
+                    'confirme no motor Python.');
+    }
+    elAvisos.innerHTML = avisos.map(function (a) { return '<p>' + a + '</p>'; }).join('');
+  }
+
+  // ---------------------------------------------------------------- estado na URL
+  var salvando = null;
+  function salvarNaURL(padrao, flags) {
+    clearTimeout(salvando);
+    salvando = setTimeout(function () {
+      var h = '#p=' + encodeURIComponent(padrao) + '&f=' + flags;
+      if (elTexto.dataset.amostra) h += '&a=' + elTexto.dataset.amostra;
+      if (elMotor.value === 'python') h += '&m=python';
+      history.replaceState(null, '', h);
+    }, 500);
+  }
+
+  function lerURL() {
+    var h = location.hash.replace(/^#/, '');
+    if (!h) return null;
+    var out = {};
+    h.split('&').forEach(function (par) {
+      var i = par.indexOf('=');
+      if (i > 0) out[par.slice(0, i)] = decodeURIComponent(par.slice(i + 1));
+    });
+    return out;
+  }
+
+  // ---------------------------------------------------------------- amostras
+  function carregarAmostra(chave) {
+    var a = AMOSTRAS[chave];
+    if (!a) return;
+    elTexto.dataset.amostra = chave;
+    if (a.texto !== null && a.texto !== undefined) {
+      elTexto.value = a.texto;
+      executar();
+      return;
+    }
+    elEstado.textContent = 'baixando ' + a.rotulo + '…';
+    fetch(a.url)
+      .then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.text();
+      })
+      .then(function (t) {
+        a.texto = t;
+        elTexto.value = t;
+        elEstado.textContent = '';
+        executar();
+      })
+      .catch(function () {
+        elEstado.textContent = '';
+        elTexto.value = 'Não foi possível carregar ' + a.rotulo + '.\n' +
+          'Abra esta página pelo GitHub Pages ou por um servidor local\n' +
+          '(python -m http.server) — o navegador bloqueia leitura de arquivo\n' +
+          'quando a página é aberta direto do disco.';
+        executar();
+      });
+  }
+
+  function montarBotoes() {
+    var dv = document.getElementById('amostras');
+    Object.keys(AMOSTRAS).forEach(function (chave) {
+      var b = document.createElement('button');
+      b.className = 'chip';
+      b.textContent = AMOSTRAS[chave].rotulo;
+      b.onclick = function () { carregarAmostra(chave); };
+      dv.appendChild(b);
+    });
+    var limpar = document.createElement('button');
+    limpar.className = 'chip';
+    limpar.textContent = 'limpar';
+    limpar.onclick = function () { elTexto.value = ''; delete elTexto.dataset.amostra; executar(); };
+    dv.appendChild(limpar);
+
+    var ch = document.getElementById('chips');
+    EXEMPLOS.forEach(function (ex) {
+      var b = document.createElement('button');
+      b.className = 'chip';
+      b.innerHTML = ex.rotulo + ' <code>' + esc(ex.padrao) + '</code>';
+      b.onclick = function () {
+        elPadrao.value = ex.padrao;
+        Object.keys(caixas).forEach(function (k) { caixas[k].checked = ex.flags.indexOf(k) >= 0; });
+        carregarAmostra(ex.amostra);
+      };
+      ch.appendChild(b);
+    });
+  }
+
+  // ---------------------------------------------------------------- início
+  var adiado = null;
+  function agendar() { clearTimeout(adiado); adiado = setTimeout(executar, 250); }
+
+  elPadrao.addEventListener('input', agendar);
+  elTexto.addEventListener('input', agendar);
+  Object.keys(caixas).forEach(function (k) { caixas[k].addEventListener('change', executar); });
+  elMotor.addEventListener('change', function () {
+    elAvisos.innerHTML = '';
+    if (elMotor.value === 'python' && !pythonPronto) elEstado.textContent = 'preparando o Python…';
+    executar();
+  });
+
+  montarBotoes();
+  if (!criarWorker()) cairParaModoDireto();
+
+  var inicial = lerURL();
+  if (inicial && inicial.p !== undefined) {
+    elPadrao.value = inicial.p;
+    var f = inicial.f || '';
+    Object.keys(caixas).forEach(function (k) { caixas[k].checked = f.indexOf(k) >= 0; });
+    if (inicial.m === 'python' && !semWorker) {
+      elMotor.value = 'python';
+      elEstado.textContent = 'preparando o Python…';
+    }
+    carregarAmostra(inicial.a || 'datas');
+  } else {
+    elPadrao.value = '\\b\\d{1,2}/\\d{1,2}/\\d{4}\\b';
+    carregarAmostra('datas');
+  }
+})();
+</script>
+</body>
+</html>

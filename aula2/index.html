@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aula 2 — Regex e APIs REST</title>
+  <meta name="description" content="Arquivos da aula 2 da disciplina Coleta e Preparação de Dados.">
+  <style>
+    :root { --fundo:#f5f6f8; --cartao:#fff; --texto:#1b1f24; --suave:#5a636e; --borda:#dfe3e8; --marca:#8c1d40; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --fundo:#14171b; --cartao:#1d2126; --texto:#eceff3; --suave:#a4adb8; --borda:#2c323a; --marca:#e8879f;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--fundo); color:var(--texto); line-height:1.55;
+           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 860px; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+    a { color: var(--marca); }
+    h1 { font-size: 1.6rem; margin: 0 0 .3rem; }
+    .sub { color: var(--suave); margin: 0 0 2rem; }
+    section { background: var(--cartao); border: 1px solid var(--borda); border-radius: 10px;
+              padding: 1.1rem 1.25rem; margin-bottom: 1.1rem; }
+    h2 { font-size: 1.05rem; margin: 0 0 .2rem; }
+    p.tema { color: var(--suave); margin: 0 0 .8rem; font-size: .92rem; }
+    table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+    td { padding: .35rem .5rem .35rem 0; border-bottom: 1px solid var(--borda); vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    td.arq { white-space: nowrap; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    td.obs { color: var(--suave); }
+    pre { background: var(--fundo); border: 1px solid var(--borda); border-radius: 8px;
+          padding: .8rem; overflow-x: auto; font-size: .85rem; }
+    .voltar { display: inline-block; margin-bottom: 1.2rem; font-size: .9rem; }
+    @media (max-width: 520px) { td.arq { white-space: normal; word-break: break-all; } }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="voltar" href="../">← Todas as aulas</a>
+    <h1>Aula 2 — Expressões Regulares e APIs REST</h1>
+    <p class="sub">Coleta e Preparação de Dados · PUCRS Online</p>
+
+    <section>
+      <h2><a href="testador/">Testador de expressões regulares</a></h2>
+      <p class="tema">Escreva o padrão e veja os casamentos destacados no texto, com os arquivos da
+         aula já carregados. Tem os dois motores: o do navegador, instantâneo, e o
+         <code>re</code> do Python de verdade, para quando a diferença importar.</p>
+      <table>
+        <tr><td class="arq"><a href="testador/">testador/</a></td>
+            <td class="obs">exemplos prontos dos slides, referência rápida e link compartilhável por URL</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Parte 1 — Expressões regulares</h2>
+      <p class="tema">Arquivos-alvo dos exemplos e dos três exercícios.</p>
+      <table>
+        <tr><td class="arq"><a href="regex/mbox-short.txt">regex/mbox-short.txt</a></td><td class="obs">slides 3, 14 e 15 · 27 mensagens, 1910 linhas · Severance, Python for Everybody (CC BY 4.0)</td></tr>
+        <tr><td class="arq"><a href="regex/datas.txt">regex/datas.txt</a></td><td class="obs">exercício 1 (slides 16–17)</td></tr>
+        <tr><td class="arq"><a href="regex/emails.txt">regex/emails.txt</a></td><td class="obs">exercício 2 (slides 18–19)</td></tr>
+        <tr><td class="arq"><a href="regex/latencia.log">regex/latencia.log</a></td><td class="obs">exercício 3 (slides 20–21)</td></tr>
+        <tr><td class="arq"><a href="regex/trechos_dos_slides.txt">regex/trechos_dos_slides.txt</a></td><td class="obs">os mini-exemplos dos slides 8 a 13, para colar no regex101</td></tr>
+      </table>
+      <pre>grep -Pc '^X.*:' mbox-short.txt
+grep -Po '(?&lt;=X-DSPAM-Confidence:\s)[\d.]+' mbox-short.txt | head</pre>
+    </section>
+    <section>
+      <h2>Parte 2 — API estática</h2>
+      <p class="tema">JSONs com caminhos que imitam uma API REST, para praticar <code>requests</code>, paginação e <code>json_normalize</code> sem depender de serviço externo.</p>
+      <table>
+        <tr><td class="arq"><a href="api/v1/localidades/estados/RS/municipios.json">api/v1/localidades/estados/RS/municipios.json</a></td><td class="obs">os 497 municípios do slide 30 · cópia da API de Localidades do IBGE</td></tr>
+        <tr><td class="arq"><a href="api/v1/localidades/estados/RS/_proveniencia.json">api/v1/…/_proveniencia.json</a></td><td class="obs">URL, data da coleta e versão da API — a proveniência do slide 41</td></tr>
+        <tr><td class="arq"><a href="api/v1/municipios/pagina-1.json">api/v1/municipios/pagina-1.json</a></td><td class="obs">a mesma lista paginada, 100 por página (páginas 1 a 5; a 6ª vem vazia)</td></tr>
+        <tr><td class="arq"><a href="api/v1/processos.json">api/v1/processos.json</a></td><td class="obs">texto livre dentro do JSON, para regex sobre o retorno (slide 40)</td></tr>
+      </table>
+      <pre>base = "https://lucaskup.github.io/pucrs-coleta-e-preparacao/aula2/api/v1"
+r = requests.get(f"{base}/localidades/estados/RS/municipios.json", timeout=10)
+len(r.json())   # 497</pre>
+      <p class="tema">Query string, códigos de erro, cabeçalhos e POST não funcionam em arquivo
+         estático — para isso, use httpbin.org e httpstat.us. Detalhes no
+         <a href="https://github.com/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula2/README.md">README</a>.</p>
+    </section>
+
+    <section>
+      <h2>Baixar tudo de uma vez</h2>
+      <pre>git clone https://github.com/lucaskup/pucrs-coleta-e-preparacao.git</pre>
+    </section>
+  </main>
+</body>
+</html>

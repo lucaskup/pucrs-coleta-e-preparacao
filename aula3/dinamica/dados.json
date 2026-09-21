@@ -1,0 +1,103 @@
+{
+  "fonte": "Rede fictícia de estações meteorológicas — dados sintéticos",
+  "atualizado_em": "2026-09-20T08:00:00-03:00",
+  "total": 12,
+  "leituras": [
+    {
+      "id": "EST-001",
+      "cidade": "Porto Alegre",
+      "bairro": "Zona Norte",
+      "temperatura_c": 19.4,
+      "umidade_pct": 78,
+      "medido_em": "2026-09-20T08:00:00-03:00"
+    },
+    {
+      "id": "EST-002",
+      "cidade": "Porto Alegre",
+      "bairro": "Centro Histórico",
+      "temperatura_c": 20.1,
+      "umidade_pct": 74,
+      "medido_em": "2026-09-20T08:00:00-03:00"
+    },
+    {
+      "id": "EST-003",
+      "cidade": "Canoas",
+      "bairro": "Nossa Senhora das Graças",
+      "temperatura_c": 19.8,
+      "umidade_pct": 81,
+      "medido_em": "2026-09-20T08:00:00-03:00"
+    },
+    {
+      "id": "EST-004",
+      "cidade": "Caxias do Sul",
+      "bairro": "São Pelegrino",
+      "temperatura_c": 12.6,
+      "umidade_pct": 88,
+      "medido_em": "2026-09-20T08:00:00-03:00"
+    },
+    {
+      "id": "EST-005",
+      "cidade": "Pelotas",
+      "bairro": "Laranjal",
+      "temperatura_c": 17.2,
+      "umidade_pct": 92,
+      "medido_em": "2026-09-20T08:00:00-03:00"
+    },
+    {
+      "id": "EST-006",
+      "cidade": "Santa Maria",
+      "bairro": "Camobi",
+      "temperatura_c": 16.9,
+      "umidade_pct": 70,
+      "medido_em": "2026-09-20T08:00:00-03:00"
+    },
+    {
+      "id": "EST-007",
+      "cidade": "Rio Grande",
+      "bairro": "Cassino",
+      "temperatura_c": 16.1,
+      "umidade_pct": 95,
+      "medido_em": "2026-09-20T08:00:00-03:00"
+    },
+    {
+      "id": "EST-008",
+      "cidade": "Passo Fundo",
+      "bairro": "Boqueirão",
+      "temperatura_c": 14.3,
+      "umidade_pct": 66,
+      "medido_em": "2026-09-20T08:00:00-03:00"
+    },
+    {
+      "id": "EST-009",
+      "cidade": "Uruguaiana",
+      "bairro": "Centro",
+      "temperatura_c": 22.7,
+      "umidade_pct": 59,
+      "medido_em": "2026-09-20T08:00:00-03:00"
+    },
+    {
+      "id": "EST-010",
+      "cidade": "Torres",
+      "bairro": "Praia Grande",
+      "temperatura_c": 18.0,
+      "umidade_pct": 89,
+      "medido_em": "2026-09-20T08:00:00-03:00"
+    },
+    {
+      "id": "EST-011",
+      "cidade": "Bagé",
+      "bairro": "Malafaia",
+      "temperatura_c": 15.5,
+      "umidade_pct": 72,
+      "medido_em": "2026-09-20T08:00:00-03:00"
+    },
+    {
+      "id": "EST-012",
+      "cidade": "Erechim",
+      "bairro": "Koller",
+      "temperatura_c": 13.8,
+      "umidade_pct": 84,
+      "medido_em": "2026-09-20T08:00:00-03:00"
+    }
+  ]
+}

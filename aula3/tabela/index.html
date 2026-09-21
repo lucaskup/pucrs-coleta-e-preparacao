@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>População por país — tabela</title>
+  <meta name="description" content="Duas tabelas HTML para praticar pandas.read_html.">
+  <style>
+    :root { --fundo:#f5f6f8; --cartao:#fff; --texto:#1b1f24; --suave:#5a636e; --borda:#dfe3e8; --marca:#8c1d40; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --fundo:#14171b; --cartao:#1d2126; --texto:#eceff3; --suave:#a4adb8; --borda:#2c323a; --marca:#e8879f;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--fundo); color:var(--texto); line-height:1.55;
+           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .conteudo { max-width: 900px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+    a { color: var(--marca); }
+    h1 { font-size: 1.5rem; margin: 0 0 .2rem; }
+    .sub { color: var(--suave); margin: 0 0 1.5rem; }
+    .aviso { background:#fff8e1; border:1px solid #e8d48b; color:#5c4700;
+             padding:.7rem .9rem; border-radius:8px; margin:0 0 1.5rem; font-size:.85rem; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .aviso { background:#33290d; border-color:#6b5716; color:#f2e2b0; }
+    }
+    table { width: 100%; border-collapse: collapse; background: var(--cartao);
+            border: 1px solid var(--borda); border-radius: 8px; margin-bottom: 2rem; font-size: .9rem; }
+    th, td { padding: .5rem .7rem; border-bottom: 1px solid var(--borda); text-align: left; }
+    th { background: rgba(140,29,64,.06); }
+    tr:last-child td { border-bottom: none; }
+    h2 { font-size: 1.15rem; margin-top: 2.5rem; }
+  </style>
+</head>
+<body>
+  <main class="conteudo">
+    <h1>População por país</h1>
+    <p class="sub">Tabela HTML regular: o caso fácil do <code>pd.read_html</code></p>
+    <p class="aviso"><strong>Página de exemplo.</strong> Conteúdo fictício, criado para a disciplina Coleta e Preparação de Dados (PUCRS Online).</p>
+    <table id="populacao">
+      <tr>
+        <th>País</th><th>População</th><th>Área (km²)</th>
+      </tr>
+      <tr>
+        <td>Andorra</td><td>84000</td><td>468.0</td>
+      </tr>
+      <tr>
+        <td>Emirados Árabes Unidos</td><td>4975593</td><td>82880.0</td>
+      </tr>
+      <tr>
+        <td>Afeganistão</td><td>29121286</td><td>647500.0</td>
+      </tr>
+      <tr>
+        <td>Antígua e Barbuda</td><td>86754</td><td>443.0</td>
+      </tr>
+      <tr>
+        <td>Anguilla</td><td>13254</td><td>102.0</td>
+      </tr>
+      <tr>
+        <td>Albânia</td><td>2986952</td><td>28748.0</td>
+      </tr>
+      <tr>
+        <td>Armênia</td><td>2968000</td><td>29800.0</td>
+      </tr>
+      <tr>
+        <td>Angola</td><td>13068161</td><td>1246700.0</td>
+      </tr>
+      <tr>
+        <td>Argentina</td><td>41343201</td><td>2766890.0</td>
+      </tr>
+      <tr>
+        <td>Áustria</td><td>8205000</td><td>83858.0</td>
+      </tr>
+      <tr>
+        <td>Austrália</td><td>21515754</td><td>7686850.0</td>
+      </tr>
+      <tr>
+        <td>Brasil</td><td>202656788</td><td>8511965.0</td>
+      </tr>
+      <tr>
+        <td>Canadá</td><td>33679000</td><td>9984670.0</td>
+      </tr>
+      <tr>
+        <td>Chile</td><td>16746491</td><td>756950.0</td>
+      </tr>
+      <tr>
+        <td>Portugal</td><td>10676000</td><td>92391.0</td>
+      </tr>
+      <tr>
+        <td>Uruguai</td><td>3477000</td><td>176220.0</td>
+      </tr>
+    </table>
+
+    <h2>Uma tabela que dá trabalho</h2>
+    <p class="sub">Cabeçalho em duas linhas e células mescladas — o caso que o slide 21 avisa que quebra.</p>
+    <table id="dificil">
+      <tr><th rowspan="2">País</th><th colspan="2">Indicadores</th></tr>
+      <tr><th>População</th><th>Área (km²)</th></tr>
+      <tr><td>Brasil</td><td>202.656.788</td><td>8.511.965</td></tr>
+      <tr><td>Argentina</td><td>41.343.201</td><td>2.766.890</td></tr>
+      <tr><td colspan="3">Fonte: dados de exemplo</td></tr>
+    </table>
+  </main>
+</body>
+</html>

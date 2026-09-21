@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arquitetura dos Dias Úteis — Livraria Aurora</title>
+  <meta name="description" content="Página de detalhe fictícia do livro Arquitetura dos Dias Úteis.">
+  <style>
+    :root { --fundo:#f5f6f8; --cartao:#fff; --texto:#1b1f24; --suave:#5a636e; --borda:#dfe3e8; --marca:#8c1d40; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --fundo:#14171b; --cartao:#1d2126; --texto:#eceff3; --suave:#a4adb8; --borda:#2c323a; --marca:#e8879f;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--fundo); color:var(--texto); line-height:1.55;
+           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .conteudo { max-width: 980px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+    a { color: var(--marca); }
+    h1 { font-size: 1.5rem; margin: 0 0 .2rem; }
+    .sub { color: var(--suave); margin: 0 0 1.5rem; }
+    .aviso { background:#fff8e1; border:1px solid #e8d48b; color:#5c4700;
+             padding:.7rem .9rem; border-radius:8px; margin:0 0 1.5rem; font-size:.85rem; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .aviso { background:#33290d; border-color:#6b5716; color:#f2e2b0; }
+    }
+    .lista { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+    .product_pod { background: var(--cartao); border: 1px solid var(--borda); border-radius: 10px;
+                   padding: .9rem; display: flex; flex-direction: column; }
+    .image_container { text-align: center; margin-bottom: .6rem; }
+    .image_container img { width: 72px; height: 96px; }
+    .product_pod h3 { font-size: .95rem; margin: 0 0 .4rem; line-height: 1.3; }
+    .product_pod h3 a { text-decoration: none; }
+    .star-rating { margin: 0 0 .4rem; color: #d8a300; font-size: .8rem; letter-spacing: .1em; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .price_color { margin: 0; font-weight: 600; }
+    .availability { margin: .2rem 0 0; font-size: .8rem; color: var(--suave); }
+    .availability.outofstock { color: #b3261e; }
+    .pager { list-style: none; display: flex; gap: 1rem; align-items: center; justify-content: center;
+             padding: 0; margin: 2rem 0 0; font-size: .9rem; }
+    .pager .current { color: var(--suave); }
+    table.table-striped { width: 100%; border-collapse: collapse; background: var(--cartao);
+                          border: 1px solid var(--borda); border-radius: 8px; font-size: .9rem; }
+    table.table-striped th, table.table-striped td { padding: .5rem .7rem; border-bottom: 1px solid var(--borda); text-align: left; }
+    table.table-striped tr:last-child td, table.table-striped tr:last-child th { border-bottom: none; }
+    .breadcrumb { list-style: none; display: flex; gap: .5rem; padding: 0; font-size: .85rem; color: var(--suave); }
+    .breadcrumb li:not(:last-child)::after { content: " ›"; }
+  </style>
+</head>
+<body>
+  <main class="conteudo">
+    <ul class="breadcrumb">
+      <li><a href="../index.html">Catálogo</a></li>
+      <li><a href="../index.html">Ensaio</a></li>
+      <li>Arquitetura dos Dias Úteis</li>
+    </ul>
+    <h1>Arquitetura dos Dias Úteis</h1>
+    <p class="sub">Renata Pozzer</p>
+    <p class="price_color">R$ 61,20</p>
+    <p id="descricao">Romance de estreia de Renata Pozzer, publicado pela editora Aurora.
+       O texto acompanha personagens comuns em situações que insistem em não se resolver,
+       e foi escrito integralmente para servir de exemplo em uma aula de coleta de dados.</p>
+    <table class="table-striped">
+      <tr><th>UPC</th><td>000000134623</td></tr>
+      <tr><th>Categoria</th><td>Ensaio</td></tr>
+      <tr><th>Autor</th><td>Renata Pozzer</td></tr>
+      <tr><th>Preço</th><td>R$ 61,20</td></tr>
+      <tr><th>Disponibilidade</th><td>Em estoque (9 disponíveis)</td></tr>
+      <tr><th>Avaliações</th><td>4 de 5</td></tr>
+    </table>
+  </main>
+</body>
+</html>

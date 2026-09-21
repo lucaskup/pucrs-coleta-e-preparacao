@@ -29,7 +29,16 @@ aula1/
   README.md       o que é cada arquivo, de qual slide vem, comandos
   txt/ csv/ xml/ json/
   site/index.html página estática de corpo docente (alvo de wget/scraping)
-aula2/ … aula6/   ainda vazias
+aula2/
+  index.html  README.md
+  regex/      mbox-short.txt e os arquivos dos três exercícios
+  api/v1/…    API estática: JSONs paginados imitando uma API REST
+aula3/
+  index.html  README.md
+  livraria/ produtos/ tabela/ paises/    páginas dos exemplos dos slides
+  catalogo/   mini-site com paginação, detalhe, sitemap.xml e robots.txt
+  dinamica/   página montada por JavaScript + dados.json
+aula4/ … aula6/   ainda vazias
 ```
 
 ## Mapa de conteúdos por aula
@@ -37,8 +46,8 @@ aula2/ … aula6/   ainda vazias
 | Aula | Conteúdo | Artefatos esperados no repo |
 | --- | --- | --- |
 | 1 | Abertura e manipulação de arquivos TXT, CSV e JSON | `.txt`, `.csv`, `.json` (incluindo casos sujos: encoding, separadores, aninhamento) |
-| 2 | Expressões regulares | arquivos texto com logs, e-mails, telefones, datas, CPF/CNPJ, etc. |
-| 3 | Web scraping: Beautiful Soup, Selenium, seletores CSS, XPath | páginas HTML estáticas e páginas dinâmicas com JS (paginação, lazy load, filtros) |
+| 2 | Expressões regulares **e coleta em APIs REST** (o deck tem duas partes) | arquivos texto com logs, e-mails, datas; JSONs servindo de API estática |
+| 3 | Web scraping: HTTP, HTML/DOM, seletores CSS, XPath, BeautifulSoup | páginas HTML estáticas (paginação, tabelas, sitemap, robots) e uma página dinâmica com JS |
 | 4 | Etapas do processo de KDD; objetos de dados e seus atributos; estatística descritiva | datasets tabulares com tipos de atributo variados (nominal, ordinal, intervalar, razão) |
 | 5 | Visualização de dados; similaridade e dissimilaridade; introdução ao pré-processamento | datasets adequados a gráficos e a cálculo de distâncias/similaridade |
 | 6 | Limpeza, integração, redução, transformação e discretização de dados | datasets com valores faltantes, ruído, outliers, duplicatas; múltiplas fontes para integrar |
@@ -113,6 +122,38 @@ O repositório é publicado via **GitHub Pages** em
 - Os arquivos de dados reproduzem **os exemplos literais dos slides** (pequenos), acrescidos de
   variantes de codificação (UTF-8, ISO-8859-1, UTF-8 com BOM), CSV em padrão brasileiro
   (`;` e vírgula decimal) e JSON aninhado para `json_normalize`.
+
+## Decisões já tomadas (aulas 2 e 3)
+
+- A **API estática** da aula 2 (`aula2/api/`) imita uma API REST com arquivos JSON. Não suporta
+  query string, códigos de erro, cabeçalhos nem POST — para isso os alunos vão a httpbin.org e
+  httpstat.us. Está dito no README da aula.
+- Dois insumos externos são **redistribuídos com atribuição**: `mbox-short.txt` (Severance,
+  *Python for Everybody*, CC BY 4.0) e a resposta da API de Localidades do IBGE (dado público,
+  cópia sem alteração, com arquivo de proveniência ao lado).
+- O catálogo da aula 3 usa preços em **R$ com vírgula decimal**, e não `£51.77` como
+  books.toscrape. O pipeline do slide 62 precisa de um ajuste na conversão do preço — documentado
+  no README, e é de propósito: reforça o `decimal=','` da aula 1.
+- `python -m http.server` responde `text/html` **sem charset**, então `r.text` sai com acentuação
+  quebrada; o GitHub Pages envia `charset=utf-8`. Isso é a armadilha do slide 32 da aula 2 e está
+  documentado como exercício, não como bug.
+- O `robots.txt` em `aula3/catalogo/` é **exemplo para leitura**: num *project page* o robots.txt
+  com efeito real é o da raiz de `lucaskup.github.io`, fora deste repositório.
+- `aula2/testador/` é uma página interativa (não só dados): regex com destaque dos casamentos.
+  Roda o motor do navegador por padrão e, opcionalmente, o `re` do Python via **Pyodide**
+  (`cdn.jsdelivr.net/pyodide/v0.28.3/`, carregado sob demanda dentro de um Web Worker). O motor
+  Python existe porque JS e `re` divergem justamente no que os slides ensinam: `\w`/`\b` com
+  acento, look-behind de largura variável, `(?P<nome>…)`, `\A`/`\Z` e `re.X`. Se o CDN falhar,
+  a página volta sozinha para o motor JavaScript avisando.
+- Testes de navegador neste repositório: dá para usar o Chrome do Windows a partir do WSL
+  (`/mnt/c/Program Files/Google/Chrome/Application/chrome.exe --headless --dump-dom`). Dois
+  cuidados: o servidor de teste precisa ligar em `0.0.0.0` (o Chrome do Windows não alcança
+  `127.0.0.1` do WSL), e `--virtual-time-budget` adianta os `setTimeout`, o que dispara
+  temporizadores de espera antes da hora — para esperar de verdade, deixe uma requisição pendente
+  na página.
+- Os decks estão em `/mnt/g/Meu Drive/Documentos/cursos/gpo/Coleta e Preparacao/2026/entrega/slides/`
+  (`Aula 1.pptx`, `Aula 2.pptx`, `Aula 3.pptx`). **Atenção:** os slides internos do `Aula 2.pptx`
+  estão rotulados como "Aula 3 · Parte 1/2" — numeração a conferir com o professor.
 
 ## Materiais de origem (fora do repositório)
 

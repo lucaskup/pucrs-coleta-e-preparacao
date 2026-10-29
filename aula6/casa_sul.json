@@ -1,0 +1,1879 @@
+{
+  "fonte": "Casa Sul Imóveis (fictícia)",
+  "gerado_em": "2026-10-01",
+  "dicionario": {
+    "valor_mil": "preço em milhares de reais",
+    "conservacao": "1 = precisa de reforma, 2 = regular, 3 = bom, 4 = ótimo",
+    "anunciado_em": "data no formato do sistema de origem"
+  },
+  "imoveis": [
+    {
+      "id": "CS-101",
+      "titulo": "Casa 4 dorm. - Centro",
+      "endereco": {
+        "logradouro": "R. da Ponte Velha 164",
+        "bairro": "Centro",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1856.6,
+      "metragem": "308m2",
+      "dorms": 4,
+      "vagas": 3,
+      "condominio": null,
+      "conservacao": 3,
+      "pet": "N",
+      "anunciado_em": "08/24/2026",
+      "comodidades": [
+        "SACADA"
+      ]
+    },
+    {
+      "id": "CS-102",
+      "titulo": "Casa 4 dorm. - Menino Deus",
+      "endereco": {
+        "logradouro": "Tv. da Aurora, 2258",
+        "bairro": "Menino Deus",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 2031.1,
+      "metragem": "293m2",
+      "dorms": 4,
+      "vagas": 2,
+      "condominio": null,
+      "conservacao": 1,
+      "pet": "N",
+      "anunciado_em": "09/18/2026",
+      "comodidades": [
+        "SACADA"
+      ]
+    },
+    {
+      "id": "CS-103",
+      "titulo": "Apartamento 1 dorm. - Cristal",
+      "endereco": {
+        "logradouro": "R. Quatro Ventos 1361",
+        "bairro": "Cristal",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 286.1,
+      "metragem": "50m2",
+      "dorms": 1,
+      "vagas": 1,
+      "condominio": "R$ 630,00",
+      "conservacao": 2,
+      "pet": "N",
+      "anunciado_em": "04/20/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "CHURRASQUEIRA",
+        "PISCINA",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-104",
+      "titulo": "Apartamento 4 dorm. - Jd. Lindóia",
+      "endereco": {
+        "logradouro": "Av. das Palmeiras, 2132",
+        "bairro": "Jd. Lindóia",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1108.5,
+      "metragem": "125m2",
+      "dorms": 4,
+      "vagas": 0,
+      "condominio": "R$ 1.170,00",
+      "conservacao": 4,
+      "pet": "S",
+      "anunciado_em": "05/31/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PLAYGROUND",
+        "PORTARIA 24H",
+        "SACADA"
+      ]
+    },
+    {
+      "id": "CS-105",
+      "titulo": "Casa 3 dorm. - Menino Deus",
+      "endereco": {
+        "logradouro": "R. das Acacias 265",
+        "bairro": "Menino Deus",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1388.1,
+      "metragem": "250m2",
+      "dorms": 3,
+      "vagas": 1,
+      "condominio": null,
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "01/27/2026",
+      "comodidades": [
+        "PISCINA"
+      ]
+    },
+    {
+      "id": "CS-106",
+      "titulo": "Apartamento 3 dorm. - Passo da Areia",
+      "endereco": {
+        "logradouro": "R. Quatro Ventos, 767",
+        "bairro": "Passo da Areia",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 688.6,
+      "metragem": "101m2",
+      "dorms": 3,
+      "vagas": 1,
+      "condominio": "R$ 1.040,00",
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "08/28/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "ELEVADOR",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-107",
+      "titulo": "Apartamento 2 dorm. - Centro",
+      "endereco": {
+        "logradouro": "R. Quatro Ventos 46",
+        "bairro": "Centro",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 492.8,
+      "metragem": "76m2",
+      "dorms": 2,
+      "vagas": 2,
+      "condominio": "R$ 730,00",
+      "conservacao": 3,
+      "pet": "N",
+      "anunciado_em": "06/16/2026",
+      "comodidades": [
+        "BICICLETARIO",
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PISCINA",
+        "PLAYGROUND",
+        "PORTARIA 24H",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-108",
+      "titulo": "Studio 1 dorm. - Ipanema",
+      "endereco": {
+        "logradouro": "R. das Hortênsias, 334",
+        "bairro": "Ipanema",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": null,
+      "metragem": "24m2",
+      "dorms": 1,
+      "vagas": 0,
+      "condominio": "R$ 210,00",
+      "conservacao": 1,
+      "pet": "S",
+      "anunciado_em": "04/17/2026",
+      "comodidades": [
+        "ELEVADOR"
+      ]
+    },
+    {
+      "id": "CS-109",
+      "titulo": "Apartamento 1 dorm. - Partenon",
+      "endereco": {
+        "logradouro": "R. das Hortênsias 1978",
+        "bairro": "Partenon",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 345.6,
+      "metragem": "56m2",
+      "dorms": 1,
+      "vagas": 1,
+      "condominio": "R$ 470,00",
+      "conservacao": 3,
+      "pet": "N",
+      "anunciado_em": "01/26/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "PLAYGROUND",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-110",
+      "titulo": "Apartamento 1 dorm. - Jd. Botânico",
+      "endereco": {
+        "logradouro": "R. do Mirante 2276",
+        "bairro": "Jd. Botânico",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 288.6,
+      "metragem": "46m2",
+      "dorms": 1,
+      "vagas": 1,
+      "condominio": "R$ 420,00",
+      "conservacao": 1,
+      "pet": "N",
+      "anunciado_em": "05/10/2026",
+      "comodidades": [
+        "PORTARIA 24H",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-111",
+      "titulo": "Apartamento 3 dorm. - Ipanema",
+      "endereco": {
+        "logradouro": "Av. do Lago, 1752",
+        "bairro": "Ipanema",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 828.0,
+      "metragem": "103m2",
+      "dorms": 3,
+      "vagas": 2,
+      "condominio": "R$ 1.180,00",
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "03/12/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "PISCINA",
+        "PORTARIA 24H"
+      ]
+    },
+    {
+      "id": "CS-112",
+      "titulo": "Casa 4 dorm. - Jd. Botânico",
+      "endereco": {
+        "logradouro": "R. Quatro Ventos 2339",
+        "bairro": "Jd. Botânico",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1705.7,
+      "metragem": "241m2",
+      "dorms": 4,
+      "vagas": 0,
+      "condominio": null,
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "09/15/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "PISCINA"
+      ]
+    },
+    {
+      "id": "CS-113",
+      "titulo": "Apartamento 1 dorm. - Petropolis",
+      "endereco": {
+        "logradouro": "R. dos Ipes 2367",
+        "bairro": "Petropolis",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 383.0,
+      "metragem": "44m2",
+      "dorms": 1,
+      "vagas": 1,
+      "condominio": "R$ 420,00",
+      "conservacao": 1,
+      "pet": "S",
+      "anunciado_em": "02/06/2026",
+      "comodidades": [
+        "BICICLETARIO",
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PLAYGROUND",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-114",
+      "titulo": "Cobertura 3 dorm. - Partenon",
+      "endereco": {
+        "logradouro": "Tv. da Aurora 2367",
+        "bairro": "Partenon",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1383.0,
+      "metragem": "239m2",
+      "dorms": 3,
+      "vagas": 3,
+      "condominio": "R$ 1.890,00",
+      "conservacao": 2,
+      "pet": "N",
+      "anunciado_em": "03/05/2026",
+      "comodidades": [
+        "BICICLETARIO",
+        "PORTARIA 24H"
+      ]
+    },
+    {
+      "id": "CS-115",
+      "titulo": "Apartamento 2 dorm. - Moinhos",
+      "endereco": {
+        "logradouro": "R. do Farol 116",
+        "bairro": "Moinhos",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 923.5,
+      "metragem": "78m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 790,00",
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "09/25/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-116",
+      "titulo": "Apartamento 2 dorm. - Menino Deus",
+      "endereco": {
+        "logradouro": "R. da Ponte Velha 2018",
+        "bairro": "Menino Deus",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 649.2,
+      "metragem": "69m2",
+      "dorms": 2,
+      "vagas": 2,
+      "condominio": "R$ 680,00",
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "03/26/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "CHURRASQUEIRA",
+        "PISCINA",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-117",
+      "titulo": "Casa 5 dorm. - Bela Vista",
+      "endereco": {
+        "logradouro": "R. dos Ipês 1980",
+        "bairro": "Bela Vista",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 3595.9,
+      "metragem": "325m2",
+      "dorms": 5,
+      "vagas": 2,
+      "condominio": null,
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "04/11/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "SACADA"
+      ]
+    },
+    {
+      "id": "CS-118",
+      "titulo": "Apartamento 2 dorm. - Partenon",
+      "endereco": {
+        "logradouro": "R. dos Jacarandas, 1230",
+        "bairro": "Partenon",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 283.5,
+      "metragem": "78m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 770,00",
+      "conservacao": 1,
+      "pet": "S",
+      "anunciado_em": "07/16/2026",
+      "comodidades": [
+        "ELEVADOR"
+      ]
+    },
+    {
+      "id": "CS-119",
+      "titulo": "Studio 1 dorm. - Tristeza",
+      "endereco": {
+        "logradouro": "R. Sete Estrelas, 609",
+        "bairro": "Tristeza",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 256.9,
+      "metragem": "35m2",
+      "dorms": 1,
+      "vagas": 0,
+      "condominio": "R$ 350,00",
+      "conservacao": 1,
+      "pet": "S",
+      "anunciado_em": "12/29/2025",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PISCINA",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-120",
+      "titulo": "Apartamento 2 dorm. - Passo da Areia",
+      "endereco": {
+        "logradouro": "R. dos Ipes, 1391",
+        "bairro": "Passo da Areia",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 596200.0,
+      "metragem": "80m2",
+      "dorms": 2,
+      "vagas": 2,
+      "condominio": "R$ 920,00",
+      "conservacao": 3,
+      "pet": "N",
+      "anunciado_em": "07/29/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PISCINA",
+        "PLAYGROUND",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-121",
+      "titulo": "Apartamento 1 dorm. - Moinhos",
+      "endereco": {
+        "logradouro": "R. Sete Estrelas, 516",
+        "bairro": "Moinhos",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 726.3,
+      "metragem": "55m2",
+      "dorms": 1,
+      "vagas": 0,
+      "condominio": "R$ 680,00",
+      "conservacao": 3,
+      "pet": "N",
+      "anunciado_em": "01/16/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "CHURRASQUEIRA",
+        "PISCINA",
+        "PORTARIA 24H",
+        "SACADA"
+      ]
+    },
+    {
+      "id": "CS-122",
+      "titulo": "Apartamento 2 dorm. - Cristal",
+      "endereco": {
+        "logradouro": "Av. do Lago, 432",
+        "bairro": "Cristal",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 587.4,
+      "metragem": "82m2",
+      "dorms": 2,
+      "vagas": 2,
+      "condominio": "R$ 720,00",
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "06/06/2026",
+      "comodidades": [
+        "BICICLETARIO",
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PISCINA",
+        "PORTARIA 24H",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-123",
+      "titulo": "Apartamento 2 dorm. - Bom Fim",
+      "endereco": {
+        "logradouro": "R. dos Jacarandas, 431",
+        "bairro": "Bom Fim",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 605.9,
+      "metragem": "78m2",
+      "dorms": 2,
+      "vagas": 2,
+      "condominio": "R$ 720,00",
+      "conservacao": 1,
+      "pet": "S",
+      "anunciado_em": "06/08/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "ELEVADOR"
+      ]
+    },
+    {
+      "id": "CS-124",
+      "titulo": "Apartamento 2 dorm. - Bela Vista",
+      "endereco": {
+        "logradouro": "R. do Farol 299",
+        "bairro": "Bela Vista",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 992.1,
+      "metragem": "78m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 650,00",
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "08/18/2026",
+      "comodidades": [
+        "BICICLETARIO",
+        "ELEVADOR",
+        "PLAYGROUND",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-125",
+      "titulo": "Apartamento 4 dorm. - Cristal",
+      "endereco": {
+        "logradouro": "R. da Ponte Velha 819",
+        "bairro": "Cristal",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 792.6,
+      "metragem": "119m2",
+      "dorms": 4,
+      "vagas": 2,
+      "condominio": "R$ 1.230,00",
+      "conservacao": 2,
+      "pet": "N",
+      "anunciado_em": "07/29/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PISCINA",
+        "PORTARIA 24H"
+      ]
+    },
+    {
+      "id": "CS-126",
+      "titulo": "Apartamento 1 dorm. - Menino Deus",
+      "endereco": {
+        "logradouro": "R. da Ponte Velha 2077",
+        "bairro": "Menino Deus",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 581.1,
+      "metragem": "58m2",
+      "dorms": 1,
+      "vagas": 1,
+      "condominio": "R$ 720,00",
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "02/24/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PISCINA",
+        "PLAYGROUND",
+        "PORTARIA 24H",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-127",
+      "titulo": "Apartamento 2 dorm. - Tristeza",
+      "endereco": {
+        "logradouro": "R. das Hortênsias 1562",
+        "bairro": "Tristeza",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 533.7,
+      "metragem": "61m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 690,00",
+      "conservacao": 1,
+      "pet": "S",
+      "anunciado_em": "07/22/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "CHURRASQUEIRA",
+        "PLAYGROUND",
+        "PORTARIA 24H",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-128",
+      "titulo": "Apartamento 4 dorm. - Menino Deus",
+      "endereco": {
+        "logradouro": "R. do Mirante 1378",
+        "bairro": "Menino Deus",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1072.3,
+      "metragem": "125m2",
+      "dorms": 4,
+      "vagas": 1,
+      "condominio": "R$ 1.210,00",
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "06/05/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "ELEVADOR",
+        "PISCINA",
+        "PLAYGROUND",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-129",
+      "titulo": "Casa 3 dorm. - Centro",
+      "endereco": {
+        "logradouro": "R. dos Ipês 2122",
+        "bairro": "Centro",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1549.7,
+      "metragem": "242m2",
+      "dorms": 3,
+      "vagas": 3,
+      "condominio": null,
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "08/06/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "PISCINA",
+        "SACADA"
+      ]
+    },
+    {
+      "id": "CS-130",
+      "titulo": "Apartamento 3 dorm. - Bom Fim",
+      "endereco": {
+        "logradouro": "R. do Farol 230",
+        "bairro": "Bom Fim",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1025.6,
+      "metragem": "107m2",
+      "dorms": 3,
+      "vagas": 3,
+      "condominio": "R$ 940,00",
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "07/06/2026",
+      "comodidades": [
+        "BICICLETARIO",
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PISCINA",
+        "PLAYGROUND",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-131",
+      "titulo": "Apartamento 2 dorm. - Cristal",
+      "endereco": {
+        "logradouro": "R. dos Jacarandás, 494",
+        "bairro": "Cristal",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 443.9,
+      "metragem": "63m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 520,00",
+      "conservacao": 2,
+      "pet": "N",
+      "anunciado_em": "08/16/2026",
+      "comodidades": [
+        "ELEVADOR",
+        "SACADA"
+      ]
+    },
+    {
+      "id": "CS-132",
+      "titulo": "Apartamento 3 dorm. - Partenon",
+      "endereco": {
+        "logradouro": "R. Sete Estrelas 1305",
+        "bairro": "Partenon",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 401.2,
+      "metragem": "92m2",
+      "dorms": 3,
+      "vagas": 2,
+      "condominio": "R$ 760,00",
+      "conservacao": 1,
+      "pet": "S",
+      "anunciado_em": "01/15/2026",
+      "comodidades": [
+        "ELEVADOR",
+        "PORTARIA 24H",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-133",
+      "titulo": "Apartamento 2 dorm. - Partenon",
+      "endereco": {
+        "logradouro": "Tv. da Aurora 410",
+        "bairro": "Partenon",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 487.2,
+      "metragem": "87m2",
+      "dorms": 2,
+      "vagas": 3,
+      "condominio": "R$ 820,00",
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "04/19/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PORTARIA 24H"
+      ]
+    },
+    {
+      "id": "CS-134",
+      "titulo": "Apartamento 2 dorm. - Cristal",
+      "endereco": {
+        "logradouro": "R. Quatro Ventos 2137",
+        "bairro": "Cristal",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 481.1,
+      "metragem": "91m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 1.080,00",
+      "conservacao": 2,
+      "pet": "N",
+      "anunciado_em": "06/07/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "ELEVADOR",
+        "PISCINA",
+        "SACADA"
+      ]
+    },
+    {
+      "id": "CS-135",
+      "titulo": "Apartamento 2 dorm. - Sarandi",
+      "endereco": {
+        "logradouro": "R. dos Ipês, 128",
+        "bairro": "Sarandi",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 308.3,
+      "metragem": "76m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 650,00",
+      "conservacao": 3,
+      "pet": "N",
+      "anunciado_em": "01/22/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "ELEVADOR"
+      ]
+    },
+    {
+      "id": "CS-136",
+      "titulo": "Apartamento 2 dorm. - Ipanema",
+      "endereco": {
+        "logradouro": "Av. das Palmeiras, 250",
+        "bairro": "Ipanema",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 784.9,
+      "metragem": "89m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 810,00",
+      "conservacao": 4,
+      "pet": "S",
+      "anunciado_em": "05/20/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "ELEVADOR",
+        "PISCINA",
+        "PORTARIA 24H"
+      ]
+    },
+    {
+      "id": "CS-137",
+      "titulo": "Casa 3 dorm. - Centro",
+      "endereco": {
+        "logradouro": "Av. das Palmeiras, 1454",
+        "bairro": "Centro",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1010.2,
+      "metragem": "190m2",
+      "dorms": 3,
+      "vagas": 1,
+      "condominio": null,
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "02/07/2026",
+      "comodidades": []
+    },
+    {
+      "id": "CS-138",
+      "titulo": "Apartamento 2 dorm. - Passo d'Areia",
+      "endereco": {
+        "logradouro": "Av. do Lago, 1803",
+        "bairro": "Passo d'Areia",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 582.0,
+      "metragem": "72m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 850,00",
+      "conservacao": 4,
+      "pet": "N",
+      "anunciado_em": "04/13/2026",
+      "comodidades": [
+        "BICICLETARIO",
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PLAYGROUND",
+        "PORTARIA 24H",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-139",
+      "titulo": "Apartamento 3 dorm. - Bela Vista",
+      "endereco": {
+        "logradouro": "R. da Ponte Velha, 630",
+        "bairro": "Bela Vista",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1010.2,
+      "metragem": "96m2",
+      "dorms": 3,
+      "vagas": 0,
+      "condominio": "R$ 1.040,00",
+      "conservacao": 1,
+      "pet": "N",
+      "anunciado_em": "07/23/2026",
+      "comodidades": [
+        "ELEVADOR"
+      ]
+    },
+    {
+      "id": "CS-140",
+      "titulo": "Apartamento 3 dorm. - Bela Vista",
+      "endereco": {
+        "logradouro": "Av. das Palmeiras, 1958",
+        "bairro": "Bela Vista",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1204.2,
+      "metragem": "102m2",
+      "dorms": 3,
+      "vagas": 1,
+      "condominio": "R$ 930,00",
+      "conservacao": 2,
+      "pet": "N",
+      "anunciado_em": "08/21/2026",
+      "comodidades": [
+        "ELEVADOR",
+        "PLAYGROUND"
+      ]
+    },
+    {
+      "id": "CS-141",
+      "titulo": "Apartamento 1 dorm. - Moinhos",
+      "endereco": {
+        "logradouro": "R. do Mirante 2325",
+        "bairro": "Moinhos",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 694.5,
+      "metragem": "60m2",
+      "dorms": 1,
+      "vagas": 1,
+      "condominio": "R$ 540,00",
+      "conservacao": 2,
+      "pet": "N",
+      "anunciado_em": "07/20/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PISCINA",
+        "PLAYGROUND",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-142",
+      "titulo": "Apartamento 2 dorm. - Partenon",
+      "endereco": {
+        "logradouro": "R. Quatro Ventos 2048",
+        "bairro": "Partenon",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 308.4,
+      "metragem": "77m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 800,00",
+      "conservacao": 1,
+      "pet": "N",
+      "anunciado_em": "07/07/2026",
+      "comodidades": [
+        "CHURRASQUEIRA"
+      ]
+    },
+    {
+      "id": "CS-143",
+      "titulo": "Apartamento 2 dorm. - Rio Branco",
+      "endereco": {
+        "logradouro": "R. dos Jacarandás 549",
+        "bairro": "Rio Branco",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 556.0,
+      "metragem": "80m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 770,00",
+      "conservacao": 2,
+      "pet": "N",
+      "anunciado_em": "03/09/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "PORTARIA 24H"
+      ]
+    },
+    {
+      "id": "CS-144",
+      "titulo": "Studio 1 dorm. - Cid. Baixa",
+      "endereco": {
+        "logradouro": "R. dos Ipês 687",
+        "bairro": "Cid. Baixa",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 338.5,
+      "metragem": "31m2",
+      "dorms": 1,
+      "vagas": 2,
+      "condominio": "R$ 390,00",
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "07/13/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PORTARIA 24H",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-145",
+      "titulo": "Apartamento 2 dorm. - Rio Branco",
+      "endereco": {
+        "logradouro": "R. dos Ipes 1488",
+        "bairro": "Rio Branco",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 900.2,
+      "metragem": "83m2",
+      "dorms": 2,
+      "vagas": 2,
+      "condominio": "R$ 720,00",
+      "conservacao": 2,
+      "pet": "N",
+      "anunciado_em": "02/24/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "BICICLETARIO",
+        "CHURRASQUEIRA",
+        "SACADA"
+      ]
+    },
+    {
+      "id": "CS-146",
+      "titulo": "Casa 3 dorm. - Passo da Areia",
+      "endereco": {
+        "logradouro": "R. dos Jacarandas 1183",
+        "bairro": "Passo da Areia",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 840.4,
+      "metragem": "211m2",
+      "dorms": 3,
+      "vagas": 1,
+      "condominio": null,
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "04/18/2026",
+      "comodidades": []
+    },
+    {
+      "id": "CS-147",
+      "titulo": "Casa 3 dorm. - Cid. Baixa",
+      "endereco": {
+        "logradouro": "R. do Mirante 411",
+        "bairro": "Cid. Baixa",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1476.6,
+      "metragem": "267m2",
+      "dorms": 3,
+      "vagas": 1,
+      "condominio": null,
+      "conservacao": 1,
+      "pet": "S",
+      "anunciado_em": "07/01/2026",
+      "comodidades": [
+        "CHURRASQUEIRA"
+      ]
+    },
+    {
+      "id": "CS-148",
+      "titulo": "Casa 3 dorm. - Menino Deus",
+      "endereco": {
+        "logradouro": "Av. das Palmeiras, 2101",
+        "bairro": "Menino Deus",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1374.5,
+      "metragem": "211m2",
+      "dorms": 3,
+      "vagas": 1,
+      "condominio": null,
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "09/18/2026",
+      "comodidades": [
+        "PISCINA"
+      ]
+    },
+    {
+      "id": "CS-149",
+      "titulo": "Casa 4 dorm. - Ipanema",
+      "endereco": {
+        "logradouro": "R. Quatro Ventos, 2061",
+        "bairro": "Ipanema",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1854.3,
+      "metragem": "286m2",
+      "dorms": 4,
+      "vagas": 3,
+      "condominio": null,
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "02/03/2026",
+      "comodidades": []
+    },
+    {
+      "id": "CS-150",
+      "titulo": "Studio 1 dorm. - Passo da Areia",
+      "endereco": {
+        "logradouro": "R. Sete Estrelas, 646",
+        "bairro": "Passo da Areia",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 272.8,
+      "metragem": "31m2",
+      "dorms": 1,
+      "vagas": 1,
+      "condominio": "R$ 500,00",
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "04/28/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "PISCINA",
+        "PLAYGROUND",
+        "PORTARIA 24H",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-151",
+      "titulo": "Apartamento 2 dorm. - Jd. Botânico",
+      "endereco": {
+        "logradouro": "R. das Acácias, 1094",
+        "bairro": "Jd. Botânico",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 517.6,
+      "metragem": "69m2",
+      "dorms": 2,
+      "vagas": 0,
+      "condominio": "R$ 740,00",
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "05/29/2026",
+      "comodidades": [
+        "ELEVADOR",
+        "SACADA"
+      ]
+    },
+    {
+      "id": "CS-152",
+      "titulo": "Apartamento 2 dorm. - Jd. Lindóia",
+      "endereco": {
+        "logradouro": "R. do Farol, 2145",
+        "bairro": "Jd. Lindóia",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 842.9,
+      "metragem": "104m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 860,00",
+      "conservacao": 2,
+      "pet": "N",
+      "anunciado_em": "02/06/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PISCINA",
+        "PLAYGROUND",
+        "PORTARIA 24H",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-153",
+      "titulo": "Apartamento 3 dorm. - Sarandi",
+      "endereco": {
+        "logradouro": "R. dos Jacarandas 954",
+        "bairro": "Sarandi",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 344.6,
+      "metragem": "105m2",
+      "dorms": 3,
+      "vagas": 1,
+      "condominio": "R$ 1.080,00",
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "09/10/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-154",
+      "titulo": "Apartamento 2 dorm. - Rio Branco",
+      "endereco": {
+        "logradouro": "R. dos Ipês 1205",
+        "bairro": "Rio Branco",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 639.0,
+      "metragem": "67m2",
+      "dorms": 2,
+      "vagas": 2,
+      "condominio": "R$ 830,00",
+      "conservacao": 1,
+      "pet": "N",
+      "anunciado_em": "06/16/2026",
+      "comodidades": [
+        "BICICLETARIO",
+        "PISCINA",
+        "PORTARIA 24H",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-155",
+      "titulo": "Apartamento 2 dorm. - Bela Vista",
+      "endereco": {
+        "logradouro": "R. do Mirante, 2024",
+        "bairro": "Bela Vista",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 768.5,
+      "metragem": "75m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 740,00",
+      "conservacao": 1,
+      "pet": "S",
+      "anunciado_em": "08/27/2026",
+      "comodidades": [
+        "ELEVADOR",
+        "PISCINA",
+        "PLAYGROUND",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-156",
+      "titulo": "Apartamento 2 dorm. - Bela Vista",
+      "endereco": {
+        "logradouro": "R. dos Ipês, 361",
+        "bairro": "Bela Vista",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 769.0,
+      "metragem": "64m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 710,00",
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "05/02/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PLAYGROUND",
+        "PORTARIA 24H",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-157",
+      "titulo": "Casa 2 dorm. - Bom Fim",
+      "endereco": {
+        "logradouro": "R. dos Jacarandas, 1446",
+        "bairro": "Bom Fim",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1902.5,
+      "metragem": "211m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": null,
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "04/11/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "PISCINA",
+        "SACADA"
+      ]
+    },
+    {
+      "id": "CS-158",
+      "titulo": "Apartamento 2 dorm. - Jardim Lindóia",
+      "endereco": {
+        "logradouro": "R. das Hortensias 1179",
+        "bairro": "Jardim Lindóia",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 485.2,
+      "metragem": "75m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 600,00",
+      "conservacao": 2,
+      "pet": "N",
+      "anunciado_em": "03/16/2026",
+      "comodidades": [
+        "PORTARIA 24H",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-159",
+      "titulo": "Apartamento 3 dorm. - Jd. Lindóia",
+      "endereco": {
+        "logradouro": "Tv. da Aurora 432",
+        "bairro": "Jd. Lindóia",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 648.0,
+      "metragem": "102m2",
+      "dorms": 3,
+      "vagas": 2,
+      "condominio": "R$ 820,00",
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "05/20/2026",
+      "comodidades": [
+        "BICICLETARIO",
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PORTARIA 24H",
+        "SACADA"
+      ]
+    },
+    {
+      "id": "CS-160",
+      "titulo": "Apartamento 1 dorm. - Passo da Areia",
+      "endereco": {
+        "logradouro": "Tv. da Aurora, 509",
+        "bairro": "Passo da Areia",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 417.6,
+      "metragem": "42m2",
+      "dorms": 1,
+      "vagas": 2,
+      "condominio": "R$ 320,00",
+      "conservacao": 3,
+      "pet": "N",
+      "anunciado_em": "08/20/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-161",
+      "titulo": "Apartamento 2 dorm. - Sarandi",
+      "endereco": {
+        "logradouro": "R. dos Ipes, 1689",
+        "bairro": "Sarandi",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 281.6,
+      "metragem": "76m2",
+      "dorms": 2,
+      "vagas": 2,
+      "condominio": "R$ 920,00",
+      "conservacao": 3,
+      "pet": "N",
+      "anunciado_em": "03/20/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "ELEVADOR",
+        "PISCINA",
+        "PLAYGROUND"
+      ]
+    },
+    {
+      "id": "CS-162",
+      "titulo": "Apartamento 2 dorm. - Tristeza",
+      "endereco": {
+        "logradouro": "Av. do Lago 937",
+        "bairro": "Tristeza",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 567.0,
+      "metragem": "75m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 680,00",
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "05/03/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PLAYGROUND"
+      ]
+    },
+    {
+      "id": "CS-163",
+      "titulo": "Apartamento 2 dorm. - Cid. Baixa",
+      "endereco": {
+        "logradouro": "R. dos Ipes 1368",
+        "bairro": "Cid. Baixa",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 690.7,
+      "metragem": "76m2",
+      "dorms": 2,
+      "vagas": 3,
+      "condominio": "R$ 610,00",
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "07/12/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "SACADA"
+      ]
+    },
+    {
+      "id": "CS-164",
+      "titulo": "Apartamento 1 dorm. - Cristal",
+      "endereco": {
+        "logradouro": "R. Sete Estrelas 2339",
+        "bairro": "Cristal",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 328.0,
+      "metragem": "52m2",
+      "dorms": 1,
+      "vagas": 2,
+      "condominio": "R$ 540,00",
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "08/23/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PORTARIA 24H",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-165",
+      "titulo": "Casa 4 dorm. - Cid. Baixa",
+      "endereco": {
+        "logradouro": "R. Quatro Ventos 274",
+        "bairro": "Cid. Baixa",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1718.0,
+      "metragem": "249m2",
+      "dorms": 4,
+      "vagas": 1,
+      "condominio": null,
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "06/15/2026",
+      "comodidades": [
+        "CHURRASQUEIRA"
+      ]
+    },
+    {
+      "id": "CS-166",
+      "titulo": "Apartamento 1 dorm. - Partenon",
+      "endereco": {
+        "logradouro": "Av. das Palmeiras, 1232",
+        "bairro": "Partenon",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 252.0,
+      "metragem": "56m2",
+      "dorms": 1,
+      "vagas": 2,
+      "condominio": "R$ 610,00",
+      "conservacao": 1,
+      "pet": "S",
+      "anunciado_em": "05/26/2026",
+      "comodidades": [
+        "ELEVADOR",
+        "PLAYGROUND"
+      ]
+    },
+    {
+      "id": "CS-167",
+      "titulo": "Apartamento 3 dorm. - Partenon",
+      "endereco": {
+        "logradouro": "R. do Mirante 196",
+        "bairro": "Partenon",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 529.7,
+      "metragem": "107m2",
+      "dorms": 3,
+      "vagas": 1,
+      "condominio": "R$ 1.050,00",
+      "conservacao": 1,
+      "pet": "N",
+      "anunciado_em": "04/28/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PISCINA",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-168",
+      "titulo": "Apartamento 2 dorm. - Rio Branco",
+      "endereco": {
+        "logradouro": "R. das Acacias 2069",
+        "bairro": "Rio Branco",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 647.6,
+      "metragem": "63m2",
+      "dorms": 2,
+      "vagas": 1,
+      "condominio": "R$ 670,00",
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "06/14/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-169",
+      "titulo": "Apartamento 1 dorm. - Rio Branco",
+      "endereco": {
+        "logradouro": "R. dos Ipês 1129",
+        "bairro": "Rio Branco",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 325.9,
+      "metragem": "43m2",
+      "dorms": 1,
+      "vagas": 0,
+      "condominio": "R$ 430,00",
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "05/07/2026",
+      "comodidades": []
+    },
+    {
+      "id": "CS-170",
+      "titulo": "Apartamento 3 dorm. - Sarandi",
+      "endereco": {
+        "logradouro": "R. da Ponte Velha 900",
+        "bairro": "Sarandi",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 522.9,
+      "metragem": "108m2",
+      "dorms": 3,
+      "vagas": 2,
+      "condominio": "R$ 1.230,00",
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "08/03/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "CHURRASQUEIRA",
+        "PLAYGROUND",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-171",
+      "titulo": "Apartamento 4 dorm. - Petropolis",
+      "endereco": {
+        "logradouro": "Av. do Lago 1104",
+        "bairro": "Petropolis",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1464.7,
+      "metragem": "139m2",
+      "dorms": 4,
+      "vagas": 1,
+      "condominio": "R$ 1.450,00",
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "08/18/2026",
+      "comodidades": [
+        "ELEVADOR",
+        "PLAYGROUND",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-172",
+      "titulo": "Studio 1 dorm. - Bom Fim",
+      "endereco": {
+        "logradouro": "R. da Ponte Velha 254",
+        "bairro": "Bom Fim",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 275.8,
+      "metragem": "30m2",
+      "dorms": 1,
+      "vagas": 0,
+      "condominio": "R$ 370,00",
+      "conservacao": 3,
+      "pet": "N",
+      "anunciado_em": "03/08/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "CHURRASQUEIRA",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-173",
+      "titulo": "Casa 4 dorm. - Cristal",
+      "endereco": {
+        "logradouro": "R. dos Jacarandás, 733",
+        "bairro": "Cristal",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1246.9,
+      "metragem": "246m2",
+      "dorms": 4,
+      "vagas": 1,
+      "condominio": null,
+      "conservacao": 2,
+      "pet": "S",
+      "anunciado_em": "02/24/2026",
+      "comodidades": [
+        "CHURRASQUEIRA"
+      ]
+    },
+    {
+      "id": "CS-174",
+      "titulo": "Apartamento 3 dorm. - Jd. Lindóia",
+      "endereco": {
+        "logradouro": "Av. do Lago 1021",
+        "bairro": "Jd. Lindóia",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 803.7,
+      "metragem": "105m2",
+      "dorms": 3,
+      "vagas": 1,
+      "condominio": "R$ 900,00",
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "08/18/2026",
+      "comodidades": [
+        "PISCINA",
+        "PLAYGROUND",
+        "PORTARIA 24H"
+      ]
+    },
+    {
+      "id": "CS-175",
+      "titulo": "Apartamento 2 dorm. - Sarandi",
+      "endereco": {
+        "logradouro": "R. dos Jacarandás, 1655",
+        "bairro": "Sarandi",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 372.7,
+      "metragem": "88m2",
+      "dorms": 2,
+      "vagas": 3,
+      "condominio": "R$ 840,00",
+      "conservacao": 1,
+      "pet": "N",
+      "anunciado_em": "03/07/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-176",
+      "titulo": "Apartamento 3 dorm. - Partenon",
+      "endereco": {
+        "logradouro": "Tv. da Aurora 1028",
+        "bairro": "Partenon",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 521.3,
+      "metragem": "94m2",
+      "dorms": 3,
+      "vagas": 1,
+      "condominio": "R$ 820,00",
+      "conservacao": 4,
+      "pet": "S",
+      "anunciado_em": "06/05/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PISCINA",
+        "PLAYGROUND",
+        "PORTARIA 24H",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-177",
+      "titulo": "Casa 4 dorm. - Tristeza",
+      "endereco": {
+        "logradouro": "R. dos Jacarandas, 2105",
+        "bairro": "Tristeza",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1191.9,
+      "metragem": "221m2",
+      "dorms": 4,
+      "vagas": 0,
+      "condominio": null,
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "08/12/2026",
+      "comodidades": [
+        "CHURRASQUEIRA"
+      ]
+    },
+    {
+      "id": "CS-178",
+      "titulo": "Apartamento 4 dorm. - Cid. Baixa",
+      "endereco": {
+        "logradouro": "R. das Hortênsias 763",
+        "bairro": "Cid. Baixa",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1381.7,
+      "metragem": "135m2",
+      "dorms": 4,
+      "vagas": 3,
+      "condominio": "R$ 1.020,00",
+      "conservacao": 4,
+      "pet": "S",
+      "anunciado_em": "06/19/2026",
+      "comodidades": [
+        "CHURRASQUEIRA",
+        "ELEVADOR",
+        "PORTARIA 24H"
+      ]
+    },
+    {
+      "id": "CS-179",
+      "titulo": "Apartamento 2 dorm. - Ipanema",
+      "endereco": {
+        "logradouro": "Tv. da Aurora, 313",
+        "bairro": "Ipanema",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 523.7,
+      "metragem": "77m2",
+      "dorms": 2,
+      "vagas": 2,
+      "condominio": "R$ 830,00",
+      "conservacao": 2,
+      "pet": "N",
+      "anunciado_em": "07/30/2026",
+      "comodidades": [
+        "ACADEMIA",
+        "PISCINA",
+        "PORTARIA 24H",
+        "SACADA",
+        "SALAO DE FESTAS"
+      ]
+    },
+    {
+      "id": "CS-180",
+      "titulo": "Casa 3 dorm. - Cid. Baixa",
+      "endereco": {
+        "logradouro": "R. do Mirante, 2032",
+        "bairro": "Cid. Baixa",
+        "cidade": "Porto Alegre",
+        "uf": "RS"
+      },
+      "valor_mil": 1512.4,
+      "metragem": "239m2",
+      "dorms": 3,
+      "vagas": 0,
+      "condominio": null,
+      "conservacao": 3,
+      "pet": "S",
+      "anunciado_em": "01/11/2026",
+      "comodidades": []
+    }
+  ]
+}

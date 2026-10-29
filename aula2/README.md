@@ -158,3 +158,32 @@ de tratar.
 
 A API do IBGE usada no slide 30 continua pública e funcionando; a cópia estática existe para o
 exercício não depender dela.
+
+
+---
+
+## Prática do encontro síncrono 2
+
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula2/pratica/encontro2.ipynb)
+
+`pratica/encontro2.ipynb`: notebook da atividade conduzida pelo mediador. O gabarito fica fora
+deste repositório e é distribuído ao mediador junto com os slides do encontro.
+
+**O log da Aurora Imóveis e o coletor do colega.**
+
+`pratica/acessos.log`: 420 linhas de log de acesso fictício (formato *combined* do Apache/Nginx
+com `rt=NNNms` no fim). IPs das faixas de documentação (RFC 5737) e e-mails em domínios `example.*`.
+Gerado por `ferramentas/gerar_log_acessos.py` (determinístico).
+
+| Pergunta | Resposta esperada |
+| --- | --- |
+| status mais comuns | 200 (325), 429 (59), 500 (7), 301 (7), 404, 401, 403 (6 cada), 503 (4) |
+| latência média / máxima | 529,3 ms / 6733 ms; as 7 acima de 3 s são erros 5xx |
+| quem levou 429 | `203.0.113.9`, `python-requests/2.32.3`, em rajadas sem intervalo |
+| e-mails nos User-Agents | `ana.souza@aluno.example.edu`, `dados@observatorio.example.org` |
+| acessos a áreas proibidas no robots | `203.0.113.200` (`BuscadorMalEducado/0.1`), 12 vezes |
+
+A parte B é a revisão de um coletor da API estática (`api/v1/municipios/`) com problemas
+plantados: o laço de paginação descarta a última página (400 municípios em vez de 497), falta
+`timeout` e `raise_for_status()`, o token está no código, a query string é concatenada e a regex do
+protocolo corta o dígito verificador e aceita o protocolo interno.

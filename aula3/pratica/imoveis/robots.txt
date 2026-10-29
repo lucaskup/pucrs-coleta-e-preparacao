@@ -1,0 +1,6 @@
+# Exemplo de robots.txt para a disciplina (num site real ele fica na raiz do domínio).
+User-agent: *
+Disallow: /aula3/pratica/imoveis/painel-corretor/
+Crawl-delay: 1
+
+Sitemap: https://lucaskup.github.io/pucrs-coleta-e-preparacao/aula3/pratica/imoveis/sitemap.xml

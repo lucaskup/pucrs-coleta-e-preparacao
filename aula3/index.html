@@ -74,6 +74,18 @@
 requests.get(URL + 'dinamica/dados.json').json()['total']  # 12</pre>
     </section>
 
+    <section id="encontro3">
+      <h2>Prática do encontro síncrono 3</h2>
+      <p class="tema"><strong>Raspando a Aurora Imóveis:</strong> listagem paginada, ficha técnica com XPath, comodidades, robots.txt e sitemap.</p>
+      <a class="colab" href="https://colab.research.google.com/github/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula3/pratica/encontro3.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Abrir no Colab"></a>
+      <table>
+        <tr><td class="arq"><a href="https://github.com/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula3/pratica/encontro3.ipynb">pratica/encontro3.ipynb</a></td><td class="obs">notebook da atividade (abra no Colab e salve uma cópia no seu Drive)</td></tr>
+        <tr><td class="arq"><a href="pratica/imoveis/">pratica/imoveis/</a></td><td class="obs">site fictício: 60 anúncios em 5 páginas, ficha técnica em <code>&lt;dl&gt;</code>, <code>a[rel=next]</code></td></tr>
+        <tr><td class="arq"><a href="pratica/imoveis/sitemap.xml">pratica/imoveis/sitemap.xml</a></td><td class="obs">65 URLs</td></tr>
+        <tr><td class="arq"><a href="pratica/imoveis/robots.txt">pratica/imoveis/robots.txt</a></td><td class="obs">exemplo para <code>urllib.robotparser</code></td></tr>
+      </table>
+    </section>
+
     <section>
       <h2>Baixar tudo de uma vez</h2>
       <pre>git clone https://github.com/lucaskup/pucrs-coleta-e-preparacao.git</pre>

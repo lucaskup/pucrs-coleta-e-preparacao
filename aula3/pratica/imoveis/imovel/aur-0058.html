@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cobertura com 3 quartos em Bela Vista · Aurora Imóveis</title>
+  <meta name="description" content="Anúncio fictício de imóvel.">
+  <style>
+    :root { --fundo:#f5f6f8; --cartao:#fff; --texto:#1b1f24; --suave:#5a636e; --borda:#dfe3e8; --marca:#1d5c8c; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --fundo:#14171b; --cartao:#1d2126; --texto:#eceff3; --suave:#a4adb8; --borda:#2c323a; --marca:#7fb8e6;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--fundo); color:var(--texto); line-height:1.5;
+           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .conteudo { max-width: 1000px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+    a { color: var(--marca); }
+    h1 { font-size: 1.5rem; margin: 0 0 .2rem; }
+    .sub { color: var(--suave); margin: 0 0 1.2rem; }
+    .aviso { background:#fff8e1; border:1px solid #e8d48b; color:#5c4700; padding:.7rem .9rem;
+             border-radius:8px; margin:0 0 1.5rem; font-size:.85rem; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .aviso { background:#33290d; border-color:#6b5716; color:#f2e2b0; }
+    }
+    .resultados { display:grid; gap:1rem; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+    article.imovel { background:var(--cartao); border:1px solid var(--borda); border-radius:10px; padding:.9rem;
+                     display:flex; flex-direction:column; gap:.25rem; }
+    .imovel .tipo { font-size:.75rem; text-transform:uppercase; letter-spacing:.05em; color:var(--suave); margin:0; }
+    .imovel h2 { font-size:1rem; margin:0; line-height:1.3; }
+    .imovel h2 a { text-decoration:none; }
+    .imovel .bairro { margin:0; font-size:.9rem; }
+    .imovel .preco { margin:.2rem 0 0; font-weight:700; font-size:1.05rem; }
+    .imovel .preco.consulte { color:var(--suave); font-weight:600; }
+    ul.caracteristicas { list-style:none; padding:0; margin:.2rem 0 0; display:flex; gap:.6rem;
+                         flex-wrap:wrap; font-size:.85rem; color:var(--suave); }
+    .paginacao { list-style:none; display:flex; gap:1rem; justify-content:center; padding:0; margin:2rem 0 0; }
+    .paginacao .atual { color:var(--suave); }
+    dl.ficha { display:grid; grid-template-columns:max-content 1fr; gap:.35rem 1.2rem; background:var(--cartao);
+               border:1px solid var(--borda); border-radius:10px; padding:1rem 1.2rem; }
+    dl.ficha dt { font-weight:600; }
+    dl.ficha dd { margin:0; }
+    ul.comodidades { display:flex; flex-wrap:wrap; gap:.4rem; list-style:none; padding:0; }
+    ul.comodidades li { border:1px solid var(--borda); border-radius:999px; padding:.15rem .7rem; font-size:.85rem;
+                        background:var(--cartao); }
+    nav.trilha { font-size:.85rem; color:var(--suave); margin-bottom:1rem; }
+  </style>
+</head>
+<body>
+  <main class="conteudo">
+    <nav class="trilha"><a href="../index.html">Aurora Imóveis</a> › Bela Vista › AUR-0058</nav>
+    <h1>Cobertura com 3 quartos em Bela Vista</h1>
+    <p class="sub">Rua do Farol, 1678 · Bela Vista · Porto Alegre/RS</p>
+    <p class="aviso"><strong>Site fictício.</strong> Imobiliária, anúncios, endereços e preços foram inventados para a disciplina Coleta e Preparação de Dados (PUCRS Online). Os nomes dos bairros são reais; os valores são inventados.</p>
+    <h2>Ficha técnica</h2>
+    <dl class="ficha">
+      <dt>Código</dt><dd>AUR-0058</dd>
+      <dt>Tipo</dt><dd>Cobertura</dd>
+      <dt>Bairro</dt><dd>Bela Vista</dd>
+      <dt>Endereço</dt><dd>Rua do Farol, 1678</dd>
+      <dt>Preço</dt><dd>R$ 3.091.000</dd>
+      <dt>Área privativa</dt><dd>201 m²</dd>
+      <dt>Quartos</dt><dd>3</dd>
+      <dt>Banheiros</dt><dd>4</dd>
+      <dt>Vagas</dt><dd>2</dd>
+      <dt>Condomínio</dt><dd>R$ 1.620/mês</dd>
+      <dt>IPTU</dt><dd>R$ 8.690/ano</dd>
+      <dt>Andar</dt><dd>6º</dd>
+      <dt>Ano de construção</dt><dd>1996</dd>
+      <dt>Conservação</dt><dd>Regular</dd>
+      <dt>Aceita pets</dt><dd>Sim</dd>
+      <dt>Anunciado em</dt><dd>02/07/2026</dd>
+    </dl>
+    <h2>Comodidades</h2>
+    <ul class="comodidades">
+      <li>Elevador</li>
+      <li>Portaria 24h</li>
+      <li>Sacada</li>
+    </ul>
+    <h2>Descrição</h2>
+    <p id="descricao">Cobertura com 3 quartos em Bela Vista, com 201 m² de área privativa, construído em 1996. Conservação: regular. Para visitar, fale com a Aurora Imóveis pelo e-mail contato@aurora-imoveis.example.com informando o código AUR-0058.</p>
+  </main>
+</body>
+</html>

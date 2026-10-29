@@ -189,3 +189,30 @@ aparece. Se quiser o texto correto localmente:
 r.encoding = 'utf-8'                      # antes de ler r.text
 html.fromstring(r.content)                # ou entregue bytes: o lxml lê o <meta charset>
 ```
+
+
+---
+
+## Prática do encontro síncrono 3
+
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula3/pratica/encontro3.ipynb)
+
+`pratica/encontro3.ipynb`: notebook da atividade conduzida pelo mediador. O gabarito fica fora
+deste repositório e é distribuído ao mediador junto com os slides do encontro.
+
+**Raspando a Aurora Imóveis.** Alvo próprio da prática, separado do catálogo usado na videoaula:
+
+```
+pratica/imoveis/index.html, pagina-2.html … pagina-5.html   12 anúncios por página, link a[rel=next]
+pratica/imoveis/imovel/aur-0001.html … aur-0060.html         ficha técnica em <dl><dt>/<dd>, ul.comodidades
+pratica/imoveis/sitemap.xml                                 65 URLs
+pratica/imoveis/robots.txt                                  exemplo (Disallow painel-corretor/, Crawl-delay 1)
+```
+
+Marcação: `article.imovel[data-codigo]`, `p.tipo`, `h2 a`, `p.bairro`, `p.preco` (`R$ 1.057.000` ou
+`Consulte`), `li.area` (`72,6 m²`), `li.quartos`, `li.vagas` (`sem vaga`). Na ficha, o condomínio das
+casas é `Isento` e o andar é `—`.
+
+Números de referência: 60 anúncios, 2 com preço "Consulte" (AUR-0018 e AUR-0045), preço mediano
+R$ 734.500. Os 60 anúncios são os 60 primeiros da base completa usada nas aulas 4 a 6.
+Gerado por `ferramentas/gerar_imoveis.py`.

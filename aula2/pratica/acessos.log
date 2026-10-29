@@ -1,0 +1,420 @@
+192.0.2.88 - - [05/Oct/2026:08:00:19 -0300] "GET /api/v1/imoveis?pagina=1 HTTP/1.1" 503 19121 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=5889ms
+192.0.2.88 - - [05/Oct/2026:08:00:48 -0300] "GET /api/v1/imoveis/AUR-0301 HTTP/1.1" 404 25184 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=29ms
+203.0.113.200 - - [05/Oct/2026:08:01:12 -0300] "GET /api/v1/imoveis?bairro=Menino%20Deus&pagina=3 HTTP/1.1" 200 10552 "-" "BuscadorMalEducado/0.1" rt=338ms
+203.0.113.200 - - [05/Oct/2026:08:01:46 -0300] "GET /api/v1/imoveis/AUR-0256 HTTP/1.1" 200 11564 "-" "BuscadorMalEducado/0.1" rt=659ms
+192.0.2.14 - - [05/Oct/2026:08:02:23 -0300] "GET /api/v1/imoveis?bairro=Tristeza&pagina=2 HTTP/1.1" 503 4763 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=1955ms
+203.0.113.9 - - [05/Oct/2026:08:02:51 -0300] "GET /sitemap.xml HTTP/1.1" 200 35262 "-" "python-requests/2.32.3" rt=202ms
+203.0.113.9 - - [05/Oct/2026:08:02:51 -0300] "GET /api/v1/imoveis?bairro=Tristeza&pagina=5 HTTP/1.1" 200 19866 "-" "python-requests/2.32.3" rt=46ms
+203.0.113.9 - - [05/Oct/2026:08:02:51 -0300] "GET /api/v1/imoveis?bairro=Petr%C3%B3polis&pagina=3 HTTP/1.1" 200 47838 "-" "python-requests/2.32.3" rt=234ms
+203.0.113.9 - - [05/Oct/2026:08:02:51 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 200 42943 "-" "python-requests/2.32.3" rt=743ms
+203.0.113.9 - - [05/Oct/2026:08:02:51 -0300] "GET /api/v1/imoveis/AUR-0316 HTTP/1.1" 404 7516 "-" "python-requests/2.32.3" rt=711ms
+203.0.113.9 - - [05/Oct/2026:08:03:01 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 200 40934 "-" "python-requests/2.32.3" rt=513ms
+203.0.113.9 - - [05/Oct/2026:08:03:02 -0300] "GET /api/v1/imoveis/AUR-0002 HTTP/1.1" 200 20190 "-" "python-requests/2.32.3" rt=812ms
+203.0.113.9 - - [05/Oct/2026:08:03:02 -0300] "GET /api/v1/imoveis/AUR-0129 HTTP/1.1" 200 32090 "-" "python-requests/2.32.3" rt=95ms
+203.0.113.9 - - [05/Oct/2026:08:03:02 -0300] "GET /api/v1/imoveis/AUR-0066 HTTP/1.1" 200 13034 "-" "python-requests/2.32.3" rt=369ms
+203.0.113.9 - - [05/Oct/2026:08:03:02 -0300] "GET /api/v1/imoveis?bairro=Bom%20Fim&pagina=3 HTTP/1.1" 200 30435 "-" "python-requests/2.32.3" rt=1053ms
+203.0.113.9 - - [05/Oct/2026:08:03:02 -0300] "GET /api/v1/imoveis/AUR-0034 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=14ms
+203.0.113.9 - - [05/Oct/2026:08:03:03 -0300] "GET /api/v1/imoveis?pagina=1 HTTP/1.1" 200 46385 "-" "python-requests/2.32.3" rt=683ms
+203.0.113.9 - - [05/Oct/2026:08:03:03 -0300] "GET /api/v1/imoveis/AUR-0197 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=10ms
+192.0.2.14 - - [05/Oct/2026:08:03:33 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=5 HTTP/1.1" 200 20336 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=261ms
+198.51.100.23 - - [05/Oct/2026:08:03:51 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 200 1297 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=378ms
+198.51.100.23 - - [05/Oct/2026:08:04:03 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 200 31873 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=866ms
+192.0.2.14 - - [05/Oct/2026:08:04:39 -0300] "GET /api/v1/imoveis/AUR-0287 HTTP/1.1" 200 36614 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=421ms
+192.0.2.14 - - [05/Oct/2026:08:04:59 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 200 44815 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=47ms
+203.0.113.200 - - [05/Oct/2026:08:05:05 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 28052 "-" "BuscadorMalEducado/0.1" rt=763ms
+203.0.113.9 - - [05/Oct/2026:08:05:13 -0300] "GET /api/v1/imoveis/AUR-0056 HTTP/1.1" 200 21186 "-" "python-requests/2.32.3" rt=74ms
+203.0.113.9 - - [05/Oct/2026:08:05:13 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 42326 "-" "python-requests/2.32.3" rt=634ms
+203.0.113.9 - - [05/Oct/2026:08:05:13 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 25769 "-" "python-requests/2.32.3" rt=330ms
+203.0.113.9 - - [05/Oct/2026:08:05:13 -0300] "GET /api/v1/imoveis/AUR-0142 HTTP/1.1" 200 16416 "-" "python-requests/2.32.3" rt=396ms
+203.0.113.9 - - [05/Oct/2026:08:05:13 -0300] "GET /api/v1/imoveis/AUR-0070 HTTP/1.1" 200 34588 "-" "python-requests/2.32.3" rt=696ms
+203.0.113.9 - - [05/Oct/2026:08:05:14 -0300] "GET /sitemap.xml HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=9ms
+203.0.113.9 - - [05/Oct/2026:08:05:14 -0300] "GET /api/v1/imoveis/AUR-0294 HTTP/1.1" 200 15398 "-" "python-requests/2.32.3" rt=858ms
+203.0.113.9 - - [05/Oct/2026:08:05:14 -0300] "HEAD /api/v1/imoveis?pagina=6 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=9ms
+203.0.113.9 - - [05/Oct/2026:08:05:14 -0300] "GET /robots.txt HTTP/1.1" 200 9324 "-" "python-requests/2.32.3" rt=173ms
+203.0.113.9 - - [05/Oct/2026:08:05:14 -0300] "GET /robots.txt HTTP/1.1" 200 9064 "-" "python-requests/2.32.3" rt=847ms
+203.0.113.9 - - [05/Oct/2026:08:05:14 -0300] "GET /api/v1/imoveis/AUR-0025 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=8ms
+203.0.113.9 - - [05/Oct/2026:08:05:14 -0300] "GET /api/v1/imoveis/AUR-0102 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=15ms
+203.0.113.200 - - [05/Oct/2026:08:05:33 -0300] "GET /api/v1/imoveis/AUR-0176 HTTP/1.1" 503 8194 "-" "BuscadorMalEducado/0.1" rt=3190ms
+192.0.2.14 - - [05/Oct/2026:08:06:12 -0300] "GET /robots.txt HTTP/1.1" 200 28825 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=1377ms
+198.51.100.23 - - [05/Oct/2026:08:06:48 -0300] "GET /api/v1/imoveis/AUR-0045 HTTP/1.1" 200 9240 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=362ms
+198.51.100.23 - - [05/Oct/2026:08:07:10 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 13970 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=58ms
+203.0.113.9 - - [05/Oct/2026:08:07:40 -0300] "GET /api/v1/imoveis?bairro=Sarandi&pagina=2 HTTP/1.1" 200 406 "-" "python-requests/2.32.3" rt=553ms
+203.0.113.9 - - [05/Oct/2026:08:07:41 -0300] "GET /api/v1/imoveis/AUR-0216 HTTP/1.1" 200 22336 "-" "python-requests/2.32.3" rt=753ms
+203.0.113.9 - - [05/Oct/2026:08:07:41 -0300] "GET /api/v1/imoveis/AUR-0284 HTTP/1.1" 200 14302 "-" "python-requests/2.32.3" rt=481ms
+203.0.113.9 - - [05/Oct/2026:08:07:41 -0300] "GET /api/v1/imoveis?bairro=Sarandi&pagina=1 HTTP/1.1" 200 15438 "-" "python-requests/2.32.3" rt=884ms
+203.0.113.9 - - [05/Oct/2026:08:07:41 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 8545 "-" "python-requests/2.32.3" rt=769ms
+203.0.113.9 - - [05/Oct/2026:08:07:41 -0300] "GET /api/v1/imoveis/AUR-0192 HTTP/1.1" 200 15233 "-" "python-requests/2.32.3" rt=321ms
+203.0.113.9 - - [05/Oct/2026:08:07:41 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 200 43684 "-" "python-requests/2.32.3" rt=649ms
+203.0.113.9 - - [05/Oct/2026:08:07:42 -0300] "GET /api/v1/imoveis/AUR-0199 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=12ms
+203.0.113.9 - - [05/Oct/2026:08:07:42 -0300] "GET /api/v1/imoveis?bairro=Sarandi&pagina=4 HTTP/1.1" 200 43150 "-" "python-requests/2.32.3" rt=662ms
+203.0.113.9 - - [05/Oct/2026:08:07:42 -0300] "GET /api/v1/imoveis?bairro=Petr%C3%B3polis&pagina=1 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=6ms
+203.0.113.9 - - [05/Oct/2026:08:07:42 -0300] "GET /api/v1/imoveis/AUR-0059 HTTP/1.1" 200 37177 "-" "python-requests/2.32.3" rt=243ms
+203.0.113.9 - - [05/Oct/2026:08:07:42 -0300] "GET /robots.txt HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=7ms
+198.51.100.23 - - [05/Oct/2026:08:08:14 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 45761 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=186ms
+192.0.2.14 - - [05/Oct/2026:08:08:41 -0300] "GET /api/v1/imoveis/AUR-0098 HTTP/1.1" 200 1796 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=34ms
+203.0.113.9 - - [05/Oct/2026:08:09:06 -0300] "GET /api/v1/imoveis?bairro=Sarandi&pagina=4 HTTP/1.1" 200 20766 "-" "python-requests/2.32.3" rt=294ms
+203.0.113.9 - - [05/Oct/2026:08:09:06 -0300] "GET /api/v1/imoveis?pagina=1 HTTP/1.1" 200 29368 "-" "python-requests/2.32.3" rt=220ms
+203.0.113.9 - - [05/Oct/2026:08:09:06 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 28539 "-" "python-requests/2.32.3" rt=421ms
+203.0.113.9 - - [05/Oct/2026:08:09:06 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 11031 "-" "python-requests/2.32.3" rt=433ms
+203.0.113.9 - - [05/Oct/2026:08:09:07 -0300] "GET /sitemap.xml HTTP/1.1" 200 43584 "-" "python-requests/2.32.3" rt=94ms
+203.0.113.9 - - [05/Oct/2026:08:09:07 -0300] "GET /api/v1/imoveis?bairro=Bom%20Fim&pagina=3 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=12ms
+203.0.113.9 - - [05/Oct/2026:08:09:07 -0300] "GET /api/v1/imoveis?bairro=Petr%C3%B3polis&pagina=2 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=11ms
+203.0.113.9 - - [05/Oct/2026:08:09:07 -0300] "GET /api/v1/imoveis/AUR-0123 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=15ms
+203.0.113.9 - - [05/Oct/2026:08:09:07 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=4ms
+203.0.113.9 - - [05/Oct/2026:08:09:08 -0300] "HEAD /api/v1/imoveis?bairro=Bom%20Fim&pagina=4 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=3ms
+203.0.113.9 - - [05/Oct/2026:08:09:08 -0300] "GET /api/v1/imoveis/AUR-0249 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=13ms
+203.0.113.9 - - [05/Oct/2026:08:09:08 -0300] "GET /api/v1/imoveis/AUR-0139 HTTP/1.1" 200 24869 "-" "python-requests/2.32.3" rt=184ms
+192.0.2.14 - - [05/Oct/2026:08:09:42 -0300] "GET /api/v1/imoveis?pagina=1 HTTP/1.1" 200 30873 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=30ms
+192.0.2.14 - - [05/Oct/2026:08:09:52 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=6 HTTP/1.1" 200 34386 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=207ms
+192.0.2.14 - - [05/Oct/2026:08:10:18 -0300] "GET /api/v1/imoveis/AUR-0286 HTTP/1.1" 200 40589 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=191ms
+198.51.100.57 - - [05/Oct/2026:08:10:43 -0300] "GET /api/v1/imoveis/AUR-0136 HTTP/1.1" 200 40427 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=1754ms
+198.51.100.23 - - [05/Oct/2026:08:10:58 -0300] "HEAD /api/v1/imoveis/AUR-0110 HTTP/1.1" 200 0 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=900ms
+192.0.2.88 - - [05/Oct/2026:08:11:37 -0300] "GET /api/v1/imoveis/AUR-0214 HTTP/1.1" 200 33674 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=433ms
+198.51.100.23 - - [05/Oct/2026:08:11:49 -0300] "GET /api/v1/imoveis?bairro=Bom%20Fim&pagina=2 HTTP/1.1" 200 5157 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=474ms
+192.0.2.14 - - [05/Oct/2026:08:12:08 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=2 HTTP/1.1" 500 14193 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=3670ms
+198.51.100.57 - - [05/Oct/2026:08:12:23 -0300] "GET /sitemap.xml HTTP/1.1" 200 1831 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=489ms
+198.51.100.57 - - [05/Oct/2026:08:12:52 -0300] "GET /robots.txt HTTP/1.1" 200 15311 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=411ms
+203.0.113.200 - - [05/Oct/2026:08:13:23 -0300] "GET /admin/ HTTP/1.1" 401 3165 "-" "BuscadorMalEducado/0.1" rt=76ms
+192.0.2.88 - - [05/Oct/2026:08:13:34 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 200 36572 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=723ms
+192.0.2.88 - - [05/Oct/2026:08:14:10 -0300] "GET /api/v1/imoveis/AUR-0272 HTTP/1.1" 200 31066 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=334ms
+192.0.2.14 - - [05/Oct/2026:08:14:33 -0300] "GET /api/v1/imoveis/AUR-0030 HTTP/1.1" 200 47333 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=2507ms
+192.0.2.14 - - [05/Oct/2026:08:14:43 -0300] "GET /api/v1/imoveis/AUR-0102 HTTP/1.1" 200 22129 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=569ms
+198.51.100.57 - - [05/Oct/2026:08:15:21 -0300] "HEAD /api/v1/imoveis?pagina=3 HTTP/1.1" 200 0 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=633ms
+198.51.100.23 - - [05/Oct/2026:08:15:35 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 200 47754 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=616ms
+198.51.100.57 - - [05/Oct/2026:08:15:36 -0300] "GET /api/v1/imoveis/AUR-0100 HTTP/1.1" 200 16139 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=268ms
+198.51.100.57 - - [05/Oct/2026:08:16:01 -0300] "GET /robots.txt HTTP/1.1" 200 10819 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=428ms
+198.51.100.23 - - [05/Oct/2026:08:16:19 -0300] "GET /sitemap.xml HTTP/1.1" 200 16574 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=758ms
+203.0.113.200 - - [05/Oct/2026:08:16:20 -0300] "GET /admin/ HTTP/1.1" 401 35447 "-" "BuscadorMalEducado/0.1" rt=643ms
+192.0.2.14 - - [05/Oct/2026:08:16:32 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=1 HTTP/1.1" 503 30838 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=6733ms
+192.0.2.14 - - [05/Oct/2026:08:16:55 -0300] "GET /api/v1/imoveis/AUR-0279 HTTP/1.1" 200 8811 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=686ms
+192.0.2.14 - - [05/Oct/2026:08:16:56 -0300] "GET /api/v1/imoveis?bairro=Petr%C3%B3polis&pagina=4 HTTP/1.1" 200 403 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=637ms
+203.0.113.9 - - [05/Oct/2026:08:17:14 -0300] "GET /api/v1/imoveis/AUR-0104 HTTP/1.1" 200 16737 "-" "python-requests/2.32.3" rt=392ms
+203.0.113.9 - - [05/Oct/2026:08:17:14 -0300] "GET /api/v1/imoveis/AUR-0122 HTTP/1.1" 200 13617 "-" "python-requests/2.32.3" rt=362ms
+203.0.113.9 - - [05/Oct/2026:08:17:14 -0300] "GET /api/v1/imoveis/AUR-0073 HTTP/1.1" 200 44874 "-" "python-requests/2.32.3" rt=505ms
+203.0.113.9 - - [05/Oct/2026:08:17:15 -0300] "POST /contato HTTP/1.1" 200 27379 "-" "python-requests/2.32.3" rt=851ms
+203.0.113.9 - - [05/Oct/2026:08:17:15 -0300] "GET /sobre HTTP/1.1" 301 0 "-" "python-requests/2.32.3" rt=719ms
+203.0.113.9 - - [05/Oct/2026:08:17:15 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=7ms
+203.0.113.9 - - [05/Oct/2026:08:17:15 -0300] "GET /robots.txt HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=5ms
+203.0.113.9 - - [05/Oct/2026:08:17:15 -0300] "GET /api/v1/imoveis?pagina=1 HTTP/1.1" 200 29286 "-" "python-requests/2.32.3" rt=1059ms
+203.0.113.9 - - [05/Oct/2026:08:17:16 -0300] "HEAD /sitemap.xml HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=4ms
+203.0.113.9 - - [05/Oct/2026:08:17:16 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=7ms
+203.0.113.9 - - [05/Oct/2026:08:17:16 -0300] "GET /api/v1/imoveis/AUR-0280 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=11ms
+203.0.113.9 - - [05/Oct/2026:08:17:16 -0300] "GET /robots.txt HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=9ms
+192.0.2.88 - - [05/Oct/2026:08:17:43 -0300] "GET /robots.txt HTTP/1.1" 200 19048 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=95ms
+192.0.2.14 - - [05/Oct/2026:08:18:08 -0300] "GET /robots.txt HTTP/1.1" 200 19672 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=204ms
+198.51.100.57 - - [05/Oct/2026:08:18:21 -0300] "GET /api/v1/imoveis/AUR-0070 HTTP/1.1" 200 30631 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=558ms
+198.51.100.23 - - [05/Oct/2026:08:19:00 -0300] "GET /api/v1/imoveis/AUR-0234 HTTP/1.1" 200 39506 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=518ms
+203.0.113.9 - - [05/Oct/2026:08:19:27 -0300] "GET /api/v1/imoveis/AUR-0042 HTTP/1.1" 200 13241 "-" "python-requests/2.32.3" rt=678ms
+203.0.113.9 - - [05/Oct/2026:08:19:27 -0300] "GET /api/v1/imoveis?pagina=1 HTTP/1.1" 200 30240 "-" "python-requests/2.32.3" rt=46ms
+203.0.113.9 - - [05/Oct/2026:08:19:28 -0300] "GET /api/v1/imoveis/AUR-0162 HTTP/1.1" 200 18261 "-" "python-requests/2.32.3" rt=762ms
+203.0.113.9 - - [05/Oct/2026:08:19:28 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 25402 "-" "python-requests/2.32.3" rt=138ms
+203.0.113.9 - - [05/Oct/2026:08:19:28 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 2902 "-" "python-requests/2.32.3" rt=2517ms
+203.0.113.9 - - [05/Oct/2026:08:19:28 -0300] "GET /robots.txt HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=14ms
+203.0.113.9 - - [05/Oct/2026:08:19:28 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=15ms
+203.0.113.9 - - [05/Oct/2026:08:19:28 -0300] "GET /api/v1/imoveis/AUR-0170 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=13ms
+203.0.113.9 - - [05/Oct/2026:08:19:29 -0300] "HEAD /api/v1/imoveis?pagina=6 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=15ms
+203.0.113.9 - - [05/Oct/2026:08:19:29 -0300] "GET /api/v1/imoveis?pagina=1 HTTP/1.1" 200 24063 "-" "python-requests/2.32.3" rt=603ms
+203.0.113.9 - - [05/Oct/2026:08:19:29 -0300] "GET /sitemap.xml HTTP/1.1" 200 10959 "-" "python-requests/2.32.3" rt=672ms
+203.0.113.9 - - [05/Oct/2026:08:19:29 -0300] "GET /api/v1/imoveis/AUR-0006 HTTP/1.1" 200 3282 "-" "python-requests/2.32.3" rt=184ms
+192.0.2.88 - - [05/Oct/2026:08:19:35 -0300] "GET /api/v1/imoveis/AUR-0281 HTTP/1.1" 200 28280 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=425ms
+198.51.100.23 - - [05/Oct/2026:08:19:40 -0300] "GET /api/v1/imoveis?bairro=Petr%C3%B3polis&pagina=5 HTTP/1.1" 200 11250 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=768ms
+192.0.2.88 - - [05/Oct/2026:08:19:46 -0300] "GET /api/v1/imoveis/AUR-0244 HTTP/1.1" 200 4623 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=582ms
+192.0.2.14 - - [05/Oct/2026:08:20:25 -0300] "GET /sitemap.xml HTTP/1.1" 200 26320 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=34ms
+192.0.2.88 - - [05/Oct/2026:08:21:05 -0300] "GET /sobre HTTP/1.1" 301 0 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=845ms
+203.0.113.200 - - [05/Oct/2026:08:21:34 -0300] "GET /admin/ HTTP/1.1" 403 10994 "-" "BuscadorMalEducado/0.1" rt=497ms
+198.51.100.23 - - [05/Oct/2026:08:21:35 -0300] "GET /api/v1/imoveis/AUR-0081 HTTP/1.1" 200 20017 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=1659ms
+203.0.113.200 - - [05/Oct/2026:08:22:05 -0300] "GET /api/v1/imoveis/AUR-0145 HTTP/1.1" 200 376 "-" "BuscadorMalEducado/0.1" rt=220ms
+192.0.2.14 - - [05/Oct/2026:08:22:28 -0300] "GET /sitemap.xml HTTP/1.1" 200 21749 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=258ms
+192.0.2.14 - - [05/Oct/2026:08:22:32 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 11078 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=529ms
+192.0.2.14 - - [05/Oct/2026:08:22:39 -0300] "GET /api/v1/imoveis/AUR-0221 HTTP/1.1" 200 9867 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=506ms
+192.0.2.88 - - [05/Oct/2026:08:23:06 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 41406 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=36ms
+203.0.113.200 - - [05/Oct/2026:08:23:12 -0300] "GET /painel-corretor/login HTTP/1.1" 401 47241 "-" "BuscadorMalEducado/0.1" rt=162ms
+192.0.2.14 - - [05/Oct/2026:08:23:26 -0300] "GET /api/v1/imoveis?bairro=Bom%20Fim&pagina=3 HTTP/1.1" 200 21180 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=763ms
+198.51.100.23 - - [05/Oct/2026:08:23:34 -0300] "GET /robots.txt HTTP/1.1" 200 21180 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=607ms
+198.51.100.23 - - [05/Oct/2026:08:24:02 -0300] "GET /api/v1/imoveis/AUR-0146 HTTP/1.1" 200 30630 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=847ms
+198.51.100.57 - - [05/Oct/2026:08:24:19 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 200 8853 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=494ms
+192.0.2.14 - - [05/Oct/2026:08:24:43 -0300] "GET /api/v1/imoveis?bairro=Tristeza&pagina=6 HTTP/1.1" 200 19056 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=620ms
+203.0.113.200 - - [05/Oct/2026:08:24:49 -0300] "GET /api/v1/imoveis?bairro=Tristeza&pagina=2 HTTP/1.1" 200 39814 "-" "BuscadorMalEducado/0.1" rt=604ms
+203.0.113.200 - - [05/Oct/2026:08:25:23 -0300] "GET /robots.txt HTTP/1.1" 200 16474 "-" "BuscadorMalEducado/0.1" rt=730ms
+198.51.100.23 - - [05/Oct/2026:08:25:25 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 5622 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=243ms
+192.0.2.88 - - [05/Oct/2026:08:26:04 -0300] "GET /api/v1/imoveis?bairro=Petr%C3%B3polis&pagina=5 HTTP/1.1" 200 13630 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=97ms
+192.0.2.88 - - [05/Oct/2026:08:26:07 -0300] "GET /sitemap.xml HTTP/1.1" 200 22340 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=57ms
+198.51.100.57 - - [05/Oct/2026:08:26:23 -0300] "GET /api/v1/imoveis/AUR-0178 HTTP/1.1" 200 28221 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=516ms
+198.51.100.23 - - [05/Oct/2026:08:26:56 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 200 18641 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=66ms
+192.0.2.14 - - [05/Oct/2026:08:27:28 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 15476 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=1874ms
+198.51.100.57 - - [05/Oct/2026:08:27:38 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=2 HTTP/1.1" 200 33824 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=44ms
+192.0.2.14 - - [05/Oct/2026:08:28:05 -0300] "GET /api/v1/imoveis/AUR-0066 HTTP/1.1" 200 7826 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=711ms
+198.51.100.57 - - [05/Oct/2026:08:28:21 -0300] "GET /api/v1/imoveis/AUR-0066 HTTP/1.1" 200 6228 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=1940ms
+198.51.100.23 - - [05/Oct/2026:08:28:31 -0300] "GET /api/v1/imoveis/AUR-0045 HTTP/1.1" 200 43337 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=595ms
+203.0.113.9 - - [05/Oct/2026:08:28:51 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=3 HTTP/1.1" 200 34185 "-" "python-requests/2.32.3" rt=1657ms
+203.0.113.9 - - [05/Oct/2026:08:28:52 -0300] "GET /api/v1/imoveis?bairro=Bom%20Fim&pagina=3 HTTP/1.1" 200 4082 "-" "python-requests/2.32.3" rt=92ms
+203.0.113.9 - - [05/Oct/2026:08:28:52 -0300] "GET /api/v1/imoveis/AUR-0110 HTTP/1.1" 200 15235 "-" "python-requests/2.32.3" rt=335ms
+203.0.113.9 - - [05/Oct/2026:08:28:52 -0300] "GET /sobre HTTP/1.1" 301 0 "-" "python-requests/2.32.3" rt=328ms
+203.0.113.9 - - [05/Oct/2026:08:28:52 -0300] "GET /api/v1/imoveis/AUR-0303 HTTP/1.1" 404 13047 "-" "python-requests/2.32.3" rt=247ms
+203.0.113.9 - - [05/Oct/2026:08:28:52 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 10885 "-" "python-requests/2.32.3" rt=474ms
+203.0.113.9 - - [05/Oct/2026:08:28:53 -0300] "GET /robots.txt HTTP/1.1" 200 45607 "-" "python-requests/2.32.3" rt=1963ms
+203.0.113.9 - - [05/Oct/2026:08:28:53 -0300] "GET /robots.txt HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=6ms
+203.0.113.9 - - [05/Oct/2026:08:28:53 -0300] "GET /robots.txt HTTP/1.1" 200 17372 "-" "python-requests/2.32.3" rt=268ms
+203.0.113.9 - - [05/Oct/2026:08:28:53 -0300] "GET /api/v1/imoveis?bairro=Bom%20Fim&pagina=3 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=11ms
+203.0.113.9 - - [05/Oct/2026:08:28:53 -0300] "GET /api/v1/imoveis/AUR-0056 HTTP/1.1" 200 25143 "-" "python-requests/2.32.3" rt=458ms
+203.0.113.9 - - [05/Oct/2026:08:28:54 -0300] "GET /api/v1/imoveis/AUR-0150 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=7ms
+203.0.113.9 - - [05/Oct/2026:08:28:55 -0300] "GET /api/v1/imoveis/AUR-0072 HTTP/1.1" 200 13893 "-" "python-requests/2.32.3" rt=30ms
+203.0.113.9 - - [05/Oct/2026:08:28:55 -0300] "GET /api/v1/imoveis/AUR-0252 HTTP/1.1" 200 42323 "-" "python-requests/2.32.3" rt=735ms
+203.0.113.9 - - [05/Oct/2026:08:28:55 -0300] "GET /api/v1/imoveis?bairro=Tristeza&pagina=3 HTTP/1.1" 200 17896 "-" "python-requests/2.32.3" rt=558ms
+203.0.113.9 - - [05/Oct/2026:08:28:55 -0300] "GET /api/v1/imoveis/AUR-0309 HTTP/1.1" 404 13495 "-" "python-requests/2.32.3" rt=539ms
+203.0.113.9 - - [05/Oct/2026:08:28:55 -0300] "GET /robots.txt HTTP/1.1" 200 39902 "-" "python-requests/2.32.3" rt=158ms
+203.0.113.9 - - [05/Oct/2026:08:28:56 -0300] "GET /api/v1/imoveis/AUR-0260 HTTP/1.1" 200 675 "-" "python-requests/2.32.3" rt=415ms
+203.0.113.9 - - [05/Oct/2026:08:28:56 -0300] "GET /api/v1/imoveis/AUR-0066 HTTP/1.1" 200 41965 "-" "python-requests/2.32.3" rt=507ms
+203.0.113.9 - - [05/Oct/2026:08:28:56 -0300] "GET /api/v1/imoveis/AUR-0071 HTTP/1.1" 200 5620 "-" "python-requests/2.32.3" rt=61ms
+203.0.113.200 - - [05/Oct/2026:08:29:25 -0300] "GET /api/v1/imoveis/AUR-0126 HTTP/1.1" 200 46731 "-" "BuscadorMalEducado/0.1" rt=403ms
+192.0.2.88 - - [05/Oct/2026:08:29:26 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 200 42575 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=202ms
+198.51.100.23 - - [05/Oct/2026:08:29:41 -0300] "GET /api/v1/imoveis/AUR-0238 HTTP/1.1" 200 30465 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=1816ms
+198.51.100.57 - - [05/Oct/2026:08:29:57 -0300] "GET /api/v1/imoveis/AUR-0115 HTTP/1.1" 200 27344 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=2065ms
+192.0.2.14 - - [05/Oct/2026:08:30:12 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 9266 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=594ms
+192.0.2.14 - - [05/Oct/2026:08:30:18 -0300] "GET /api/v1/imoveis?bairro=Sarandi&pagina=6 HTTP/1.1" 200 8550 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=360ms
+198.51.100.23 - - [05/Oct/2026:08:30:26 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=4 HTTP/1.1" 200 805 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=483ms
+198.51.100.23 - - [05/Oct/2026:08:31:04 -0300] "GET /api/v1/imoveis/AUR-0201 HTTP/1.1" 200 27781 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=660ms
+203.0.113.200 - - [05/Oct/2026:08:31:44 -0300] "GET /api/v1/imoveis/AUR-0262 HTTP/1.1" 200 10636 "-" "BuscadorMalEducado/0.1" rt=446ms
+192.0.2.14 - - [05/Oct/2026:08:32:01 -0300] "GET /robots.txt HTTP/1.1" 200 10786 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=36ms
+203.0.113.9 - - [05/Oct/2026:08:32:04 -0300] "GET /api/v1/imoveis/AUR-0178 HTTP/1.1" 200 36364 "-" "python-requests/2.32.3" rt=126ms
+203.0.113.9 - - [05/Oct/2026:08:32:04 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 7081 "-" "python-requests/2.32.3" rt=498ms
+203.0.113.9 - - [05/Oct/2026:08:32:04 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 12774 "-" "python-requests/2.32.3" rt=159ms
+203.0.113.9 - - [05/Oct/2026:08:32:04 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 34057 "-" "python-requests/2.32.3" rt=473ms
+203.0.113.9 - - [05/Oct/2026:08:32:04 -0300] "GET /sitemap.xml HTTP/1.1" 200 21743 "-" "python-requests/2.32.3" rt=325ms
+203.0.113.9 - - [05/Oct/2026:08:32:05 -0300] "GET /api/v1/imoveis?bairro=Bom%20Fim&pagina=1 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=14ms
+203.0.113.9 - - [05/Oct/2026:08:32:05 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=11ms
+203.0.113.9 - - [05/Oct/2026:08:32:05 -0300] "GET /api/v1/imoveis?bairro=Menino%20Deus&pagina=2 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=6ms
+203.0.113.200 - - [05/Oct/2026:08:32:29 -0300] "GET /api/v1/imoveis/AUR-0289 HTTP/1.1" 200 1649 "-" "BuscadorMalEducado/0.1" rt=101ms
+192.0.2.88 - - [05/Oct/2026:08:33:07 -0300] "GET /robots.txt HTTP/1.1" 200 46442 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=53ms
+192.0.2.14 - - [05/Oct/2026:08:33:29 -0300] "GET /robots.txt HTTP/1.1" 500 36184 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=6543ms
+198.51.100.23 - - [05/Oct/2026:08:33:32 -0300] "GET /api/v1/imoveis?bairro=Tristeza&pagina=6 HTTP/1.1" 200 13137 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=553ms
+198.51.100.23 - - [05/Oct/2026:08:33:54 -0300] "GET /api/v1/imoveis/AUR-0016 HTTP/1.1" 200 11815 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=343ms
+198.51.100.57 - - [05/Oct/2026:08:34:33 -0300] "GET /api/v1/imoveis/AUR-0080 HTTP/1.1" 200 24772 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=731ms
+203.0.113.9 - - [05/Oct/2026:08:34:40 -0300] "GET /api/v1/imoveis?bairro=Tristeza&pagina=2 HTTP/1.1" 200 1577 "-" "python-requests/2.32.3" rt=730ms
+203.0.113.9 - - [05/Oct/2026:08:34:40 -0300] "GET /api/v1/imoveis/AUR-0270 HTTP/1.1" 200 11994 "-" "python-requests/2.32.3" rt=226ms
+203.0.113.9 - - [05/Oct/2026:08:34:40 -0300] "POST /contato HTTP/1.1" 200 41074 "-" "python-requests/2.32.3" rt=182ms
+203.0.113.9 - - [05/Oct/2026:08:34:40 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 31739 "-" "python-requests/2.32.3" rt=282ms
+203.0.113.9 - - [05/Oct/2026:08:34:41 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 200 27764 "-" "python-requests/2.32.3" rt=1299ms
+203.0.113.9 - - [05/Oct/2026:08:34:41 -0300] "GET /robots.txt HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=15ms
+203.0.113.9 - - [05/Oct/2026:08:34:41 -0300] "GET /api/v1/imoveis/AUR-0106 HTTP/1.1" 200 37884 "-" "python-requests/2.32.3" rt=502ms
+203.0.113.9 - - [05/Oct/2026:08:34:41 -0300] "GET /sitemap.xml HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=12ms
+203.0.113.9 - - [05/Oct/2026:08:34:41 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 38245 "-" "python-requests/2.32.3" rt=457ms
+203.0.113.9 - - [05/Oct/2026:08:34:42 -0300] "GET /api/v1/imoveis?bairro=Bom%20Fim&pagina=3 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=8ms
+203.0.113.9 - - [05/Oct/2026:08:34:42 -0300] "GET /api/v1/imoveis/AUR-0210 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=11ms
+192.0.2.88 - - [05/Oct/2026:08:35:09 -0300] "GET /robots.txt HTTP/1.1" 200 14593 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=22ms
+198.51.100.23 - - [05/Oct/2026:08:35:48 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=5 HTTP/1.1" 200 15424 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=646ms
+192.0.2.14 - - [05/Oct/2026:08:36:28 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 7499 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=223ms
+192.0.2.88 - - [05/Oct/2026:08:36:29 -0300] "GET /api/v1/imoveis/AUR-0128 HTTP/1.1" 200 29363 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=262ms
+198.51.100.23 - - [05/Oct/2026:08:36:46 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 40396 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=512ms
+192.0.2.14 - - [05/Oct/2026:08:37:21 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 32838 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=397ms
+192.0.2.14 - - [05/Oct/2026:08:37:31 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 200 45167 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=871ms
+192.0.2.14 - - [05/Oct/2026:08:38:04 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 19875 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=628ms
+192.0.2.88 - - [05/Oct/2026:08:38:09 -0300] "GET /api/v1/imoveis/AUR-0124 HTTP/1.1" 200 22398 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=472ms
+198.51.100.23 - - [05/Oct/2026:08:38:41 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 200 45075 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=55ms
+192.0.2.88 - - [05/Oct/2026:08:38:56 -0300] "GET /api/v1/imoveis/AUR-0186 HTTP/1.1" 200 12209 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=78ms
+192.0.2.14 - - [05/Oct/2026:08:39:06 -0300] "GET /api/v1/imoveis/AUR-0180 HTTP/1.1" 200 2559 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=502ms
+198.51.100.23 - - [05/Oct/2026:08:39:34 -0300] "GET /api/v1/imoveis/AUR-0203 HTTP/1.1" 200 1017 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=141ms
+203.0.113.200 - - [05/Oct/2026:08:40:09 -0300] "GET /api/v1/imoveis/AUR-0087 HTTP/1.1" 200 34255 "-" "BuscadorMalEducado/0.1" rt=691ms
+198.51.100.23 - - [05/Oct/2026:08:40:41 -0300] "GET /api/v1/imoveis?bairro=Tristeza&pagina=1 HTTP/1.1" 200 45171 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=129ms
+198.51.100.23 - - [05/Oct/2026:08:41:04 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 2754 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=693ms
+198.51.100.23 - - [05/Oct/2026:08:41:05 -0300] "GET /api/v1/imoveis/AUR-0082 HTTP/1.1" 200 44731 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=776ms
+198.51.100.23 - - [05/Oct/2026:08:41:14 -0300] "GET /sitemap.xml HTTP/1.1" 200 45111 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=888ms
+198.51.100.23 - - [05/Oct/2026:08:41:51 -0300] "GET /api/v1/imoveis/AUR-0262 HTTP/1.1" 200 32362 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=799ms
+203.0.113.9 - - [05/Oct/2026:08:42:17 -0300] "GET /sitemap.xml HTTP/1.1" 200 15293 "-" "python-requests/2.32.3" rt=332ms
+203.0.113.9 - - [05/Oct/2026:08:42:17 -0300] "GET /sitemap.xml HTTP/1.1" 200 1560 "-" "python-requests/2.32.3" rt=221ms
+203.0.113.9 - - [05/Oct/2026:08:42:17 -0300] "GET /robots.txt HTTP/1.1" 200 8534 "-" "python-requests/2.32.3" rt=22ms
+203.0.113.9 - - [05/Oct/2026:08:42:17 -0300] "GET /api/v1/imoveis/AUR-0149 HTTP/1.1" 200 37637 "-" "python-requests/2.32.3" rt=34ms
+203.0.113.9 - - [05/Oct/2026:08:42:18 -0300] "GET /api/v1/imoveis?bairro=Menino%20Deus&pagina=1 HTTP/1.1" 200 15651 "-" "python-requests/2.32.3" rt=623ms
+203.0.113.9 - - [05/Oct/2026:08:42:18 -0300] "GET /api/v1/imoveis/AUR-0097 HTTP/1.1" 200 4430 "-" "python-requests/2.32.3" rt=1933ms
+203.0.113.9 - - [05/Oct/2026:08:42:18 -0300] "GET /robots.txt HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=13ms
+203.0.113.9 - - [05/Oct/2026:08:42:18 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 17271 "-" "python-requests/2.32.3" rt=2759ms
+203.0.113.9 - - [05/Oct/2026:08:42:18 -0300] "GET /api/v1/imoveis/AUR-0089 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=15ms
+203.0.113.9 - - [05/Oct/2026:08:42:19 -0300] "GET /api/v1/imoveis/AUR-0034 HTTP/1.1" 200 38082 "-" "python-requests/2.32.3" rt=619ms
+198.51.100.57 - - [05/Oct/2026:08:42:45 -0300] "GET /api/v1/imoveis?bairro=Menino%20Deus&pagina=6 HTTP/1.1" 200 20548 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=23ms
+192.0.2.14 - - [05/Oct/2026:08:42:55 -0300] "GET /contato HTTP/1.1" 200 35349 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=266ms
+203.0.113.200 - - [05/Oct/2026:08:43:19 -0300] "GET /painel-corretor/ HTTP/1.1" 403 44931 "-" "BuscadorMalEducado/0.1" rt=645ms
+203.0.113.200 - - [05/Oct/2026:08:43:59 -0300] "GET /robots.txt HTTP/1.1" 200 26545 "-" "BuscadorMalEducado/0.1" rt=78ms
+192.0.2.14 - - [05/Oct/2026:08:44:15 -0300] "GET /api/v1/imoveis/AUR-0024 HTTP/1.1" 200 20068 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=320ms
+203.0.113.9 - - [05/Oct/2026:08:44:33 -0300] "GET /api/v1/imoveis/AUR-0273 HTTP/1.1" 200 10487 "-" "python-requests/2.32.3" rt=31ms
+203.0.113.9 - - [05/Oct/2026:08:44:33 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 18365 "-" "python-requests/2.32.3" rt=1502ms
+203.0.113.9 - - [05/Oct/2026:08:44:33 -0300] "GET /robots.txt HTTP/1.1" 200 22814 "-" "python-requests/2.32.3" rt=593ms
+203.0.113.9 - - [05/Oct/2026:08:44:33 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 200 6849 "-" "python-requests/2.32.3" rt=312ms
+203.0.113.9 - - [05/Oct/2026:08:44:33 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 25143 "-" "python-requests/2.32.3" rt=47ms
+203.0.113.9 - - [05/Oct/2026:08:44:34 -0300] "HEAD /sitemap.xml HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=8ms
+203.0.113.9 - - [05/Oct/2026:08:44:34 -0300] "GET /api/v1/imoveis/AUR-0003 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=10ms
+203.0.113.9 - - [05/Oct/2026:08:44:34 -0300] "GET /robots.txt HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=12ms
+203.0.113.9 - - [05/Oct/2026:08:44:34 -0300] "GET /api/v1/imoveis?bairro=Menino%20Deus&pagina=4 HTTP/1.1" 200 42915 "-" "python-requests/2.32.3" rt=112ms
+203.0.113.200 - - [05/Oct/2026:08:44:39 -0300] "GET /admin/ HTTP/1.1" 403 42251 "-" "BuscadorMalEducado/0.1" rt=761ms
+192.0.2.88 - - [05/Oct/2026:08:45:08 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 17263 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=211ms
+203.0.113.200 - - [05/Oct/2026:08:45:22 -0300] "GET /painel-corretor/login HTTP/1.1" 401 25758 "-" "BuscadorMalEducado/0.1" rt=245ms
+192.0.2.14 - - [05/Oct/2026:08:45:38 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 7754 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=516ms
+203.0.113.9 - - [05/Oct/2026:08:46:09 -0300] "HEAD /api/v1/imoveis?bairro=Tristeza&pagina=6 HTTP/1.1" 200 0 "-" "python-requests/2.32.3" rt=714ms
+203.0.113.9 - - [05/Oct/2026:08:46:09 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 200 40646 "-" "python-requests/2.32.3" rt=348ms
+203.0.113.9 - - [05/Oct/2026:08:46:10 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 30062 "-" "python-requests/2.32.3" rt=146ms
+203.0.113.9 - - [05/Oct/2026:08:46:10 -0300] "GET /api/v1/imoveis/AUR-0123 HTTP/1.1" 200 35510 "-" "python-requests/2.32.3" rt=585ms
+203.0.113.9 - - [05/Oct/2026:08:46:10 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 11772 "-" "python-requests/2.32.3" rt=120ms
+203.0.113.9 - - [05/Oct/2026:08:46:10 -0300] "GET /api/v1/imoveis?bairro=Petr%C3%B3polis&pagina=6 HTTP/1.1" 200 35166 "-" "python-requests/2.32.3" rt=23ms
+203.0.113.9 - - [05/Oct/2026:08:46:10 -0300] "GET /api/v1/imoveis/AUR-0065 HTTP/1.1" 200 27992 "-" "python-requests/2.32.3" rt=742ms
+203.0.113.9 - - [05/Oct/2026:08:46:10 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=15ms
+203.0.113.9 - - [05/Oct/2026:08:46:11 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=5ms
+203.0.113.9 - - [05/Oct/2026:08:46:11 -0300] "GET /api/v1/imoveis/AUR-0150 HTTP/1.1" 200 33729 "-" "python-requests/2.32.3" rt=793ms
+203.0.113.9 - - [05/Oct/2026:08:46:11 -0300] "GET /api/v1/imoveis?bairro=Petr%C3%B3polis&pagina=5 HTTP/1.1" 200 9040 "-" "python-requests/2.32.3" rt=617ms
+203.0.113.9 - - [05/Oct/2026:08:46:11 -0300] "GET /api/v1/imoveis/AUR-0162 HTTP/1.1" 200 11753 "-" "python-requests/2.32.3" rt=121ms
+203.0.113.200 - - [05/Oct/2026:08:46:48 -0300] "GET /painel-corretor/login HTTP/1.1" 401 8509 "-" "BuscadorMalEducado/0.1" rt=593ms
+192.0.2.88 - - [05/Oct/2026:08:47:22 -0300] "GET /api/v1/imoveis?bairro=Tristeza&pagina=4 HTTP/1.1" 200 18637 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=661ms
+198.51.100.23 - - [05/Oct/2026:08:47:26 -0300] "GET /api/v1/imoveis/AUR-0160 HTTP/1.1" 200 6879 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=628ms
+192.0.2.14 - - [05/Oct/2026:08:47:32 -0300] "GET /robots.txt HTTP/1.1" 200 44250 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=23ms
+198.51.100.23 - - [05/Oct/2026:08:47:38 -0300] "POST /contato HTTP/1.1" 500 11433 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=2462ms
+192.0.2.14 - - [05/Oct/2026:08:47:48 -0300] "GET /api/v1/imoveis?bairro=Petr%C3%B3polis&pagina=5 HTTP/1.1" 200 34065 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=423ms
+203.0.113.200 - - [05/Oct/2026:08:48:07 -0300] "GET /admin/ HTTP/1.1" 403 767 "-" "BuscadorMalEducado/0.1" rt=682ms
+203.0.113.9 - - [05/Oct/2026:08:48:23 -0300] "GET /api/v1/imoveis?pagina=1 HTTP/1.1" 200 23604 "-" "python-requests/2.32.3" rt=809ms
+203.0.113.9 - - [05/Oct/2026:08:48:23 -0300] "HEAD /sitemap.xml HTTP/1.1" 200 0 "-" "python-requests/2.32.3" rt=711ms
+203.0.113.9 - - [05/Oct/2026:08:48:24 -0300] "GET /api/v1/imoveis?bairro=Petr%C3%B3polis&pagina=4 HTTP/1.1" 200 45082 "-" "python-requests/2.32.3" rt=359ms
+203.0.113.9 - - [05/Oct/2026:08:48:24 -0300] "GET /api/v1/imoveis/AUR-0219 HTTP/1.1" 200 1614 "-" "python-requests/2.32.3" rt=26ms
+203.0.113.9 - - [05/Oct/2026:08:48:24 -0300] "GET /api/v1/imoveis/AUR-0074 HTTP/1.1" 200 23111 "-" "python-requests/2.32.3" rt=381ms
+203.0.113.9 - - [05/Oct/2026:08:48:24 -0300] "GET /robots.txt HTTP/1.1" 200 23452 "-" "python-requests/2.32.3" rt=808ms
+203.0.113.9 - - [05/Oct/2026:08:48:44 -0300] "GET /api/v1/imoveis/AUR-0001 HTTP/1.1" 200 7039 "-" "python-requests/2.32.3" rt=233ms
+203.0.113.9 - - [05/Oct/2026:08:48:44 -0300] "GET /sitemap.xml HTTP/1.1" 200 26739 "-" "python-requests/2.32.3" rt=428ms
+203.0.113.9 - - [05/Oct/2026:08:48:44 -0300] "GET /api/v1/imoveis/AUR-0224 HTTP/1.1" 200 20278 "-" "python-requests/2.32.3" rt=709ms
+203.0.113.9 - - [05/Oct/2026:08:48:45 -0300] "GET /api/v1/imoveis/AUR-0090 HTTP/1.1" 200 23098 "-" "python-requests/2.32.3" rt=295ms
+203.0.113.9 - - [05/Oct/2026:08:48:45 -0300] "GET /api/v1/imoveis?bairro=Petr%C3%B3polis&pagina=3 HTTP/1.1" 200 14382 "-" "python-requests/2.32.3" rt=80ms
+203.0.113.9 - - [05/Oct/2026:08:48:45 -0300] "HEAD /api/v1/imoveis?pagina=4 HTTP/1.1" 200 0 "-" "python-requests/2.32.3" rt=88ms
+203.0.113.9 - - [05/Oct/2026:08:48:45 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 27670 "-" "python-requests/2.32.3" rt=149ms
+203.0.113.9 - - [05/Oct/2026:08:48:45 -0300] "GET /api/v1/imoveis?bairro=Bom%20Fim&pagina=2 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=10ms
+203.0.113.9 - - [05/Oct/2026:08:48:46 -0300] "GET /sitemap.xml HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=10ms
+203.0.113.9 - - [05/Oct/2026:08:48:46 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=2 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=10ms
+203.0.113.9 - - [05/Oct/2026:08:48:46 -0300] "GET /api/v1/imoveis/AUR-0200 HTTP/1.1" 200 15119 "-" "python-requests/2.32.3" rt=676ms
+203.0.113.9 - - [05/Oct/2026:08:48:46 -0300] "GET /api/v1/imoveis/AUR-0213 HTTP/1.1" 200 42042 "-" "python-requests/2.32.3" rt=889ms
+198.51.100.57 - - [05/Oct/2026:08:49:26 -0300] "GET /robots.txt HTTP/1.1" 200 9490 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=827ms
+192.0.2.88 - - [05/Oct/2026:08:49:34 -0300] "GET /sobre HTTP/1.1" 301 0 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=610ms
+192.0.2.14 - - [05/Oct/2026:08:50:06 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 2098 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=842ms
+203.0.113.200 - - [05/Oct/2026:08:50:33 -0300] "GET /robots.txt HTTP/1.1" 200 47843 "-" "BuscadorMalEducado/0.1" rt=888ms
+192.0.2.88 - - [05/Oct/2026:08:51:13 -0300] "GET /api/v1/imoveis/AUR-0240 HTTP/1.1" 200 18656 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=1925ms
+203.0.113.200 - - [05/Oct/2026:08:51:24 -0300] "GET /painel-corretor/login HTTP/1.1" 403 15349 "-" "BuscadorMalEducado/0.1" rt=199ms
+192.0.2.14 - - [05/Oct/2026:08:51:44 -0300] "GET /robots.txt HTTP/1.1" 200 6767 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=452ms
+203.0.113.200 - - [05/Oct/2026:08:51:52 -0300] "GET /sitemap.xml HTTP/1.1" 200 37659 "-" "BuscadorMalEducado/0.1" rt=33ms
+203.0.113.200 - - [05/Oct/2026:08:52:31 -0300] "GET /robots.txt HTTP/1.1" 200 21238 "-" "BuscadorMalEducado/0.1" rt=886ms
+192.0.2.88 - - [05/Oct/2026:08:52:32 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 7643 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=216ms
+203.0.113.200 - - [05/Oct/2026:08:52:50 -0300] "GET /api/v1/imoveis/AUR-0254 HTTP/1.1" 200 46537 "-" "BuscadorMalEducado/0.1" rt=165ms
+203.0.113.200 - - [05/Oct/2026:08:53:12 -0300] "GET /api/v1/imoveis/AUR-0146 HTTP/1.1" 200 23040 "-" "BuscadorMalEducado/0.1" rt=599ms
+192.0.2.14 - - [05/Oct/2026:08:53:17 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=5 HTTP/1.1" 200 7189 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=579ms
+198.51.100.23 - - [05/Oct/2026:08:53:46 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 24826 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=790ms
+192.0.2.14 - - [05/Oct/2026:08:54:09 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 1763 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=766ms
+198.51.100.23 - - [05/Oct/2026:08:54:27 -0300] "GET /api/v1/imoveis/AUR-0252 HTTP/1.1" 200 33481 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=291ms
+198.51.100.57 - - [05/Oct/2026:08:54:44 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 500 30296 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=2078ms
+192.0.2.14 - - [05/Oct/2026:08:55:15 -0300] "GET /api/v1/imoveis/AUR-0228 HTTP/1.1" 200 5854 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=204ms
+198.51.100.23 - - [05/Oct/2026:08:55:35 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 200 38545 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=703ms
+198.51.100.23 - - [05/Oct/2026:08:55:47 -0300] "GET /robots.txt HTTP/1.1" 200 46712 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=692ms
+198.51.100.23 - - [05/Oct/2026:08:56:24 -0300] "GET / HTTP/1.1" 200 32627 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=238ms
+198.51.100.23 - - [05/Oct/2026:08:56:59 -0300] "GET /api/v1/imoveis?bairro=Sarandi&pagina=6 HTTP/1.1" 200 7330 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=842ms
+192.0.2.88 - - [05/Oct/2026:08:57:16 -0300] "POST /contato HTTP/1.1" 200 36902 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=1334ms
+203.0.113.9 - - [05/Oct/2026:08:57:26 -0300] "GET /api/v1/imoveis/AUR-0304 HTTP/1.1" 404 41145 "-" "python-requests/2.32.3" rt=602ms
+203.0.113.9 - - [05/Oct/2026:08:57:26 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=5 HTTP/1.1" 200 412 "-" "python-requests/2.32.3" rt=316ms
+203.0.113.9 - - [05/Oct/2026:08:57:27 -0300] "GET /api/v1/imoveis/AUR-0318 HTTP/1.1" 404 10931 "-" "python-requests/2.32.3" rt=285ms
+203.0.113.9 - - [05/Oct/2026:08:57:27 -0300] "GET /api/v1/imoveis/AUR-0193 HTTP/1.1" 200 14368 "-" "python-requests/2.32.3" rt=308ms
+192.0.2.14 - - [05/Oct/2026:08:57:55 -0300] "GET /robots.txt HTTP/1.1" 200 10055 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=880ms
+192.0.2.88 - - [05/Oct/2026:08:58:09 -0300] "GET /sitemap.xml HTTP/1.1" 200 33595 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=214ms
+203.0.113.200 - - [05/Oct/2026:08:58:20 -0300] "GET /admin/ HTTP/1.1" 401 22662 "-" "BuscadorMalEducado/0.1" rt=538ms
+192.0.2.14 - - [05/Oct/2026:08:58:55 -0300] "GET /api/v1/imoveis/AUR-0264 HTTP/1.1" 200 21840 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=354ms
+198.51.100.23 - - [05/Oct/2026:08:59:13 -0300] "GET /api/v1/imoveis/AUR-0166 HTTP/1.1" 200 43984 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=601ms
+198.51.100.23 - - [05/Oct/2026:08:59:52 -0300] "GET /api/v1/imoveis?bairro=Sarandi&pagina=6 HTTP/1.1" 200 17914 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=242ms
+192.0.2.14 - - [05/Oct/2026:09:00:19 -0300] "GET /api/v1/imoveis?bairro=Sarandi&pagina=5 HTTP/1.1" 200 24564 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=260ms
+192.0.2.88 - - [05/Oct/2026:09:00:36 -0300] "GET /api/v1/imoveis/AUR-0151 HTTP/1.1" 200 2095 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=329ms
+192.0.2.14 - - [05/Oct/2026:09:00:58 -0300] "GET /api/v1/imoveis/AUR-0073 HTTP/1.1" 200 35896 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=259ms
+203.0.113.9 - - [05/Oct/2026:09:01:05 -0300] "GET /api/v1/imoveis/AUR-0272 HTTP/1.1" 200 31026 "-" "python-requests/2.32.3" rt=619ms
+203.0.113.9 - - [05/Oct/2026:09:01:05 -0300] "GET /robots.txt HTTP/1.1" 200 31736 "-" "python-requests/2.32.3" rt=367ms
+203.0.113.9 - - [05/Oct/2026:09:01:05 -0300] "GET /api/v1/imoveis/AUR-0284 HTTP/1.1" 200 15280 "-" "python-requests/2.32.3" rt=629ms
+203.0.113.9 - - [05/Oct/2026:09:01:05 -0300] "GET /api/v1/imoveis/AUR-0298 HTTP/1.1" 200 10589 "-" "python-requests/2.32.3" rt=72ms
+203.0.113.9 - - [05/Oct/2026:09:01:05 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 35989 "-" "python-requests/2.32.3" rt=783ms
+203.0.113.9 - - [05/Oct/2026:09:01:06 -0300] "GET /sitemap.xml HTTP/1.1" 200 36509 "-" "python-requests/2.32.3" rt=742ms
+203.0.113.9 - - [05/Oct/2026:09:01:06 -0300] "GET /api/v1/imoveis/AUR-0198 HTTP/1.1" 200 36533 "-" "python-requests/2.32.3" rt=873ms
+198.51.100.23 - - [05/Oct/2026:09:01:36 -0300] "GET /sobre HTTP/1.1" 301 0 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=121ms
+192.0.2.88 - - [05/Oct/2026:09:01:56 -0300] "GET /api/v1/imoveis/AUR-0083 HTTP/1.1" 200 24299 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=523ms
+192.0.2.14 - - [05/Oct/2026:09:02:36 -0300] "GET /api/v1/imoveis/AUR-0017 HTTP/1.1" 200 44722 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=398ms
+192.0.2.88 - - [05/Oct/2026:09:02:38 -0300] "GET /robots.txt HTTP/1.1" 200 33167 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=648ms
+192.0.2.14 - - [05/Oct/2026:09:03:08 -0300] "GET /robots.txt HTTP/1.1" 200 40101 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=36ms
+192.0.2.88 - - [05/Oct/2026:09:03:29 -0300] "GET /robots.txt HTTP/1.1" 200 25272 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=403ms
+203.0.113.200 - - [05/Oct/2026:09:04:05 -0300] "GET /sobre HTTP/1.1" 301 0 "-" "BuscadorMalEducado/0.1" rt=435ms
+203.0.113.200 - - [05/Oct/2026:09:04:42 -0300] "HEAD /api/v1/imoveis/AUR-0035 HTTP/1.1" 200 0 "-" "BuscadorMalEducado/0.1" rt=891ms
+198.51.100.57 - - [05/Oct/2026:09:04:43 -0300] "GET /api/v1/imoveis?pagina=1 HTTP/1.1" 200 3848 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=760ms
+203.0.113.9 - - [05/Oct/2026:09:05:00 -0300] "GET /api/v1/imoveis?bairro=Sarandi&pagina=4 HTTP/1.1" 200 3422 "-" "python-requests/2.32.3" rt=258ms
+203.0.113.9 - - [05/Oct/2026:09:05:00 -0300] "GET /api/v1/imoveis?bairro=Tristeza&pagina=1 HTTP/1.1" 200 4065 "-" "python-requests/2.32.3" rt=706ms
+203.0.113.9 - - [05/Oct/2026:09:05:00 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 40266 "-" "python-requests/2.32.3" rt=701ms
+203.0.113.9 - - [05/Oct/2026:09:05:00 -0300] "GET /api/v1/imoveis/AUR-0238 HTTP/1.1" 200 9840 "-" "python-requests/2.32.3" rt=487ms
+203.0.113.9 - - [05/Oct/2026:09:05:00 -0300] "GET /api/v1/imoveis?bairro=Petr%C3%B3polis&pagina=4 HTTP/1.1" 200 43184 "-" "python-requests/2.32.3" rt=30ms
+203.0.113.9 - - [05/Oct/2026:09:05:01 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=7ms
+203.0.113.9 - - [05/Oct/2026:09:05:01 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=3 HTTP/1.1" 200 40767 "-" "python-requests/2.32.3" rt=208ms
+203.0.113.9 - - [05/Oct/2026:09:05:01 -0300] "GET /sitemap.xml HTTP/1.1" 200 7236 "-" "python-requests/2.32.3" rt=77ms
+203.0.113.9 - - [05/Oct/2026:09:05:01 -0300] "GET /sitemap.xml HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=15ms
+203.0.113.9 - - [05/Oct/2026:09:05:01 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=12ms
+203.0.113.9 - - [05/Oct/2026:09:05:01 -0300] "GET /api/v1/imoveis/AUR-0158 HTTP/1.1" 200 20075 "-" "python-requests/2.32.3" rt=660ms
+203.0.113.9 - - [05/Oct/2026:09:05:01 -0300] "GET /api/v1/imoveis?pagina=1 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=13ms
+203.0.113.9 - - [05/Oct/2026:09:05:18 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 200 19618 "-" "python-requests/2.32.3" rt=312ms
+203.0.113.9 - - [05/Oct/2026:09:05:19 -0300] "GET /robots.txt HTTP/1.1" 200 1797 "-" "python-requests/2.32.3" rt=317ms
+203.0.113.9 - - [05/Oct/2026:09:05:19 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 5196 "-" "python-requests/2.32.3" rt=158ms
+203.0.113.9 - - [05/Oct/2026:09:05:19 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 200 36841 "-" "python-requests/2.32.3" rt=775ms
+203.0.113.9 - - [05/Oct/2026:09:05:19 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 10671 "-" "python-requests/2.32.3" rt=402ms
+203.0.113.9 - - [05/Oct/2026:09:05:19 -0300] "GET /api/v1/imoveis/AUR-0085 HTTP/1.1" 200 20081 "-" "python-requests/2.32.3" rt=465ms
+203.0.113.9 - - [05/Oct/2026:09:05:19 -0300] "GET /api/v1/imoveis/AUR-0240 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=12ms
+203.0.113.9 - - [05/Oct/2026:09:05:20 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=6ms
+203.0.113.9 - - [05/Oct/2026:09:05:20 -0300] "GET /api/v1/imoveis?bairro=Sarandi&pagina=4 HTTP/1.1" 200 11420 "-" "python-requests/2.32.3" rt=637ms
+203.0.113.9 - - [05/Oct/2026:09:05:20 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=1 HTTP/1.1" 200 20794 "-" "python-requests/2.32.3" rt=821ms
+203.0.113.9 - - [05/Oct/2026:09:05:52 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 27817 "-" "python-requests/2.32.3" rt=648ms
+203.0.113.9 - - [05/Oct/2026:09:05:52 -0300] "GET /api/v1/imoveis/AUR-0256 HTTP/1.1" 200 45239 "-" "python-requests/2.32.3" rt=670ms
+203.0.113.9 - - [05/Oct/2026:09:05:52 -0300] "GET /api/v1/imoveis?bairro=Bom%20Fim&pagina=4 HTTP/1.1" 200 33123 "-" "python-requests/2.32.3" rt=496ms
+203.0.113.9 - - [05/Oct/2026:09:05:52 -0300] "GET /robots.txt HTTP/1.1" 200 8007 "-" "python-requests/2.32.3" rt=507ms
+203.0.113.9 - - [05/Oct/2026:09:05:52 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=6 HTTP/1.1" 200 7487 "-" "python-requests/2.32.3" rt=352ms
+203.0.113.9 - - [05/Oct/2026:09:05:53 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 200 21752 "-" "python-requests/2.32.3" rt=249ms
+203.0.113.9 - - [05/Oct/2026:09:05:53 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=4ms
+203.0.113.9 - - [05/Oct/2026:09:05:53 -0300] "GET /api/v1/imoveis?pagina=1 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=15ms
+203.0.113.9 - - [05/Oct/2026:09:05:53 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=2ms
+198.51.100.23 - - [05/Oct/2026:09:06:03 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=3 HTTP/1.1" 200 29909 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=253ms
+198.51.100.57 - - [05/Oct/2026:09:06:33 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 47255 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=388ms
+203.0.113.9 - - [05/Oct/2026:09:07:11 -0300] "GET /api/v1/imoveis/AUR-0167 HTTP/1.1" 200 18397 "-" "python-requests/2.32.3" rt=390ms
+203.0.113.9 - - [05/Oct/2026:09:07:11 -0300] "GET /sobre HTTP/1.1" 301 0 "-" "python-requests/2.32.3" rt=513ms
+203.0.113.9 - - [05/Oct/2026:09:07:12 -0300] "GET /api/v1/imoveis?bairro=Moinhos%20de%20Vento&pagina=4 HTTP/1.1" 200 27268 "-" "python-requests/2.32.3" rt=386ms
+203.0.113.9 - - [05/Oct/2026:09:07:12 -0300] "GET /contato HTTP/1.1" 200 19084 "-" "python-requests/2.32.3" rt=862ms
+203.0.113.9 - - [05/Oct/2026:09:07:12 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 200 22513 "-" "python-requests/2.32.3" rt=787ms
+203.0.113.9 - - [05/Oct/2026:09:07:12 -0300] "GET /api/v1/imoveis?pagina=1 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=2ms
+203.0.113.9 - - [05/Oct/2026:09:07:12 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=7ms
+203.0.113.9 - - [05/Oct/2026:09:07:13 -0300] "GET /api/v1/imoveis?bairro=Sarandi&pagina=6 HTTP/1.1" 200 20186 "-" "python-requests/2.32.3" rt=509ms
+203.0.113.9 - - [05/Oct/2026:09:07:13 -0300] "GET /api/v1/imoveis/AUR-0129 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=12ms
+203.0.113.9 - - [05/Oct/2026:09:07:13 -0300] "GET /api/v1/imoveis?bairro=Bom%20Fim&pagina=2 HTTP/1.1" 200 44307 "-" "python-requests/2.32.3" rt=315ms
+203.0.113.9 - - [05/Oct/2026:09:07:13 -0300] "GET /api/v1/imoveis?bairro=Petr%C3%B3polis&pagina=5 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=6ms
+203.0.113.9 - - [05/Oct/2026:09:07:13 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 200 1473 "-" "python-requests/2.32.3" rt=643ms
+203.0.113.200 - - [05/Oct/2026:09:07:36 -0300] "GET /admin/ HTTP/1.1" 403 21704 "-" "BuscadorMalEducado/0.1" rt=391ms
+203.0.113.200 - - [05/Oct/2026:09:08:07 -0300] "GET /api/v1/imoveis/AUR-0193 HTTP/1.1" 200 21116 "-" "BuscadorMalEducado/0.1" rt=413ms
+198.51.100.23 - - [05/Oct/2026:09:08:16 -0300] "GET /api/v1/imoveis/AUR-0222 HTTP/1.1" 200 46542 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=289ms
+198.51.100.23 - - [05/Oct/2026:09:08:34 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 35658 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=361ms
+192.0.2.14 - - [05/Oct/2026:09:08:53 -0300] "GET /api/v1/imoveis/AUR-0067 HTTP/1.1" 200 28500 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=157ms
+203.0.113.200 - - [05/Oct/2026:09:09:33 -0300] "GET /api/v1/imoveis/AUR-0250 HTTP/1.1" 200 1267 "-" "BuscadorMalEducado/0.1" rt=204ms
+203.0.113.9 - - [05/Oct/2026:09:10:13 -0300] "GET /api/v1/imoveis/AUR-0132 HTTP/1.1" 200 44152 "-" "python-requests/2.32.3" rt=483ms
+203.0.113.9 - - [05/Oct/2026:09:10:14 -0300] "GET /sobre HTTP/1.1" 500 15592 "-" "python-requests/2.32.3" rt=1801ms
+203.0.113.9 - - [05/Oct/2026:09:10:14 -0300] "GET /api/v1/imoveis?pagina=1 HTTP/1.1" 200 10938 "-" "python-requests/2.32.3" rt=433ms
+203.0.113.9 - - [05/Oct/2026:09:10:14 -0300] "GET / HTTP/1.1" 200 42470 "-" "python-requests/2.32.3" rt=691ms
+203.0.113.9 - - [05/Oct/2026:09:10:14 -0300] "GET /api/v1/imoveis/AUR-0127 HTTP/1.1" 200 42770 "-" "python-requests/2.32.3" rt=87ms
+203.0.113.9 - - [05/Oct/2026:09:10:15 -0300] "GET /api/v1/imoveis/AUR-0261 HTTP/1.1" 200 34453 "-" "python-requests/2.32.3" rt=1200ms
+203.0.113.9 - - [05/Oct/2026:09:10:15 -0300] "GET /api/v1/imoveis?pagina=5 HTTP/1.1" 429 0 "-" "python-requests/2.32.3" rt=5ms
+203.0.113.9 - - [05/Oct/2026:09:10:15 -0300] "GET /api/v1/imoveis/AUR-0078 HTTP/1.1" 200 14590 "-" "python-requests/2.32.3" rt=300ms
+203.0.113.9 - - [05/Oct/2026:09:10:15 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 200 35347 "-" "python-requests/2.32.3" rt=469ms
+192.0.2.14 - - [05/Oct/2026:09:10:39 -0300] "GET /api/v1/imoveis/AUR-0300 HTTP/1.1" 200 35135 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=294ms
+192.0.2.14 - - [05/Oct/2026:09:10:48 -0300] "GET /api/v1/imoveis/AUR-0115 HTTP/1.1" 500 41707 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=4768ms
+198.51.100.23 - - [05/Oct/2026:09:10:53 -0300] "GET /api/v1/imoveis?pagina=1 HTTP/1.1" 500 14178 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=3614ms
+198.51.100.23 - - [05/Oct/2026:09:11:23 -0300] "GET /api/v1/imoveis/AUR-0048 HTTP/1.1" 200 34304 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=590ms
+192.0.2.14 - - [05/Oct/2026:09:11:28 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 904 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=692ms
+192.0.2.14 - - [05/Oct/2026:09:11:46 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 46173 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=889ms
+198.51.100.23 - - [05/Oct/2026:09:12:12 -0300] "GET /api/v1/imoveis/AUR-0273 HTTP/1.1" 200 17104 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=226ms
+198.51.100.57 - - [05/Oct/2026:09:12:14 -0300] "GET /api/v1/imoveis?bairro=Tristeza&pagina=2 HTTP/1.1" 200 32492 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=260ms
+192.0.2.14 - - [05/Oct/2026:09:12:46 -0300] "GET /api/v1/imoveis?pagina=6 HTTP/1.1" 200 994 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=720ms
+198.51.100.23 - - [05/Oct/2026:09:12:48 -0300] "GET /sitemap.xml HTTP/1.1" 200 29364 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=394ms
+198.51.100.23 - - [05/Oct/2026:09:13:23 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 44385 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=256ms
+192.0.2.14 - - [05/Oct/2026:09:13:31 -0300] "GET /api/v1/imoveis/AUR-0186 HTTP/1.1" 200 36444 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=775ms
+192.0.2.14 - - [05/Oct/2026:09:14:10 -0300] "GET /api/v1/imoveis?pagina=2 HTTP/1.1" 200 12828 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=438ms
+203.0.113.200 - - [05/Oct/2026:09:14:22 -0300] "HEAD /api/v1/imoveis/AUR-0084 HTTP/1.1" 200 0 "-" "BuscadorMalEducado/0.1" rt=281ms
+192.0.2.14 - - [05/Oct/2026:09:14:44 -0300] "GET /api/v1/imoveis/AUR-0190 HTTP/1.1" 200 7573 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=58ms
+192.0.2.88 - - [05/Oct/2026:09:14:48 -0300] "GET /contato HTTP/1.1" 200 34011 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=501ms
+198.51.100.23 - - [05/Oct/2026:09:15:27 -0300] "GET /api/v1/imoveis/AUR-0248 HTTP/1.1" 200 21906 "-" "coletor-pucrs/1.0 (ana.souza@aluno.example.edu)" rt=660ms
+198.51.100.57 - - [05/Oct/2026:09:15:29 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 39197 "-" "pesquisa-imoveis/2.1 (+https://observatorio.example.org; dados@observatorio.example.org)" rt=27ms
+192.0.2.14 - - [05/Oct/2026:09:15:36 -0300] "GET /api/v1/imoveis?pagina=4 HTTP/1.1" 200 32340 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0 Safari/537.36" rt=892ms
+192.0.2.88 - - [05/Oct/2026:09:15:51 -0300] "GET /api/v1/imoveis/AUR-0232 HTTP/1.1" 200 9377 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=804ms
+192.0.2.88 - - [05/Oct/2026:09:15:54 -0300] "GET /api/v1/imoveis?pagina=3 HTTP/1.1" 200 27978 "https://aurora-imoveis.example.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 Safari/605.1.15" rt=302ms

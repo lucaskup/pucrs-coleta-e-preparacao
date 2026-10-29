@@ -38,7 +38,11 @@ aula3/
   livraria/ produtos/ tabela/ paises/    páginas dos exemplos dos slides
   catalogo/   mini-site com paginação, detalhe, sitemap.xml e robots.txt
   dinamica/   página montada por JavaScript + dados.json
-aula4/ … aula6/   ainda vazias
+aula4/  imoveis_aurora.csv (base sintética com problemas plantados)
+aula5/  (usa a base da aula 4)
+aula6/  imoveis_aurora.csv, casa_sul.json, bairros_poa.csv
+aulaN/pratica/   notebook do encontro síncrono N (encontroN.ipynb) e dados da prática
+ferramentas/     geradores determinísticos dos dados sintéticos (gerar_imoveis.py, gerar_log_acessos.py)
 ```
 
 ## Mapa de conteúdos por aula
@@ -154,6 +158,22 @@ O repositório é publicado via **GitHub Pages** em
 - Os decks estão em `/mnt/g/Meu Drive/Documentos/cursos/gpo/Coleta e Preparacao/2026/entrega/slides/`
   (`Aula 1.pptx`, `Aula 2.pptx`, `Aula 3.pptx`). **Atenção:** os slides internos do `Aula 2.pptx`
   estão rotulados como "Aula 3 · Parte 1/2" — numeração a conferir com o professor.
+
+## Decisões já tomadas (práticas dos encontros síncronos)
+
+- Mapeamento: **encontro N = aula N** para N = 1…6 (o encontro 1 também tem a ambientação, por isso
+  a prática dele dura só 15 min); o encontro 7 é revisão.
+- Ambiente dos alunos: **Google Colab**. Cada encontro tem `aulaN/pratica/encontroN.ipynb`, que lê os
+  dados direto do GitHub Pages. Os **gabaritos não ficam no repositório** (é público); vão para o
+  mediador junto com os slides.
+- Formato das atividades varia por aula, sempre com código: corrigir código de colega (E1, E2, E4,
+  E6), escrever código com revisão cruzada por checklist (E3), refazer gráficos e comparar medidas
+  (E5), estações com diário de decisões (E6).
+- Fio condutor dos encontros 3 a 6: a imobiliária fictícia **Aurora Imóveis** (Porto Alegre). Os
+  60 anúncios do site da aula 3 são os 60 primeiros da base de 300 das aulas 4 a 6. Bairros reais,
+  valores inventados; as "zonas" são um agrupamento didático.
+- Os dados são gerados por scripts determinísticos em `ferramentas/`. Ao regerar, os números de
+  referência citados nos READMEs e nos slides dos encontros precisam ser conferidos.
 
 ## Materiais de origem (fora do repositório)
 

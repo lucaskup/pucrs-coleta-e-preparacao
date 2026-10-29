@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aurora Imóveis — página 3</title>
+  <meta name="description" content="Anúncios fictícios de imóveis para praticar web scraping.">
+  <style>
+    :root { --fundo:#f5f6f8; --cartao:#fff; --texto:#1b1f24; --suave:#5a636e; --borda:#dfe3e8; --marca:#1d5c8c; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --fundo:#14171b; --cartao:#1d2126; --texto:#eceff3; --suave:#a4adb8; --borda:#2c323a; --marca:#7fb8e6;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--fundo); color:var(--texto); line-height:1.5;
+           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .conteudo { max-width: 1000px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+    a { color: var(--marca); }
+    h1 { font-size: 1.5rem; margin: 0 0 .2rem; }
+    .sub { color: var(--suave); margin: 0 0 1.2rem; }
+    .aviso { background:#fff8e1; border:1px solid #e8d48b; color:#5c4700; padding:.7rem .9rem;
+             border-radius:8px; margin:0 0 1.5rem; font-size:.85rem; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .aviso { background:#33290d; border-color:#6b5716; color:#f2e2b0; }
+    }
+    .resultados { display:grid; gap:1rem; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+    article.imovel { background:var(--cartao); border:1px solid var(--borda); border-radius:10px; padding:.9rem;
+                     display:flex; flex-direction:column; gap:.25rem; }
+    .imovel .tipo { font-size:.75rem; text-transform:uppercase; letter-spacing:.05em; color:var(--suave); margin:0; }
+    .imovel h2 { font-size:1rem; margin:0; line-height:1.3; }
+    .imovel h2 a { text-decoration:none; }
+    .imovel .bairro { margin:0; font-size:.9rem; }
+    .imovel .preco { margin:.2rem 0 0; font-weight:700; font-size:1.05rem; }
+    .imovel .preco.consulte { color:var(--suave); font-weight:600; }
+    ul.caracteristicas { list-style:none; padding:0; margin:.2rem 0 0; display:flex; gap:.6rem;
+                         flex-wrap:wrap; font-size:.85rem; color:var(--suave); }
+    .paginacao { list-style:none; display:flex; gap:1rem; justify-content:center; padding:0; margin:2rem 0 0; }
+    .paginacao .atual { color:var(--suave); }
+    dl.ficha { display:grid; grid-template-columns:max-content 1fr; gap:.35rem 1.2rem; background:var(--cartao);
+               border:1px solid var(--borda); border-radius:10px; padding:1rem 1.2rem; }
+    dl.ficha dt { font-weight:600; }
+    dl.ficha dd { margin:0; }
+    ul.comodidades { display:flex; flex-wrap:wrap; gap:.4rem; list-style:none; padding:0; }
+    ul.comodidades li { border:1px solid var(--borda); border-radius:999px; padding:.15rem .7rem; font-size:.85rem;
+                        background:var(--cartao); }
+    nav.trilha { font-size:.85rem; color:var(--suave); margin-bottom:1rem; }
+  </style>
+</head>
+<body>
+  <main class="conteudo">
+    <h1>Aurora Imóveis — Porto Alegre</h1>
+    <p class="sub">60 imóveis à venda · página 3 de 5</p>
+    <p class="aviso"><strong>Site fictício.</strong> Imobiliária, anúncios, endereços e preços foram inventados para a disciplina Coleta e Preparação de Dados (PUCRS Online). Os bairros existem; os valores, não.</p>
+    <section class="resultados">
+      <article class="imovel" data-codigo="AUR-0025">
+        <p class="tipo">Apartamento</p>
+        <h2><a href="imovel/aur-0025.html">Apartamento com 2 quartos em Sarandi</a></h2>
+        <p class="bairro">Sarandi</p>
+        <p class="preco">R$ 325.000</p>
+        <ul class="caracteristicas">
+          <li class="area">70 m²</li>
+          <li class="quartos">2 quartos</li>
+          <li class="vagas">1 vaga</li>
+        </ul>
+      </article>
+      <article class="imovel" data-codigo="AUR-0026">
+        <p class="tipo">Apartamento</p>
+        <h2><a href="imovel/aur-0026.html">Apartamento com 3 quartos em Bela Vista</a></h2>
+        <p class="bairro">Bela Vista</p>
+        <p class="preco">R$ 1.755.000</p>
+        <ul class="caracteristicas">
+          <li class="area">98 m²</li>
+          <li class="quartos">3 quartos</li>
+          <li class="vagas">1 vaga</li>
+        </ul>
+      </article>
+      <article class="imovel" data-codigo="AUR-0027">
+        <p class="tipo">Apartamento</p>
+        <h2><a href="imovel/aur-0027.html">Apartamento com 3 quartos em Cristal</a></h2>
+        <p class="bairro">Cristal</p>
+        <p class="preco">R$ 677.000</p>
+        <ul class="caracteristicas">
+          <li class="area">110,8 m²</li>
+          <li class="quartos">3 quartos</li>
+          <li class="vagas">2 vagas</li>
+        </ul>
+      </article>
+      <article class="imovel" data-codigo="AUR-0028">
+        <p class="tipo">Casa</p>
+        <h2><a href="imovel/aur-0028.html">Casa com 2 quartos em Partenon</a></h2>
+        <p class="bairro">Partenon</p>
+        <p class="preco">R$ 652.000</p>
+        <ul class="caracteristicas">
+          <li class="area">184 m²</li>
+          <li class="quartos">2 quartos</li>
+          <li class="vagas">2 vagas</li>
+        </ul>
+      </article>
+      <article class="imovel" data-codigo="AUR-0029">
+        <p class="tipo">Cobertura</p>
+        <h2><a href="imovel/aur-0029.html">Cobertura com 4 quartos em Tristeza</a></h2>
+        <p class="bairro">Tristeza</p>
+        <p class="preco">R$ 1.958.000</p>
+        <ul class="caracteristicas">
+          <li class="area">268,1 m²</li>
+          <li class="quartos">4 quartos</li>
+          <li class="vagas">2 vagas</li>
+        </ul>
+      </article>
+      <article class="imovel" data-codigo="AUR-0030">
+        <p class="tipo">Cobertura</p>
+        <h2><a href="imovel/aur-0030.html">Cobertura com 4 quartos em Jardim Lindóia</a></h2>
+        <p class="bairro">Jardim Lindóia</p>
+        <p class="preco">R$ 2.753.000</p>
+        <ul class="caracteristicas">
+          <li class="area">216,7 m²</li>
+          <li class="quartos">4 quartos</li>
+          <li class="vagas">1 vaga</li>
+        </ul>
+      </article>
+      <article class="imovel" data-codigo="AUR-0031">
+        <p class="tipo">Apartamento</p>
+        <h2><a href="imovel/aur-0031.html">Apartamento com 1 quarto em Jardim Botânico</a></h2>
+        <p class="bairro">Jardim Botânico</p>
+        <p class="preco">R$ 424.000</p>
+        <ul class="caracteristicas">
+          <li class="area">51,7 m²</li>
+          <li class="quartos">1 quarto</li>
+          <li class="vagas">3 vagas</li>
+        </ul>
+      </article>
+      <article class="imovel" data-codigo="AUR-0032">
+        <p class="tipo">Cobertura</p>
+        <h2><a href="imovel/aur-0032.html">Cobertura com 3 quartos em Partenon</a></h2>
+        <p class="bairro">Partenon</p>
+        <p class="preco">R$ 1.130.000</p>
+        <ul class="caracteristicas">
+          <li class="area">180,8 m²</li>
+          <li class="quartos">3 quartos</li>
+          <li class="vagas">2 vagas</li>
+        </ul>
+      </article>
+      <article class="imovel" data-codigo="AUR-0033">
+        <p class="tipo">Apartamento</p>
+        <h2><a href="imovel/aur-0033.html">Apartamento com 3 quartos em Petrópolis</a></h2>
+        <p class="bairro">Petrópolis</p>
+        <p class="preco">R$ 1.330.000</p>
+        <ul class="caracteristicas">
+          <li class="area">110 m²</li>
+          <li class="quartos">3 quartos</li>
+          <li class="vagas">1 vaga</li>
+        </ul>
+      </article>
+      <article class="imovel" data-codigo="AUR-0034">
+        <p class="tipo">Apartamento</p>
+        <h2><a href="imovel/aur-0034.html">Apartamento com 2 quartos em Bela Vista</a></h2>
+        <p class="bairro">Bela Vista</p>
+        <p class="preco">R$ 690.000</p>
+        <ul class="caracteristicas">
+          <li class="area">73,6 m²</li>
+          <li class="quartos">2 quartos</li>
+          <li class="vagas">sem vaga</li>
+        </ul>
+      </article>
+      <article class="imovel" data-codigo="AUR-0035">
+        <p class="tipo">Apartamento</p>
+        <h2><a href="imovel/aur-0035.html">Apartamento com 4 quartos em Menino Deus</a></h2>
+        <p class="bairro">Menino Deus</p>
+        <p class="preco">R$ 893.000</p>
+        <ul class="caracteristicas">
+          <li class="area">116,5 m²</li>
+          <li class="quartos">4 quartos</li>
+          <li class="vagas">3 vagas</li>
+        </ul>
+      </article>
+      <article class="imovel" data-codigo="AUR-0036">
+        <p class="tipo">Casa</p>
+        <h2><a href="imovel/aur-0036.html">Casa com 3 quartos em Rio Branco</a></h2>
+        <p class="bairro">Rio Branco</p>
+        <p class="preco">R$ 2.040.000</p>
+        <ul class="caracteristicas">
+          <li class="area">201 m²</li>
+          <li class="quartos">3 quartos</li>
+          <li class="vagas">sem vaga</li>
+        </ul>
+      </article>
+    </section>
+    <ul class="paginacao">
+      <li class="anterior"><a href="pagina-2.html" rel="prev">← anterior</a></li>
+      <li class="atual">página 3 de 5</li>
+      <li class="proxima"><a href="pagina-4.html" rel="next">próxima →</a></li>
+    </ul>
+  </main>
+</body>
+</html>

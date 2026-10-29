@@ -1,0 +1,307 @@
+codigo,tipo,bairro,zona,cep,endereco,preco,area_m2,quartos,banheiros,vagas,condominio,iptu_anual,ano_construcao,andar,conservacao,aceita_pet,comodidades,data_anuncio
+AUR-0001,Apartamento,Partenon,Leste,90610190,"Rua Quatro Ventos, 427",839000.0,119.0,4,5,2,990.0,2980.0,1996,5,Bom,sim,Elevador;Playground;Portaria 24h;Sacada,2026-02-25
+AUR-0002,Casa,Cidade Baixa,Centro,90050478,"Travessa da Aurora, 528",2288000.0,246.0,4,4,1,0.0,8630.0,2016,,Ótimo,sim,Sacada,2026-08-09
+AUR-0003,Apartamento,Partenon,Leste,90610240,"Avenida do Lago, 1675",350000.0,77.0,2,2,2,750.0,1110.0,1973,14,Regular,sim,Elevador;Portaria 24h,2026-09-08
+AUR-0004,Casa,Bom Fim,Centro,90035705,"Rua dos Ipês, 1206",2425000.0,229.0,3,2,1,0.0,10370.0,2006,,Ótimo,sim,Churrasqueira;Sacada,2026-08-25
+AUR-0005,Apartamento,Cidade Baixa,Centro,90050892,"Rua Sete Estrelas, 2368",660000.0,78.0,2,1,1,840.0,1920.0,1993,3,Bom,sim,Playground;Portaria 24h,2026-05-06
+AUR-0006,Apartamento,Menino Deus,Sul,90130644,"Rua do Mirante, 712",785000.0,72.6,2,2,1,750.0,2970.0,1988,2,Ótimo,sim,Churrasqueira;Playground,2026-08-05
+AUR-0007,Apartamento,Menino Deus,Sul,90130716,"Rua dos Ipês, 579",493000.0,65.0,2,2,0,,1440.0,1962,13,Precisa de reforma,sim,Elevador;Sacada,2026-01-18
+AUR-0008,Apartamento,Bela Vista,Centro,90450607,"Rua do Farol, 448",1057000.0,74.0,2,2,0,650.0,4530.0,1975,6,Bom,sim,Elevador;Portaria 24h,2026-06-23
+AUR-0009,Apartamento,Tristeza,Sul,91920431,"Travessa da Aurora, 2245",923000.0,106.0,3,3,1,1000.0,3300.0,1975,2,Regular,sim,Piscina;Portaria 24h,2026-07-11
+AUR-0010,Apartamento,Sarandi,Norte,91140713,"Rua da Ponte Velha, 919",446000.0,93.5,3,4,1,1020.0,1600.0,2007,11,Regular,não,Academia;Bicicletário;Churrasqueira;Elevador;Sacada,2026-04-05
+AUR-0011,Casa,Centro Histórico,Centro,90010511,"Rua do Mirante, 1763",1660000.0,283.2,5,4,3,0.0,5780.0,2002,,Bom,sim,Churrasqueira;Sacada,2026-06-14
+AUR-0012,Apartamento,Jardim Botânico,Leste,90690512,"Rua da Ponte Velha, 2071",331000.0,44.0,1,1,2,320.0,990.0,1981,13,Bom,não,Churrasqueira;Elevador;Sacada,2026-03-19
+AUR-0013,Apartamento,Passo d'Areia,Norte,91350469,"Rua dos Ipês, 735",461000.0,62.0,2,1,0,600.0,1450.0,1993,18,Bom,não,Bicicletário;Elevador;Playground;Salão de festas,2026-04-29
+AUR-0014,Apartamento,Partenon,Leste,90610404,"Rua Sete Estrelas, 774",372000.0,70.0,2,2,1,620.0,970.0,1987,11,Bom,sim,Bicicletário;Elevador;Sacada,2026-09-10
+AUR-0015,Casa,Partenon,Leste,90610066,"Rua das Hortênsias, 1445",707000.0,218.0,2,2,1,0.0,2790.0,1987,,Precisa de reforma,sim,,2026-07-09
+AUR-0016,Apartamento,Bela Vista,Centro,90450808,"Rua do Farol, 299",946000.0,78.0,2,1,1,650.0,2880.0,2001,18,Bom,sim,Bicicletário;Elevador;Playground;Salão de festas,2026-07-31
+AUR-0017,Apartamento,Cidade Baixa,Centro,90050734,"Rua dos Jacarandás, 1088",414000.0,45.0,1,2,1,410.0,1370.0,2004,9,Bom,não,Bicicletário;Elevador;Playground,2026-06-15
+AUR-0018,Casa,Partenon,Leste,90610067,"Rua do Farol, 1910",1058000.0,289.9,4,4,1,0.0,4100.0,1968,,Precisa de reforma,sim,Churrasqueira,2026-01-15
+AUR-0019,Apartamento,Sarandi,Norte,91140193,"Avenida do Lago, 1673",394000.0,91.0,3,3,1,870.0,1170.0,2025,3,Regular,sim,Academia;Bicicletário;Churrasqueira;Piscina;Playground,2026-01-11
+AUR-0020,Apartamento,Partenon,Leste,90610060,"Travessa da Aurora, 1028",517000.0,94.0,3,3,1,820.0,2080.0,2016,4,otimo,sim,Churrasqueira;Elevador;Piscina;Playground;Portaria 24h;Sacada;Salão de festas,2026-05-18
+AUR-0021,Apartamento,Partenon,Leste,90610561,"Rua dos Ipês, 2153",315000.0,68.0,2,1,2,530.0,980.0,1982,1,Regular,não,Churrasqueira,2026-02-11
+AUR-0022,Apartamento,Sarandi,Norte,91140557,"Rua da Ponte Velha, 257",320000.0,88.0,2,3,1,690.0,920.0,1978,14,Regular,sim,Churrasqueira;Elevador;Playground,2026-03-27
+AUR-0023,Apartamento,Menino Deus,Sul,90130116,"Rua do Mirante, 916",484000.0,62.0,2,1,1,700.0,1990.0,1972,14,Regular,não,Academia;Churrasqueira;Piscina;Playground,2026-03-11
+AUR-0024,Apartamento,Partenon,Leste,90610728,"Rua Quatro Ventos, 2048",296000.0,77.0,2,2,1,800.0,840.0,1978,2,Precisa de reforma,não,Churrasqueira,2026-07-14
+AUR-0025,Apartamento,Sarandi,Norte,91140540,"Rua da Ponte Velha, 207",325000.0,70.0,2,3,1,600.0,840.0,1996,10,Bom,sim,Elevador;Sacada;Salão de festas,2026-06-26
+AUR-0026,Apartamento,Bela Vista,Centro,90450741,"Rua do Farol, 332",1755000.0,98.0,3,3,1,980.0,7430.0,2003,8,Bom,sim,Bicicletário;Elevador,2026-01-10
+AUR-0027,Apartamento,Cristal,Sul,90820768,"Travessa da Aurora, 1839",677000.0,110.8,3,3,2,1260.0,2730.0,1970,1,Precisa de reforma,não,Academia;Salão de festas,2026-04-01
+AUR-0028,Casa,Partenon,Leste,90610660,"Rua Quatro Ventos, 1953",652000.0,184.0,2,1,2,0.0,2680.0,2000,,Regular,sim,Churrasqueira;Sacada,2026-03-28
+AUR-0029,Cobertura,Tristeza,Sul,91920556,"Avenida das Palmeiras, 1246",1958000.0,268.1,4,4,2,,6970.0,2002,6,Regular,sim,Elevador;Playground;Portaria 24h,2026-03-06
+AUR-0030,Cobertura,Jardim Lindóia,Norte,91050957,"Avenida do Lago, 164",2753000.0,216.7,4,5,1,2060.0,10770.0,1983,7,Bom,sim,Academia;Churrasqueira;Elevador;Playground;Portaria 24h;Sacada,2026-07-18
+AUR-0031,Apartamento,Jardim Botânico,Leste,90690434,"Rua das Hortênsias, 2037",424000.0,51.7,1,1,3,460.0,1780.0,2019,17,Bom,não,Churrasqueira;Elevador;Playground;Portaria 24h;Sacada;Salão de festas,2026-05-26
+AUR-0032,Cobertura,Partenon,Leste,90610490,"Avenida das Palmeiras, 2029",1130000.0,180.8,3,2,2,1470.0,4530.0,1971,18,Regular,não,Elevador;Portaria 24h,2026-02-12
+AUR-0033,Apartamento,Petrópolis,Leste,90460479,"Rua do Farol, 582",1330000.0,110.0,3,3,1,1040.0,3530.0,2022,11,Ótimo,sim,Churrasqueira;Elevador;Piscina;Playground;Portaria 24h;Salão de festas,2026-02-08
+AUR-0034,Apartamento,Bela Vista,Centro,90450937,"Rua dos Jacarandás, 1466",690000.0,73.6,2,2,0,660.0,2650.0,1964,13,Regular,não,Elevador;Piscina;Playground;Portaria 24h;Sacada;Salão de festas,2026-03-04
+AUR-0035,Apartamento,Menino Deus,Sul,90130608,"Avenida do Lago, 39",893000.0,116.5,4,3,3,1160.0,3360.0,2025,12,Bom,sim,Elevador;Piscina;Playground;Sacada;Salão de festas,2026-06-15
+AUR-0036,Casa,Rio Branco,Centro,90420045,"Rua das Acácias, 2363",2040000.0,201.0,3,2,0,0.0,6450.0,2019,,Ótimo,sim,Churrasqueira;Piscina;Sacada,2026-02-23
+AUR-0037,Studio,Sarandi,Norte,91140270,"Rua das Acácias, 401",183000.0,34.0,1,1,1,430.0,580.0,2015,7,Bom,não,Bicicletário;Elevador;Piscina;Portaria 24h;Sacada,2026-07-28
+AUR-0038,Apartamento,Moinhos de Vento,Centro,90570229,"Rua das Hortênsias, 1200",863000.0,85.0,2,3,0,820.0,3400.0,0,18,Precisa de reforma,sim,Bicicletário;Churrasqueira;Elevador;Portaria 24h,2026-03-21
+AUR-0039,Casa,Partenon,Leste,90610981,"Rua dos Ipês, 547",1053000.0,257.2,5,5,1,0.0,4500.0,1964,,Regular,sim,Churrasqueira,2026-04-24
+AUR-0040,Casa,Menino Deus,Sul,90130485,"Rua da Ponte Velha, 130",2008000.0,210.0,2,3,2,0.0,8230.0,2019,,Ótimo,sim,Churrasqueira,2026-03-03
+AUR-0041,Apartamento,Cristal,Sul,90820409,"Rua dos Jacarandás, 2230",416000.0,82.7,2,2,0,730.0,1790.0,1976,1,Precisa de reforma,sim,Playground,2026-01-27
+AUR-0042,Casa,Ipanema,Sul,91760203,"Rua do Farol, 1759",1711000.0,286.0,5,4,2,0.0,4650.0,0,,Regular,sim,Churrasqueira,2026-02-27
+AUR-0043,Apartamento,Bela Vista,Centro,90450858,"Rua da Ponte Velha, 630",1028000.0,95.9,3,3,0,1040.0,3240.0,1992,18,Precisa de reforma,não,Elevador,2026-07-13
+AUR-0044,Studio,Partenon,Leste,90610415,"Rua do Mirante, 1658",126000.0,26.0,1,1,0,290.0,420.0,1968,14,Regular,sim,Elevador;Portaria 24h;Sacada;Salão de festas,2026-07-25
+AUR-0045,Apartamento,Jardim Lindóia,Norte,91050308,"Rua do Mirante, 1518",652000.0,89.0,3,4,0,980.0,2330.0,1988,9,Bom,não,Academia;Portaria 24h;Sacada,2026-06-28
+AUR-0046,Casa,Petrópolis,Leste,90460942,"Rua Quatro Ventos, 1017",2893000.0,293.0,4,4,0,0.0,7310.0,2020,,Ótimo,sim,Churrasqueira;Piscina;Sacada,2026-03-02
+AUR-0047,Apartamento,Centro Histórico,Centro,90010741,"Avenida do Lago, 2146",377000.0,64.0,2,2,1,,1550.0,1963,5,Precisa de reforma,sim,Elevador;Piscina;Portaria 24h;Salão de festas,2026-03-23
+AUR-0048,Apartamento,Bela Vista,Centro,90450593,"Rua do Farol, 48",728000.0,85.0,2,3,1,880.0,2610.0,1990,14,Precisa de reforma,sim,Bicicletário;Churrasqueira;Elevador;Portaria 24h;Salão de festas,2026-05-09
+AUR-0049,Apartamento,Cidade Baixa,Centro,90050354,"Rua da Ponte Velha, 176",492000.0,66.0,2,3,1,550.0,2050.0,1986,6,Precisa de reforma,não,Elevador;Playground;Sacada,2026-03-21
+AUR-0050,Casa,Passo d'Areia,Norte,91350594,"Travessa da Aurora, 2223",1551000.0,248.0,4,3,1,0.0,4640.0,2002,,Bom,sim,Sacada,2026-06-15
+AUR-0051,Apartamento,Cristal,Sul,90820281,"Rua da Ponte Velha, 29",492000.0,81.0,2,1,1,860.0,2190.0,2015,11,Bom,sim,Bicicletário;Churrasqueira;Piscina;Portaria 24h;Sacada,2026-02-18
+AUR-0052,Apartamento,Passo d'Areia,Norte,91350150,"Rua das Acácias, 1267",333000.0,70.0,1,1,2,560.0,830.0,1980,1,Precisa de reforma,sim,Churrasqueira;Portaria 24h,2026-02-27
+AUR-0053,Cobertura,Bom Fim,Centro,90035484,"Rua dos Jacarandás, 779",2940000.0,274.0,4,4,3,2470.0,7430.0,1969,14,Precisa de reforma,sim,Elevador;Sacada,2026-01-10
+AUR-0054,Apartamento,Cristal,Sul,90820702,"Avenida do Lago, 413",506000.0,90.0,2,3,2,750.0,1800.0,1975,6,Precisa de reforma,sim,Academia;Salão de festas,2026-06-11
+AUR-0055,Casa,Bela Vista,Centro,90450132,"Avenida do Lago, 1167",3481000.0,310.0,5,5,1,0.0,11680.0,1996,,Bom,sim,Churrasqueira;Sacada,2026-02-06
+AUR-0056,Apartamento,Jardim Lindóia,Norte,91050699,"Rua dos Jacarandás, 1408",741000.0,84.0,2,2,0,610.0,2240.0,1982,1,Bom,não,,2026-09-08
+AUR-0057,Apartamento,Bela Vista,Centro,90450968,"Avenida do Lago, 482",1387000.0,107.0,3,2,1,940.0,6090.0,2012,8,Ótimo,sim,Academia;Churrasqueira;Elevador;Piscina;Playground;Salão de festas,2026-07-02
+AUR-0058,Cobertura,Bela Vista,Centro,90450573,"Rua do Farol, 1678",3091000.0,201.0,3,4,2,1620.0,8690.0,1996,6,Regular,sim,Elevador;Portaria 24h;Sacada,2026-07-02
+AUR-0059,Casa,Sarandi,Norte,91140012,"Rua das Hortênsias, 1901",786000.0,230.0,4,4,3,0.0,2950.0,1992,,Regular,sim,Churrasqueira,2026-05-26
+AUR-0060,Apartamento,Moinhos de Vento,Centro,90570429,"Rua das Hortênsias, 1520",14560000.0,107.0,3,3,1,1100.0,3650.0,1980,12,Bom,sim,Elevador;Portaria 24h;Sacada,2026-06-24
+AUR-0061,Casa,Ipanema,Sul,91760238,"Rua do Farol, 981",1549000.0,280.0,4,4,1,0.0,4460.0,2008,,Precisa de reforma,sim,Churrasqueira,2026-04-13
+AUR-0062,Apartamento,Sarandi,Norte,91140276,"Rua dos Jacarandás, 1655",369000.0,88.4,2,3,3,840.0,1180.0,1993,11,Precisa de reforma,não,Churrasqueira;Elevador;Salão de festas,2026-03-26
+AUR-0063,Cobertura,Jardim Botânico,Leste,90690751,"Rua do Mirante, 1501",1513000.0,198.0,3,3,2,1820.0,5730.0,2008,9,Regular,não,Churrasqueira;Elevador;Playground;Sacada;Salão de festas,2026-03-28
+AUR-0064,Cobertura,Petrópolis,Leste,90460599,"Rua das Acácias, 848",2612000.0,177.1,4,3,1,1780.0,9590.0,2021,11,Ótimo,não,Bicicletário;Churrasqueira;Elevador;Piscina;Portaria 24h;Sacada,2026-07-10
+AUR-0065,Apartamento,Rio Branco,Centro,90420768,"Rua do Farol, 336",907000.0,95.0,2,3,1,770.0,2720.0,1982,1,Regular,não,Sacada;Salão de festas,2026-07-24
+AUR-0066,Apartamento,Menino Deus,Sul,90130623,"Rua dos Ipês, 523",1126000.0,104.0,3,3,1,1060.0,4300.0,1998,8,Bom,sim,Academia;Elevador;Portaria 24h;Salão de festas,2026-03-13
+AUR-0067,Casa,Tristeza,Sul,91920630,"Rua das Hortênsias, 1411",1730000.0,261.0,5,4,2,0.0,4630.0,1999,,Bom,sim,Churrasqueira;Sacada,2026-03-20
+AUR-0068,Apartamento,Rio Branco,Centro,90420198,"Rua do Mirante, 981",1074000.0,109.0,3,4,1,1200.0,3320.0,2021,16,Ótimo,sim,Bicicletário;Churrasqueira;Elevador;Playground;Portaria 24h;Sacada;Salão de festas,2026-05-12
+AUR-0069,Cobertura,Jardim Botânico,Leste,90690177,"Travessa da Aurora, 1352",1468000.0,176.0,4,3,1,1440.0,5000.0,2004,19,Bom,não,Elevador,2026-05-22
+AUR-0070,Apartamento,Cidade Baixa,Centro,90050883,"Rua da Ponte Velha, 2380",371000.0,49.0,1,1,2,490.0,1130.0,1972,4,Regular,não,Bicicletário;Elevador;Playground;Sacada,2026-02-25
+AUR-0071,Apartamento,Rio Branco,Centro,90420850,"Rua dos Jacarandás, 1748",851000.0,79.1,2,1,1,920.0,2380.0,2022,6,Ótimo,não,Academia;Churrasqueira;Elevador;Piscina;Playground;Portaria 24h;Sacada;Salão de festas,2026-02-22
+AUR-0072,Casa,Sarandi,Norte,91140261,"Travessa da Aurora, 1788",,264.8,3,3,1,0.0,2600.0,1979,,Precisa de reforma,sim,Churrasqueira,2026-07-08
+AUR-0073,Apartamento,Rio Branco,Centro,90420112,"Rua Sete Estrelas, 1077",879000.0,123.0,4,4,1,1140.0,3040.0,1978,3,Precisa de reforma,não,Academia,2026-04-03
+AUR-0074,Apartamento,Passo d'Areia,Norte,91350786,"Rua dos Ipês, 601",507000.0,64.0,2,2,1,590.0,1690.0,2006,6,Ótimo,não,Academia;Bicicletário;Elevador;Portaria 24h;Sacada;Salão de festas,2026-04-23
+AUR-0075,Cobertura,Cidade Baixa,Centro,90050085,"Rua das Acácias, 1282",1721000.0,149.0,3,2,2,1640.0,7240.0,1995,12,Bom,sim,Churrasqueira;Elevador,2026-07-30
+AUR-0076,Apartamento,Ipanema,Sul,91760321,"Avenida do Lago, 1274",532000.0,72.0,2,3,1,830.0,1980.0,2014,15,Ótimo,não,Churrasqueira;Elevador;Portaria 24h;Salão de festas,2026-04-12
+AUR-0077,Apartamento,Passo d'Areia,Norte,91350761,"Rua do Farol, 1865",415000.0,81.0,2,3,1,780.0,1720.0,1978,3,Regular,não,Bicicletário;Churrasqueira,2026-07-06
+AUR-0078,Apartamento,Petropolis,Leste,90460730,"Rua Sete Estrelas, 2375",938000.0,98.0,3,3,1,1230.0,3280.0,1969,14,Precisa de reforma,sim,Academia;Elevador;Piscina;Portaria 24h;Sacada;Salão de festas,2026-09-01
+AUR-0079,Apartamento,Jardim Botânico,Leste,90690777,"Rua das Hortênsias, 1343",,70.0,2,3,2,600.0,1430.0,1983,12,Precisa de reforma,não,Churrasqueira;Elevador,2026-06-02
+AUR-0080,Apartamento,Petropolis,Leste,90460701,"Rua dos Jacarandás, 1503",816000.0,74.0,2,2,1,680.0,2350.0,2001,16,Bom,sim,Churrasqueira;Elevador;Playground,2026-02-15
+AUR-0081,Cobertura,Centro Histórico,Centro,90010457,"Rua dos Jacarandás, 2101",1030000.0,155.0,3,4,2,1530.0,2900.0,1982,21,Precisa de reforma,não,Elevador;Sacada,2026-05-02
+AUR-0082,Apartamento,Petrópolis,Leste,90460124,"Travessa da Aurora, 602",534000.0,70.0,2,3,2,780.0,2130.0,1966,13,Precisa de reforma,sim,Academia;Elevador;Salão de festas,2026-03-07
+AUR-0083,Apartamento,Jardim Botânico,Leste,90690448,"Rua do Mirante, 407",448000.0,58.0,1,1,1,570.0,1790.0,2003,18,Bom,não,Bicicletário;Portaria 24h;Sacada;Salão de festas,2026-03-09
+AUR-0201,Apartamento,Ipanema,Sul,91760636,"Avenida do Lago, 1163",761000.0,108.0,3,3,1,980.0,3160.0,1992,7,Bom,sim,Academia;Elevador;Sacada;Salão de festas,2026-03-28
+AUR-0084,Apartamento,Jardim Botânico,Leste,90690175,"Rua das Acácias, 1160",547000.0,85.0,2,3,1,620.0,1380.0,1995,1,Regular,sim,,2026-08-18
+AUR-0085,Apartamento,Tristeza,Sul,91920902,"Rua Quatro Ventos, 1097",731000.0,85.0,2,2,3,760.0,1880.0,1962,3,Bom,não,,2026-06-09
+AUR-0086,Apartamento,Cristal,Sul,90820445,"Rua dos Jacarandás, 1928",303000.0,55.0,1,1,2,750.0,820.0,2013,2,Regular,sim,Academia;Bicicletário;Churrasqueira;Piscina;Playground;Portaria 24h;Sacada;Salão de festas,2026-08-20
+AUR-0087,Apartamento,Cristal,Sul,90820193,"Rua dos Ipês, 1233",468000.0,77.8,2,2,1,710.0,2020.0,1970,15,Regular,sim,Academia;Churrasqueira;Elevador;Piscina;Playground;Salão de festas,2026-03-27
+AUR-0088,Studio,Centro Histórico,Centro,90010966,"Avenida do Lago, 640",311000.0,32.0,1,1,0,300.0,1160.0,1963,15,Ótimo,não,Elevador,2026-03-03
+AUR-0089,Casa,Menino Deus,Sul,90130204,"Rua das Acácias, 265",1408000.0,249.5,3,2,1,0.0,3790.0,1984,,Regular,sim,Piscina,2026-01-25
+AUR-0090,Apartamento,Petrópolis,Leste,90460086,"Rua dos Ipês, 1290",726000.0,73.0,2,3,0,960.0,2800.0,2016,1,otimo,não,Academia;Churrasqueira;Piscina;Playground;Portaria 24h;Sacada,2026-03-26
+AUR-0091,Casa,Passo d'Areia,Norte,91350506,"Rua dos Jacarandás, 1867",1524000.0,222.0,4,4,1,0.0,5840.0,2000,,Precisa de reforma,sim,,2026-08-13
+AUR-0092,Studio,Sarandi,Norte,91140754,"Travessa da Aurora, 634",123000.0,30.2,1,1,0,350.0,360.0,1987,1,Precisa de reforma,não,Bicicletário;Churrasqueira;Piscina;Playground;Sacada;Salão de festas,2026-01-25
+AUR-0093,Apartamento,Menino Deus,Sul,90130919,"Rua do Farol, 1936",803000.0,82.9,2,2,1,640.0,2590.0,2015,14,Ótimo,não,Churrasqueira;Elevador;Portaria 24h;Sacada;Salão de festas,2026-04-13
+AUR-0094,Apartamento,Jardim Lindóia,Norte,91050325,"Rua dos Jacarandás, 1795",743000.0,87.0,2,1,1,690.0,2450.0,1973,1,Bom,não,Sacada,2026-07-19
+AUR-0095,Apartamento,Moinhos de Vento,Centro,90570873,"Avenida do Lago, 1257",1150000.0,90.0,3,2,1,940.0,5080.0,1999,6,Bom,sim,Elevador;Portaria 24h,2026-05-07
+AUR-0096,Apartamento,Passo d'Areia,Norte,91350379,"Rua dos Ipês, 390",350000.0,52.6,1,2,1,630.0,1150.0,1991,15,Bom,não,Bicicletário;Elevador;Piscina;Playground;Sacada,2026-05-11
+AUR-0097,Apartamento,Menino Deus,Sul,90130662,"Rua Quatro Ventos, 1258",524000.0,56.6,1,1,2,,2010.0,1964,4,Regular,sim,Bicicletário;Churrasqueira;Elevador;Piscina,2026-09-04
+AUR-0098,Apartamento,Cristal,Sul,90820153,"Rua dos Jacarandás, 1916",641000.0,106.0,3,3,1,980.0,2190.0,2023,15,Ótimo,não,Churrasqueira;Elevador;Portaria 24h;Sacada,2026-08-26
+AUR-0099,Apartamento,Menino Deus,Sul,90130935,"Avenida do Lago, 2001",673000.0,77.0,2,1,2,720.0,2120.0,2021,11,Regular,sim,Academia;Churrasqueira;Elevador;Playground;Portaria 24h;Sacada;Salão de festas,2026-01-09
+AUR-0100,Apartamento,Centro Histórico,Centro,90010262,"Travessa da Aurora, 1815",427000.0,61.0,1,1,2,680.0,1340.0,2019,1,Regular,não,Academia;Churrasqueira;Piscina;Portaria 24h;Salão de festas,2026-02-24
+AUR-0101,Apartamento,Petrópolis,Leste,90460278,"Rua Quatro Ventos, 496",630000.0,58.1,1,1,1,750.0,1800.0,2019,12,Bom,sim,Academia;Churrasqueira;Elevador;Piscina;Salão de festas,2026-07-21
+AUR-0102,Cobertura,Petrópolis,Leste,90460248,"Rua das Hortênsias, 1953",2244000.0,181.0,3,3,1,2020.0,6570.0,2001,18,Bom,não,Academia;Elevador;Piscina;Playground;Salão de festas,2026-04-21
+AUR-0103,Apartamento,Bela Vista,Centro,90450030,"Rua Sete Estrelas, 2182",1238000.0,94.5,3,3,1,940.0,4740.0,2024,12,Regular,sim,Academia;Bicicletário;Churrasqueira;Elevador;Portaria 24h;Sacada;Salão de festas,2026-04-02
+AUR-0104,Apartamento,Jardim Botânico,Leste,90690009,"Rua Quatro Ventos, 105",812000.0,113.0,3,4,1,840.0,2480.0,1964,9,Precisa de reforma,sim,Churrasqueira;Elevador;Sacada;Salão de festas,2026-09-01
+AUR-0105,Apartamento,Moinhos de Vento,Centro,90570648,"Avenida das Palmeiras, 176",631000.0,52.2,1,2,0,,2440.0,1985,4,Regular,sim,Churrasqueira;Elevador,2026-01-09
+AUR-0106,Studio,Jardim Botânico,Leste,90690007,"Rua da Ponte Velha, 2206",227000.0,26.6,1,2,0,320.0,690.0,2012,13,Bom,não,Bicicletário;Churrasqueira;Elevador;Piscina;Playground;Portaria 24h;Sacada;Salão de festas,2026-03-12
+AUR-0107,Apartamento,Centro Histórico,Centro,90010338,"Rua dos Ipês, 1395",615000.0,103.0,3,4,1,1050.0,2750.0,2003,13,Regular,sim,Elevador,2026-01-17
+AUR-0108,Apartamento,Sarandi,Norte,91140142,"Rua Quatro Ventos, 185",191000.0,49.0,1,2,2,650.0,670.0,2020,18,Regular,sim,Elevador;Piscina;Playground;Portaria 24h;Sacada;Salão de festas,2026-06-26
+AUR-0109,Apartamento,Centro Histórico,Centro,90010070,"Avenida do Lago, 372",457000.0,82.0,2,1,1,,1530.0,1963,4,Regular,sim,Academia;Elevador;Playground;Sacada;Salão de festas,2026-08-21
+AUR-0110,Apartamento,Bom Fim,Centro,90035234,"Rua das Acácias, 575",907000.0,102.0,-2,4,1,1000.0,2950.0,1967,5,Precisa de reforma,sim,Elevador;Piscina;Sacada,2026-05-07
+AUR-0111,Casa,Ipanema,Sul,91760430,"Avenida das Palmeiras, 726",2028000.0,300.0,4,3,2,0.0,8870.0,1962,,Regular,sim,Churrasqueira,2026-06-13
+AUR-0112,Casa,Tristeza,Sul,91920504,"Travessa da Aurora, 1659",1259000.0,217.0,3,3,1,0.0,4960.0,2002,,Precisa de reforma,sim,Churrasqueira;Piscina;Sacada,2026-07-28
+AUR-0113,Cobertura,Centro Histórico,Centro,90010832,"Rua do Farol, 658",1561000.0,208.0,3,4,1,2460.0,5590.0,2025,7,Bom,sim,Academia;Churrasqueira;Elevador;Piscina;Playground;Portaria 24h;Sacada;Salão de festas,2026-04-08
+AUR-0114,Cobertura,Passo d'Areia,Norte,91350983,"Rua do Farol, 2054",1858000.0,160.0,3,3,1,1810.0,7070.0,2012,8,otimo,sim,Academia;Elevador;Piscina;Salão de festas,2026-02-12
+AUR-0115,Apartamento,Cristal,Sul,90820160,"Avenida do Lago, 88",396000.0,60.9,1,1,1,620.0,1480.0,1963,4,Regular,sim,Churrasqueira;Elevador;Piscina;Playground,2026-05-20
+AUR-0116,Casa,Ipanema,Sul,91760735,"Rua dos Ipês, 1853",1226000.0,256.0,3,3,1,0.0,3840.0,1976,,Precisa de reforma,sim,,2026-02-02
+AUR-0117,Casa,Passo d'Areia,Norte,91350675,"Rua do Mirante, 2090",1462000.0,256.0,4,4,2,0.0,4710.0,2021,,Bom,sim,Churrasqueira,2026-09-03
+AUR-0118,Casa,Rio Branco,Centro,90420068,"Rua Quatro Ventos, 1811",2255000.0,209.0,3,3,2,0.0,8290.0,2004,,Ótimo,sim,,2026-02-10
+AUR-0119,Apartamento,Bela Vista,Centro,90450641,"Rua da Ponte Velha, 695",1306000.0,100.2,3,2,2,1150.0,5100.0,1971,3,Regular,sim,Academia;Piscina;Salão de festas,2026-03-13
+AUR-0120,Casa,Petrópolis,Leste,90460807,"Rua Quatro Ventos, 2182",1255000.0,150.0,2,2,0,0.0,5340.0,2009,,Bom,sim,Churrasqueira,2026-01-07
+AUR-0121,Apartamento,Tristeza,Sul,91920771,"Rua das Acácias, 1870",694000.0,76.2,2,3,0,630.0,2640.0,1985,11,Ótimo,sim,Academia;Churrasqueira;Elevador;Sacada,2026-05-10
+AUR-0122,Apartamento,Bela Vista,Centro,90450054,"Avenida do Lago, 1149",919000.0,80.0,2,2,1,730.0,3820.0,2016,17,Bom,não,Academia;Churrasqueira;Elevador;Playground;Portaria 24h;Sacada;Salão de festas,2026-05-27
+AUR-0123,Apartamento,Menino Deus,Sul,90130453,"Rua dos Jacarandás, 1545",949000.0,111.9,4,4,2,,3610.0,1963,10,Regular,não,Churrasqueira;Piscina;Playground,2026-06-15
+AUR-0124,Apartamento,Partenon,Leste,90610458,"Rua Quatro Ventos, 1704",356000.0,75.0,2,2,2,870.0,1420.0,1996,8,Precisa de reforma,sim,Elevador;Piscina;Portaria 24h,2026-06-13
+AUR-0125,Cobertura,Moinhos de Vento,Centro,90570408,"Avenida das Palmeiras, 319",3274000.0,185.0,3,3,0,2040.0,9520.0,0,14,Bom,não,Churrasqueira;Elevador;Portaria 24h,2026-08-04
+AUR-0126,Casa,Jardim Botânico,Leste,90690945,"Rua das Acácias, 1930",1419000.0,271.5,3,2,1,0.0,5130.0,1984,,Precisa de reforma,sim,Churrasqueira;Piscina,2026-02-17
+AUR-0127,Cobertura,Centro Histórico,Centro,90010245,"Rua Sete Estrelas, 1322",1447000.0,175.0,3,3,1,1550.0,4390.0,1989,6,Precisa de reforma,sim,Elevador;Playground,2026-02-24
+AUR-0128,Apartamento,Jardim Botânico,Leste,90690511,"Rua Quatro Ventos, 1813",503000.0,59.0,1,1,1,510.0,1990.0,1995,16,Bom,não,Elevador;Piscina;Sacada,2026-01-20
+AUR-0129,Casa,Tristeza,Sul,91920916,"Rua dos Ipês, 2032",1830000.0,231.0,2,3,1,0.0,5970.0,2011,,Ótimo,sim,Churrasqueira;Piscina,2026-07-08
+AUR-0130,Apartamento,Bela Vista,Centro,90450056,"Rua dos Jacarandás, 1857",632000.0,40.0,1,1,1,330.0,1660.0,1962,12,Bom,sim,Elevador;Sacada,2026-05-05
+AUR-0131,Apartamento,Menino Deus,Sul,90130361,"Rua do Mirante, 1378",1042000.0,125.0,4,4,1,1210.0,3930.0,1995,9,BOM,sim,Academia;Elevador;Piscina;Playground;Salão de festas,2026-06-18
+AUR-0132,Casa,Jardim Botânico,Leste,90690153,"Rua da Ponte Velha, 2393",1745000.0,280.9,5,5,1,0.0,6640.0,1984,,Regular,sim,Churrasqueira,2026-04-15
+AUR-0133,Apartamento,Jardim Lindóia,Norte,91050431,"Avenida das Palmeiras, 2021",432000.0,45.9,1,2,2,370.0,1710.0,1978,17,Regular,sim,Elevador;Playground;Sacada,2026-08-13
+AUR-0134,Apartamento,Jardim Botânico,Leste,90690893,"Rua das Acácias, 2095",444000.0,53.4,1,2,1,610.0,1260.0,1991,8,Bom,sim,Bicicletário;Elevador;Portaria 24h;Sacada,2026-06-17
+AUR-0135,Apartamento,Menino Deus,Sul,90130912,"Rua Sete Estrelas, 2268",776000.0,95.0,3,4,0,860.0,2810.0,1971,16,Regular,sim,Elevador,2026-04-18
+AUR-0136,Apartamento,Moinhos de Vento,Centro,90570523,"Rua Sete Estrelas, 1035",1127000.0,77.6,2,2,0,710.0,4270.0,1984,11,Ótimo,sim,Bicicletário;Elevador,2026-01-07
+AUR-0137,Apartamento,Jardim Botânico,Leste,90690639,"Rua da Ponte Velha, 519",897000.0,92.0,3,3,1,770.0,3080.0,2015,13,Ótimo,sim,Academia;Bicicletário;Churrasqueira;Elevador;Playground;Sacada;Salão de festas,2026-02-15
+AUR-0138,Apartamento,Bela Vista,Centro,90450043,"Travessa da Aurora, 1514",486000.0,53.0,1,1,1,580.0,1270.0,1979,3,Precisa de reforma,sim,Academia;Churrasqueira,2026-01-05
+AUR-0139,Apartamento,Partenon,Leste,90610543,"Rua Sete Estrelas, 317",267000.0,69.0,2,1,1,580.0,1120.0,1973,13,Regular,não,Playground;Sacada;Salão de festas,2026-02-05
+AUR-0140,Apartamento,Jardim Lindóia,Norte,91050351,"Travessa da Aurora, 2283",608000.0,73.0,2,2,2,790.0,1550.0,2012,15,Ótimo,sim,Bicicletário;Churrasqueira;Elevador;Piscina;Playground;Portaria 24h;Sacada;Salão de festas,2026-01-08
+AUR-0141,Cobertura,Passo d'Areia,Norte,91350068,"Rua dos Ipês, 1356",1928000.0,235.0,3,3,2,2170.0,7900.0,1992,7,BOM,não,Churrasqueira;Elevador;Playground;Salão de festas,2026-01-16
+AUR-0142,Apartamento,Jardim Lindóia,Norte,91050548,"Avenida do Lago, 547",627000.0,70.5,2,1,1,830.0,2780.0,1964,4,Bom,não,Churrasqueira;Elevador;Piscina,2026-07-09
+AUR-0143,Casa,Bela Vista,Centro,90450398,"Avenida do Lago, 254",2837000.0,280.0,4,4,2,0.0,10340.0,2014,,Regular,não,,2026-04-26
+AUR-0144,Studio,Cidade Baixa,Centro,90050945,"Rua das Acácias, 337",224000.0,23.0,1,1,0,310.0,980.0,2018,17,Ótimo,não,Churrasqueira;Elevador;Portaria 24h;Sacada;Salão de festas,2026-06-17
+AUR-0145,Apartamento,Centro Histórico,Centro,90010070,"Rua do Farol, 1173",786000.0,96.7,3,3,1,1030.0,3460.0,2004,5,Ótimo,sim,Academia;Elevador;Playground;Portaria 24h;Salão de festas,2026-02-15
+AUR-0146,Apartamento,Partenon,Leste,90610994,"Rua das Hortênsias, 388",366000.0,78.0,2,1,1,660.0,1500.0,1963,7,Regular,não,Elevador;Sacada;Salão de festas,2026-02-08
+AUR-0147,Studio,Bom Fim,Centro,90035135,"Avenida do Lago, 965",280000.0,3.2,1,1,0,,760.0,1966,14,Bom,sim,Elevador;Piscina;Sacada,2026-08-11
+AUR-0148,Studio,Bom Fim,Centro,90035117,"Rua Sete Estrelas, 134",519000.0,39.0,1,1,0,450.0,1570.0,2017,9,Bom,sim,Academia;Churrasqueira;Elevador;Playground;Portaria 24h;Sacada;Salão de festas,2026-06-12
+AUR-0149,Apartamento,Petrópolis,Leste,90460405,"Rua Sete Estrelas, 1956",561000.0,53.0,1,1,1,650.0,1460.0,2007,13,Bom,não,Academia;Churrasqueira;Elevador;Piscina;Portaria 24h;Salão de festas,2026-08-13
+AUR-0150,Casa,Cristal,Sul,90820395,"Rua das Hortênsias, 840",1311000.0,292.0,4,5,1,0.0,4070.0,1972,,Regular,sim,Churrasqueira;Sacada,2026-04-03
+AUR-0151,Apartamento,Menino Deus,Sul,90130425,"Rua dos Ipês, 1201",546000.0,62.0,2,3,2,720.0,1700.0,2000,4,Bom,não,Elevador;Piscina,2026-04-04
+AUR-0152,Apartamento,Bom Fim,Centro,90035998,"Avenida das Palmeiras, 401",820000.0,97.0,3,2,1,780.0,2850.0,2004,17,Bom,sim,Elevador;Playground,2026-08-08
+AUR-0153,Apartamento,Partenon,Leste,90610290,"Rua das Hortênsias, 2318",700000.0,95.7,3,2,2,1030.0,2850.0,2012,11,Ótimo,sim,Churrasqueira;Elevador;Piscina;Playground;Portaria 24h;Salão de festas,2026-05-05
+AUR-0154,Studio,Ipanema,Sul,91760500,"Rua Sete Estrelas, 2215",344000.0,33.0,1,1,0,340.0,1420.0,2003,10,Bom,sim,Elevador;Salão de festas,2026-06-17
+AUR-0155,Cobertura,Tristeza,Sul,91920203,"Rua Sete Estrelas, 1162",2225000.0,230.0,3,2,1,1960.0,8450.0,2020,19,Ótimo,sim,Academia;Churrasqueira;Elevador;Playground;Portaria 24h;Salão de festas,2026-07-30
+AUR-0156,Studio,Moinhos de Vento,Centro,90570240,"Rua da Ponte Velha, 2070",304000.0,23.0,1,1,0,350.0,1030.0,2016,14,Regular,não,Academia;Churrasqueira;Elevador;Portaria 24h;Sacada;Salão de festas,2026-01-18
+AUR-0157,Apartamento,Partenon,Leste,90610625,"Travessa da Aurora, 1488",571000.0,102.4,3,3,1,870.0,1470.0,2016,12,Regular,sim,Churrasqueira;Elevador;Portaria 24h;Salão de festas,2026-02-13
+AUR-0158,Apartamento,Centro Histórico,Centro,90010521,"Rua das Hortênsias, 1803",770000.0,82.0,2,3,2,650.0,3260.0,2005,3,Ótimo,sim,,2026-08-22
+AUR-0159,Apartamento,Jardim Botânico,Leste,90690351,"Rua do Mirante, 2276",279000.0,45.9,1,1,1,420.0,1130.0,2000,3,Precisa de reforma,não,Portaria 24h;Sacada;Salão de festas,2026-05-21
+AUR-0160,Apartamento,Bela Vista,Centro,90450719,"Rua do Mirante, 2182",803000.0,72.0,2,3,2,,3440.0,1986,4,Bom,sim,Elevador,2026-09-01
+AUR-0161,Apartamento,Petrópolis,Leste,90460410,"Avenida do Lago, 456",728000.0,71.0,2,1,2,710.0,3190.0,1967,9,Regular,sim,Churrasqueira;Elevador;Playground;Portaria 24h;Sacada;Salão de festas,2026-03-17
+AUR-0162,Apartamento,Partenon,Leste,90610776,"Rua dos Ipês, 682",486000.0,120.6,4,5,1,1140.0,1340.0,2021,11,Regular,não,Churrasqueira;Elevador;Piscina;Playground;Portaria 24h;Sacada;Salão de festas,2026-03-26
+AUR-0163,Apartamento,Cidade Baixa,Centro,90050497,"Rua dos Jacarandás, 1771",818000.0,104.4,3,3,2,1080.0,2930.0,2016,10,Precisa de reforma,não,Academia;Churrasqueira;Elevador;Playground;Portaria 24h;Sacada,2026-05-28
+AUR-0164,Studio,Cidade Baixa,Centro,90050314,"Rua das Acácias, 1943",345000.0,40.0,1,1,0,360.0,1480.0,1970,10,Regular,sim,Academia;Bicicletário;Elevador;Playground;Salão de festas,2026-09-11
+AUR-0165,Apartamento,Centro Histórico,Centro,90010449,"Rua Quatro Ventos, 1717",704000.0,116.0,4,5,1,1210.0,2470.0,2013,15,Bom,sim,Academia;Churrasqueira;Elevador;Piscina;Playground;Portaria 24h;Salão de festas,2026-01-08
+AUR-0166,Apartamento,Menino Deus,Sul,90130126,"Rua Sete Estrelas, 1681",449000.0,44.0,1,1,2,360.0,1450.0,2023,6,otimo,sim,Churrasqueira;Playground;Salão de festas,2026-04-03
+AUR-0167,Apartamento,Passo d'Areia,Norte,91350098,"Rua Quatro Ventos, 767",703000.0,100.6,3,3,1,1040.0,1930.0,1969,18,Bom,sim,Academia;Elevador;Salão de festas,2026-09-05
+AUR-0168,Apartamento,Passo d'Areia,Norte,91350962,"Rua do Mirante, 246",475000.0,56.0,2,3,0,590.0,2140.0,2025,17,Bom,sim,Bicicletário;Elevador;Playground;Portaria 24h;Sacada;Salão de festas,2026-08-09
+AUR-0169,Apartamento,Menino Deus,Sul,90130023,"Rua do Farol, 731",715000.0,81.0,2,3,1,850.0,1790.0,1964,3,Regular,sim,Academia;Portaria 24h;Salão de festas,2026-02-25
+AUR-0170,Apartamento,Jardim Lindóia,Norte,91050076,"Travessa da Aurora, 1332",873000.0,115.0,3,3,1,880.0,3780.0,2002,3,Bom,sim,Churrasqueira,2026-01-26
+AUR-0171,Studio,Ipanema,Sul,91760873,"Rua dos Jacarandás, 1978",239000.0,28.0,1,1,0,330.0,710.0,2009,3,Ótimo,sim,Academia;Churrasqueira;Piscina;Sacada;Salão de festas,2026-08-27
+AUR-0172,Apartamento,Tristeza,Sul,91920295,"Rua da Ponte Velha, 1885",1062000.0,120.0,4,3,3,980.0,4420.0,1992,8,Regular,não,Elevador;Playground,2026-05-20
+AUR-0199,Apartamento,Rio Branco,Centro,90420645,"Rua do Mirante, 306",704000.0,670.0,1,1,1,720.0,2020.0,2022,7,Ótimo,não,Academia;Churrasqueira;Elevador;Piscina;Portaria 24h;Sacada;Salão de festas,2026-09-14
+AUR-0138,Apartamento,Bela Vista,Centro,90450043,"Travessa da Aurora, 1514",486000.0,53.0,1,1,1,580.0,1270.0,1979,3,Precisa de reforma,sim,Academia;Churrasqueira,2026-01-05
+AUR-0173,Apartamento,Partenon,Leste,90610873,"Avenida do Lago, 312",415000.0,73.0,2,3,1,720.0,1400.0,2018,6,Ótimo,sim,Academia;Bicicletário;Churrasqueira;Elevador,2026-05-22
+AUR-0174,Apartamento,Tristeza,Sul,91920229,"Rua dos Jacarandás, 2137",567000.0,78.0,2,3,1,760.0,1870.0,2006,13,Regular,sim,Churrasqueira;Elevador;Piscina;Portaria 24h;Sacada,2026-01-21
+AUR-0175,Apartamento,Rio Branco,Centro,90420977,"Rua Sete Estrelas, 1804",618000.0,58.0,1,1,0,510.0,2410.0,1996,2,Bom,não,Churrasqueira;Salão de festas,2026-05-12
+AUR-0176,Apartamento,Cristal,Sul,90820085,"Travessa da Aurora, 1115",533000.0,85.3,2,2,1,1060.0,2190.0,1985,8,Regular,sim,Academia;Churrasqueira;Elevador;Piscina;Portaria 24h,2026-05-13
+AUR-0177,Casa,Centro Histórico,Centro,90010934,"Rua das Acácias, 214",1818000.0,265.1,3,2,1,0.0,5060.0,2006,,Ótimo,sim,Churrasqueira;Piscina,2026-07-22
+AUR-0178,Apartamento,Bela Vista,Centro,90450500,"Avenida das Palmeiras, 224",1311000.0,117.0,4,4,1,870.0,4960.0,2002,12,Regular,sim,Churrasqueira;Elevador;Sacada,2026-09-09
+AUR-0179,Apartamento,Menino Deus,Sul,90130858,"Travessa da Aurora, 1780",655000.0,74.0,2,2,1,600.0,2870.0,1995,5,Regular,sim,Sacada,2026-04-15
+AUR-0180,Studio,Partenon,Leste,90610086,"Avenida das Palmeiras, 1494",171000.0,26.0,1,1,0,400.0,750.0,2022,18,Bom,sim,Churrasqueira;Elevador;Piscina;Playground;Portaria 24h;Sacada,2026-08-01
+AUR-0181,Apartamento,Jardim Botânico,Leste,90690976,"Rua Quatro Ventos, 178",787000.0,111.0,3,4,1,960.0,2710.0,1971,10,Regular,sim,Academia;Churrasqueira;Elevador;Sacada,2026-05-20
+AUR-0182,Studio,Partenon,Leste,90610230,"Rua Quatro Ventos, 1170",132000.0,25.0,1,1,0,330.0,510.0,2024,1,Regular,sim,Academia;Churrasqueira;Piscina;Playground;Salão de festas,2026-07-05
+AUR-0183,Apartamento,Cidade Baixa,Centro,90050446,"Avenida das Palmeiras, 699",749000.0,91.0,2,1,2,870.0,2820.0,2007,2,Regular,sim,Academia;Churrasqueira;Piscina;Playground;Sacada;Salão de festas,2026-09-02
+AUR-0184,Apartamento,Sarandi,Norte,91140274,"Rua das Hortênsias, 2038",305000.0,76.4,2,2,1,880.0,1150.0,1992,10,Regular,sim,Elevador;Piscina;Portaria 24h,2026-03-20
+AUR-0185,Apartamento,Menino Deus,Sul,90130105,"Rua dos Ipês, 1792",412000.0,57.0,2,3,1,620.0,1620.0,1997,7,Regular,não,Bicicletário;Elevador;Salão de festas,2026-04-29
+AUR-0186,Apartamento,Centro Histórico,Centro,90010759,"Rua dos Ipês, 860",218000.0,36.0,1,2,1,360.0,930.0,1966,15,Regular,sim,Academia;Churrasqueira;Elevador,2026-09-06
+AUR-0187,Apartamento,Menino Deus,Sul,90130074,"Rua da Ponte Velha, 2082",745000.0,97.0,3,3,1,830.0,2860.0,1993,15,Ótimo,não,Bicicletário;Churrasqueira;Elevador;Piscina;Playground;Portaria 24h;Sacada;Salão de festas,2026-03-04
+AUR-0188,Casa,Menino Deus,Sul,90130252,"Rua do Mirante, 624",2528000.0,282.0,4,4,2,0.0,7300.0,1991,,Bom,sim,,2026-06-08
+AUR-0189,Apartamento,Bela Vista,Centro,90450203,"Rua dos Jacarandás, 2382",754000.0,64.5,2,3,2,580.0,3370.0,1973,7,Bom,sim,Churrasqueira;Elevador;Portaria 24h;Salão de festas,2026-08-31
+AUR-0190,Casa,Cristal,Sul,90820677,"Rua das Hortênsias, 1269",1213000.0,191.6,3,4,0,0.0,3590.0,2011,,Bom,não,Churrasqueira,2026-05-03
+AUR-0191,Apartamento,Jardim Lindóia,Norte,91050322,"Rua do Farol, 2077",315000.0,44.0,1,1,2,460.0,920.0,1976,17,Regular,sim,Elevador;Piscina;Playground;Salão de festas,2026-08-10
+AUR-0192,Apartamento,Menino Deus,Sul,90130398,"Avenida das Palmeiras, 2278",691000.0,72.8,2,2,1,910.0,2090.0,2017,11,Ótimo,não,Academia;Churrasqueira;Elevador;Portaria 24h;Sacada;Salão de festas,2026-07-05
+AUR-0193,Apartamento,Passo d'Areia,Norte,91350638,"Rua Quatro Ventos, 18",430000.0,64.0,2,2,1,650.0,1730.0,2005,5,Bom,sim,Elevador;Piscina;Playground;Portaria 24h;Sacada,2026-06-19
+AUR-0194,Studio,Cristal,Sul,90820021,"Rua das Hortênsias, 168",201000.0,34.0,1,2,2,380.0,840.0,1966,1,Precisa de reforma,sim,Churrasqueira;Piscina;Portaria 24h,2026-06-27
+AUR-0195,Apartamento,Menino Deus,Sul,90130294,"Rua do Mirante, 1187",793000.0,92.7,3,4,2,880.0,2090.0,2018,3,Regular,não,Academia;Bicicletário;Piscina;Playground;Portaria 24h;Sacada;Salão de festas,2026-09-12
+AUR-0196,Cobertura,Bom Fim,Centro,90035316,"Rua das Hortênsias, 1389",2442000.0,239.0,4,5,2,,9730.0,1990,11,Regular,não,Churrasqueira;Elevador;Sacada,2026-04-21
+AUR-0197,Studio,Sarandi,Norte,91140336,"Rua Sete Estrelas, 2213",103000.0,35.0,1,1,0,310.0,340.0,1993,4,Precisa de reforma,sim,Churrasqueira;Elevador;Playground;Portaria 24h;Sacada,2026-08-02
+AUR-0198,Apartamento,Tristeza,Sul,91920343,"Avenida das Palmeiras, 1926",861000.0,109.4,3,2,1,1170.0,2160.0,2016,16,Bom,não,Academia;Bicicletário;Churrasqueira;Elevador;Piscina;Playground;Portaria 24h;Sacada;Salão de festas,2026-01-09
+AUR-0199,Apartamento,Rio Branco,Centro,90420645,"Rua do Mirante, 306",704000.0,670.0,1,1,1,720.0,2020.0,2022,7,Ótimo,não,Academia;Churrasqueira;Elevador;Piscina;Portaria 24h;Sacada;Salão de festas,2026-09-14
+AUR-0200,Apartamento,Ipanema,Sul,91760824,"Rua dos Jacarandás, 1396",806000.0,102.9,3,3,1,930.0,2520.0,2001,10,Bom,sim,Churrasqueira;Elevador;Sacada,2026-04-05
+AUR-0201,Apartamento,Ipanema,Sul,91760636,"Avenida do Lago, 1163",761000.0,108.0,3,3,1,980.0,3160.0,1992,7,Bom,sim,Academia;Elevador;Sacada;Salão de festas,2026-03-28
+AUR-0202,Apartamento,Menino Deus,Sul,90130729,"Avenida do Lago, 472",867000.0,87.0,3,2,0,1040.0,2850.0,2024,1,Ótimo,não,Academia;Churrasqueira;Playground;Portaria 24h;Sacada,2026-09-11
+AUR-0203,Apartamento,Ipanema,Sul,91760612,"Rua do Mirante, 451",400000.0,77.0,2,2,1,880.0,1610.0,2018,5,Precisa de reforma,sim,Academia;Elevador;Playground;Sacada;Salão de festas,2026-01-16
+AUR-0204,Studio,Jardim Lindóia,Norte,91050180,"Rua das Acácias, 655",263000.0,30.0,1,2,0,280.0,790.0,2009,9,Regular,sim,Academia;Churrasqueira;Elevador;Playground;Sacada;Salão de festas,2026-01-31
+AUR-0205,Apartamento,Petrópolis,Leste,90460560,"Rua dos Ipês, 13",656000.0,67.0,2,3,0,670.0,2580.0,1987,3,Bom,não,Academia,2026-01-08
+AUR-0206,Casa,Menino Deus,Sul,90130496,"Rua Sete Estrelas, 1937",2078000.0,308.0,5,5,1,0.0,5300.0,1978,,Regular,não,Churrasqueira;Sacada,2026-05-07
+AUR-0207,Apartamento,Rio Branco,Centro,90420752,"Rua dos Ipês, 1129",327000.0,43.0,1,1,0,,840.0,1979,17,Regular,sim,,2026-04-17
+AUR-0208,Studio,Passo d'Areia,Norte,91350164,"Rua Quatro Ventos, 327",273000.0,40.0,1,2,1,340.0,1190.0,2009,9,Regular,não,Churrasqueira;Elevador;Sacada;Salão de festas,2026-02-03
+AUR-0209,Studio,Cristal,Sul,90820606,"Rua do Farol, 1292",153000.0,24.0,1,1,3,250.0,560.0,2011,14,Regular,sim,Academia;Churrasqueira;Elevador;Sacada;Salão de festas,2026-07-17
+AUR-0210,Studio,Passo d'Areia,Norte,91350043,"Travessa da Aurora, 172",476000.0,35.6,1,2,1,300.0,1340.0,1962,8,Ótimo,sim,Elevador;Sacada;Salão de festas,2026-08-09
+AUR-0211,Casa,Sarandi,Norte,91140019,"Rua da Ponte Velha, 518",1035000.0,261.0,4,3,1,0.0,4390.0,2009,,Regular,sim,Churrasqueira,2026-07-31
+AUR-0212,Studio,Bom Fim,Centro,90035053,"Rua da Ponte Velha, 1014",453000.0,32.0,1,1,0,420.0,1780.0,1992,12,Ótimo,não,Academia;Elevador;Piscina;Portaria 24h;Salão de festas,2026-09-14
+AUR-0213,Casa,Bom Fim,Centro,90035423,"Rua das Hortênsias, 1445",1405000.0,205.0,3,2,1,0.0,4740.0,1980,,Bom,sim,,2026-01-15
+AUR-0214,Apartamento,Cristal,Sul,90820352,"Travessa da Aurora, 1268",341000.0,70.1,2,2,0,750.0,1140.0,1982,14,Regular,sim,Playground;Sacada;Salão de festas,2026-08-26
+AUR-0215,Apartamento,Sarandi,Norte,91140803,"Rua da Ponte Velha, 900",498000.0,108.0,3,4,2,1230.0,1330.0,2010,1,Regular,sim,Academia;Churrasqueira;Playground;Sacada;Salão de festas,2026-08-12
+AUR-0216,Apartamento,Menino Deus,Sul,90130761,"Avenida do Lago, 196",779000.0,102.0,3,2,1,960.0,3060.0,2019,4,Regular,sim,Academia;Churrasqueira;Elevador;Piscina;Playground;Sacada;Salão de festas,2026-06-18
+AUR-0217,Studio,Jardim Lindóia,Norte,91050859,"Rua dos Jacarandás, 1169",141000.0,23.0,1,2,0,160.0,440.0,1991,1,Precisa de reforma,não,Churrasqueira;Playground;Sacada,2026-02-24
+AUR-0218,Apartamento,Jardim Botânico,Leste,90690202,"Rua dos Ipês, 2013",555000.0,87.0,2,2,2,870.0,2160.0,1998,9,Regular,sim,,2026-08-16
+AUR-0219,Apartamento,Menino Deus,Sul,90130288,"Rua das Acácias, 2006",301000.0,46.0,1,1,0,490.0,900.0,2004,2,Regular,não,Portaria 24h;Salão de festas,2026-05-12
+AUR-0282,Casa,Jardim Lindóia,Norte,91050831,"Rua do Farol, 483",1557000.0,222.9,4,5,1,0.0,6480.0,1997,,Bom,sim,Churrasqueira,2026-06-04
+AUR-0220,Apartamento,Cidade Baixa,Centro,90050003,"Avenida das Palmeiras, 80",508000.0,94.0,3,4,2,670.0,1300.0,1979,2,Precisa de reforma,sim,Churrasqueira;Playground;Sacada;Salão de festas,2026-07-24
+AUR-0221,Apartamento,Menino Deus,Sul,90130719,"Rua da Ponte Velha, 1820",1072000.0,108.0,3,2,2,1150.0,3420.0,1964,4,Bom,sim,Academia;Bicicletário;Churrasqueira;Elevador;Sacada,2026-06-09
+AUR-0222,Studio,Ipanema,Sul,91760350,"Rua Quatro Ventos, 1321",287000.0,34.0,1,2,2,480.0,820.0,2020,18,Bom,não,Academia;Bicicletário;Churrasqueira;Elevador;Playground;Portaria 24h;Sacada;Salão de festas,2026-01-15
+AUR-0223,Casa,Passo d'Areia,Norte,91350190,"Rua Sete Estrelas, 529",2046000.0,307.0,5,5,1,0.0,7760.0,1964,,Regular,não,Churrasqueira,2026-03-24
+AUR-0224,Apartamento,Sarandi,Norte,91140623,"Rua da Ponte Velha, 500",424000.0,103.0,3,3,1,730.0,1340.0,2022,6,Bom,sim,Churrasqueira;Elevador;Playground;Sacada;Salão de festas,2026-07-21
+AUR-0225,Apartamento,Rio Branco,Centro,90420639,"Rua das Acácias, 2387",751000.0,93.0,3,3,1,1010.0,2020.0,1982,4,Regular,não,Churrasqueira;Elevador;Portaria 24h,2026-06-11
+AUR-0226,Apartamento,Sarandi,Norte,91140368,"Avenida das Palmeiras, 367",608000.0,128.0,4,4,1,1050.0,1590.0,2013,11,Bom,sim,Bicicletário;Churrasqueira;Elevador;Playground;Portaria 24h;Sacada;Salão de festas,2026-05-26
+AUR-0227,Apartamento,Jardim Lindóia,Norte,91050424,"Avenida do Lago, 1445",441000.0,52.0,1,1,1,530.0,1160.0,1978,15,Regular,sim,Elevador,2026-03-09
+AUR-0228,Studio,Menino Deus,Sul,90130065,"Rua das Acácias, 2360",267000.0,33.1,1,1,0,380.0,780.0,1990,18,Regular,sim,Academia;Churrasqueira;Elevador,2026-09-01
+AUR-0229,Casa,Jardim Lindóia,Norte,91050513,"Avenida do Lago, 294",777000.0,153.4,2,2,0,0.0,2600.0,1987,,Regular,sim,Churrasqueira,2026-02-03
+AUR-0230,Casa,Rio Branco,Centro,90420343,"Rua do Farol, 1623",1648000.0,250.0,4,5,3,0.0,6780.0,2025,,Regular,sim,Churrasqueira;Piscina,2026-09-12
+AUR-0231,Apartamento,Partenon,Leste,90610738,"Rua do Farol, 240",305000.0,71.0,2,1,1,540.0,1320.0,0,11,Precisa de reforma,não,Churrasqueira;Elevador;Sacada,2026-07-21
+AUR-0232,Apartamento,Menino Deus,Sul,90130607,"Travessa da Aurora, 1838",684000.0,100.0,3,4,0,850.0,1920.0,2007,5,Regular,não,Churrasqueira;Elevador;Portaria 24h;Sacada;Salão de festas,2026-08-05
+AUR-0233,Apartamento,Petrópolis,Leste,90460847,"Rua das Hortênsias, 226",1046000.0,100.0,3,4,2,860.0,3860.0,0,2,Ótimo,sim,Academia;Bicicletário;Churrasqueira;Piscina;Playground;Sacada,2026-09-13
+AUR-0234,Casa,Bela Vista,Centro,90450302,"Rua das Hortênsias, 443",1182000.0,159.5,2,2,1,0.0,4140.0,0,,Precisa de reforma,sim,Churrasqueira;Sacada,2026-04-24
+AUR-0235,Casa,Bom Fim,Centro,90035377,"Rua Quatro Ventos, 657",2089000.0,259.0,4,5,1,0.0,8750.0,1963,,Regular,sim,Churrasqueira;Sacada,2026-04-13
+AUR-0236,Apartamento,Rio Branco,Centro,90420687,"Rua das Acácias, 2069",669000.0,62.8,2,2,1,670.0,2850.0,1992,1,Bom,sim,Churrasqueira;Salão de festas,2026-05-29
+AUR-0237,Apartamento,Centro Histórico,Centro,90010767,"Rua da Ponte Velha, 2088",303000.0,45.0,1,1,1,460.0,840.0,0,9,Regular,sim,Churrasqueira;Elevador;Salão de festas,2026-02-27
+AUR-0238,Apartamento,Jardim Lindóia,Norte,91050912,"Avenida do Lago, 1021",790000.0,104.7,3,3,1,900.0,2080.0,1995,1,Bom,sim,Piscina;Playground;Portaria 24h,2026-08-02
+AUR-0239,Apartamento,Jardim Botânico,Leste,90690705,"Rua das Acácias, 2114",838000.0,101.0,3,2,3,1110.0,2460.0,2007,5,Regular,sim,Academia;Churrasqueira;Elevador;Piscina;Playground;Portaria 24h;Sacada,2026-04-30
+AUR-0240,Casa,Petrópolis,Leste,90460517,"Rua das Hortênsias, 730",2190000.0,226.0,4,3,1,0.0,8450.0,1968,,Bom,sim,Churrasqueira,2026-08-19
+AUR-0241,Apartamento,Jardim Lindóia,Norte,91050417,"Avenida do Lago, 1280",542000.0,91.4,3,3,1,750.0,1800.0,1975,11,Regular,sim,Bicicletário;Elevador;Piscina;Salão de festas,2026-01-31
+AUR-0242,Casa,Menino Deus,Sul,90130632,"Rua do Farol, 1221",1207000.0,174.6,2,2,1,0.0,5420.0,2004,,Bom,não,Churrasqueira;Sacada,2026-07-25
+AUR-0243,Casa,Tristeza,Sul,91920159,"Avenida do Lago, 1437",836000.0,161.9,2,3,1,0.0,3510.0,1968,,Precisa de reforma,não,Churrasqueira;Piscina,2026-03-11
+AUR-0244,Apartamento,Jardim Botânico,Leste,90690432,"Travessa da Aurora, 941",380000.0,62.0,1,1,2,740.0,1460.0,1968,3,Precisa de reforma,não,Piscina,2026-04-11
+AUR-0245,Apartamento,Jardim Botânico,Leste,90690284,"Avenida das Palmeiras, 1063",278000.0,41.0,1,1,1,500.0,770.0,0,9,Precisa de reforma,sim,Elevador;Portaria 24h;Sacada;Salão de festas,2026-09-03
+AUR-0246,Apartamento,Cidade Baixa,Centro,90050392,"Rua do Farol, 66",403000.0,60.0,1,1,2,,1700.0,1964,16,Precisa de reforma,não,Academia;Elevador,2026-09-14
+AUR-0247,Apartamento,Partenon,Leste,90610368,"Rua dos Jacarandás, 1230",272000.0,78.2,2,2,1,770.0,1210.0,1996,16,Precisa de reforma,sim,Elevador,2026-07-23
+AUR-0248,Apartamento,Menino Deus,Sul,90130841,"Rua das Acácias, 440",814000.0,88.0,2,2,1,1010.0,2620.0,1998,4,Precisa de reforma,sim,Churrasqueira;Elevador;Piscina;Portaria 24h;Sacada;Salão de festas,2026-09-03
+AUR-0249,Apartamento,Jardim Lindóia,Norte,91050573,"Rua da Ponte Velha, 2300",519000.0,103.4,3,3,1,,1380.0,1975,14,Precisa de reforma,sim,Elevador;Salão de festas,2026-02-13
+AUR-0250,Apartamento,Menino Deus,Sul,90130124,"Rua dos Ipês, 1234",553000.0,86.0,3,2,1,840.0,2400.0,1969,3,Precisa de reforma,sim,Churrasqueira;Sacada;Salão de festas,2026-01-06
+AUR-0251,Casa,Petrópolis,Leste,90460375,"Rua dos Ipês, 2316",2006000.0,305.0,4,3,0,0.0,6080.0,1985,,Precisa de reforma,sim,Churrasqueira,2026-08-09
+AUR-0252,Studio,Bom Fim,Centro,90035380,"Rua do Farol, 2174",304000.0,35.0,1,1,0,,810.0,1980,11,Regular,sim,Elevador;Playground,2026-01-07
+AUR-0253,Apartamento,Centro Histórico,Centro,90010788,"Avenida das Palmeiras, 673",607000.0,109.0,3,3,0,910.0,2670.0,2005,4,Regular,sim,Elevador;Playground;Sacada,2026-09-05
+AUR-0254,Apartamento,Rio Branco,Centro,90420352,"Rua dos Jacarandás, 1237",1031000.0,123.7,4,4,2,1380.0,2890.0,1965,10,Regular,sim,Academia;Elevador,2026-09-07
+AUR-0255,Apartamento,Passo d'Areia,Norte,91350145,"Avenida das Palmeiras, 1261",523000.0,69.0,2,2,1,810.0,2000.0,1981,18,Bom,sim,Churrasqueira;Elevador;Playground;Portaria 24h;Sacada,2026-08-04
+AUR-0256,Apartamento,Sarandi,Norte,91140615,"Travessa da Aurora, 1639",154000.0,43.5,1,1,1,440.0,670.0,1970,9,Precisa de reforma,sim,Academia;Churrasqueira;Elevador;Piscina;Playground,2026-02-05
+AUR-0257,Apartamento,Bom Fim,Centro,90035658,"Avenida do Lago, 935",535000.0,63.0,1,1,2,660.0,2170.0,2004,11,Regular,não,Churrasqueira;Elevador,2026-01-26
+AUR-0258,Apartamento,Jardim Lindóia,Norte,91050009,"Rua Sete Estrelas, 563",297000.0,40.0,1,2,0,280.0,1240.0,1972,16,Regular,não,Bicicletário;Elevador,2026-05-13
+AUR-0259,Apartamento,Passo d'Areia,Norte,91350171,"Travessa da Aurora, 659",468000.0,75.0,2,2,1,750.0,1820.0,2011,9,Bom,sim,Academia;Bicicletário;Churrasqueira;Elevador;Playground;Portaria 24h;Sacada;Salão de festas,2026-03-06
+AUR-0260,Casa,Tristeza,Sul,91920526,"Rua das Acácias, 1450",1502000.0,232.0,4,4,1,0.0,4600.0,1978,,Bom,sim,Churrasqueira;Sacada,2026-07-21
+AUR-0261,Studio,Jardim Botânico,Leste,90690765,"Rua Quatro Ventos, 2159",283000.0,37.0,1,1,0,350.0,710.0,1965,18,Regular,sim,Academia;Elevador;Playground;Sacada,2026-02-03
+AUR-0262,Casa,Menino Deus,Sul,90130130,"Rua dos Ipês, 133",2202000.0,281.0,5,5,1,0.0,8970.0,1968,,Bom,sim,Churrasqueira;Piscina,2026-01-14
+AUR-0263,Apartamento,Bela Vista,Centro,90450299,"Rua Quatro Ventos, 317",753000.0,65.0,1,1,2,580.0,3210.0,1991,3,Precisa de reforma,não,Piscina;Salão de festas,2026-02-13
+AUR-0264,Casa,Jardim Lindóia,Norte,91050960,"Travessa da Aurora, 965",1962000.0,268.0,5,4,2,0.0,5810.0,2015,,Bom,sim,Sacada,2026-01-09
+AUR-0265,Apartamento,Centro Histórico,Centro,90010996,"Rua Quatro Ventos, 2030",398000.0,50.0,1,1,0,490.0,1780.0,2009,12,Bom,sim,Academia;Bicicletário;Churrasqueira;Elevador;Salão de festas,2026-05-18
+AUR-0266,Apartamento,Partenon,Leste,90610757,"Avenida do Lago, 1900",626000.0,100.0,3,3,1,1080.0,1720.0,1966,7,Bom,sim,Churrasqueira;Elevador;Sacada,2026-03-27
+AUR-0267,Apartamento,Jardim Botânico,Leste,90690185,"Rua das Acácias, 47",472000.0,61.0,1,1,1,550.0,1700.0,1973,8,Regular,não,Elevador;Piscina;Salão de festas,2026-08-01
+AUR-0267,Apartamento,Jardim Botânico,Leste,90690185,"Rua das Acácias, 47",472000.0,61.0,1,1,1,550.0,1700.0,1973,8,Regular,não,Elevador;Piscina;Salão de festas,2026-08-01
+AUR-0268,Studio,Rio Branco,Centro,90420275,"Travessa da Aurora, 253",350000.0,38.0,1,1,0,300.0,1040.0,1988,5,Precisa de reforma,não,Churrasqueira;Elevador;Playground,2026-03-17
+AUR-0269,Apartamento,Petrópolis,Leste,90460230,"Avenida das Palmeiras, 254",1174000.0,124.0,4,4,1,1150.0,5200.0,1981,2,Regular,sim,Churrasqueira,2026-06-19
+AUR-0270,Apartamento,Ipanema,Sul,91760183,"Avenida do Lago, 371",419000.0,83.0,2,1,0,740.0,1540.0,2000,1,Precisa de reforma,sim,Churrasqueira;Piscina;Portaria 24h;Sacada,2026-03-11
+AUR-0271,Apartamento,Partenon,Leste,90610797,"Avenida do Lago, 672",659000.0,123.1,4,4,1,1420.0,2340.0,1993,2,Precisa de reforma,sim,Academia;Churrasqueira;Portaria 24h,2026-06-17
+AUR-0272,Casa,Centro Histórico,Centro,90010389,"Avenida do Lago, 1606",1358000.0,252.7,4,4,0,0.0,5660.0,1992,,Bom,sim,Churrasqueira,2026-04-29
+AUR-0273,Apartamento,Moinhos de Vento,Centro,90570996,"Rua dos Jacarandás, 342",1753000.0,114.0,3,3,2,1150.0,5140.0,2006,7,Regular,não,Academia;Bicicletário;Elevador;Playground;Portaria 24h,2026-06-22
+AUR-0274,Apartamento,Cidade Baixa,Centro,90050670,"Rua do Mirante, 582",397000.0,63.6,2,3,1,540.0,1150.0,1962,2,Precisa de reforma,não,Piscina;Salão de festas,2026-03-22
+AUR-0275,Apartamento,Bela Vista,Centro,90450376,"Rua do Mirante, 526",1224000.0,104.0,3,3,2,1110.0,5010.0,2021,10,Regular,sim,Academia;Bicicletário;Churrasqueira;Elevador;Piscina;Portaria 24h;Salão de festas,2026-04-04
+AUR-0276,Apartamento,Bela Vista,Centro,90450718,"Avenida das Palmeiras, 713",388000.0,34.0,1,1,1,,1240.0,2007,17,BOM,não,Academia;Churrasqueira;Elevador;Playground;Salão de festas,2026-01-06
+AUR-0277,Casa,Jardim Botânico,Leste,90690518,"Rua dos Jacarandás, 386",1541000.0,193.0,3,2,1,0.0,6820.0,2015,,Bom,sim,Churrasqueira,2026-04-26
+AUR-0278,Casa,Menino Deus,Sul,90130853,"Rua das Hortênsias, 2059",1626000.0,259.0,4,3,2,0.0,5110.0,1984,,Precisa de reforma,sim,Churrasqueira;Sacada,2026-04-19
+AUR-0279,Studio,Partenon,Leste,90610053,"Avenida do Lago, 359",306000.0,37.6,1,1,3,400.0,1160.0,1969,11,Bom,não,Churrasqueira;Elevador;Piscina;Portaria 24h,2026-08-28
+AUR-0280,Studio,Moinhos de Vento,Centro,90570991,"Rua das Acácias, 462",481000.0,29.0,1,1,1,280.0,1630.0,1962,11,Bom,sim,Churrasqueira;Playground;Sacada,2026-03-09
+AUR-0281,Apartamento,Cidade Baixa,Centro,90050558,"Rua do Mirante, 735",1094000.0,125.0,4,5,1,1420.0,4540.0,2019,11,Bom,sim,Academia;Churrasqueira;Elevador;Playground;Portaria 24h;Sacada;Salão de festas,2026-03-28
+AUR-0282,Casa,Jardim Lindóia,Norte,91050831,"Rua do Farol, 483",1557000.0,222.9,4,5,1,0.0,6480.0,1997,,Bom,sim,Churrasqueira,2026-06-04
+AUR-0283,Apartamento,Cidade Baixa,Centro,90050264,"Rua da Ponte Velha, 131",566000.0,91.2,3,4,2,820.0,1500.0,1968,5,Precisa de reforma,sim,Elevador;Playground;Sacada;Salão de festas,2026-08-25
+AUR-0284,Studio,Petrópolis,Leste,90460245,"Rua Sete Estrelas, 907",295000.0,30.4,1,1,0,390.0,950.0,2006,15,Precisa de reforma,sim,Academia;Elevador;Sacada;Salão de festas,2026-07-10
+AUR-0285,Apartamento,Menino Deus,Sul,90130511,"Avenida das Palmeiras, 1704",814000.0,88.0,3,2,1,710.0,2930.0,2020,6,Ótimo,sim,Bicicletário;Churrasqueira;Elevador;Piscina;Playground;Sacada;Salão de festas,2026-08-12
+AUR-0101,Apartamento,Petrópolis,Leste,90460278,"Rua Quatro Ventos, 496",630000.0,58.1,1,1,1,750.0,1800.0,2019,12,Bom,sim,Academia;Churrasqueira;Elevador;Piscina;Salão de festas,2026-07-21
+AUR-0286,Casa,Partenon,Leste,90610307,"Rua Quatro Ventos, 1002",815000.0,182.0,2,2,1,0.0,2350.0,2020,,Regular,sim,Churrasqueira;Sacada,2026-07-13
+AUR-0287,Casa,Cidade Baixa,Centro,90050789,"Rua da Ponte Velha, 2233",1637000.0,290.0,4,4,1,0.0,5630.0,1983,,Precisa de reforma,sim,,2026-04-17
+AUR-0288,Studio,Menino Deus,Sul,90130233,"Rua Quatro Ventos, 1336",321000.0,36.6,1,2,0,400.0,840.0,2000,11,Regular,sim,Elevador,2026-06-06
+AUR-0289,Apartamento,Jardim Lindóia,Norte,91050353,"Rua do Farol, 2031",861000.0,132.0,4,4,1,1040.0,3830.0,1993,3,Regular,sim,Sacada;Salão de festas,2026-02-02
+AUR-0290,Apartamento,Jardim Lindóia,Norte,91050110,"Travessa da Aurora, 2383",604000.0,65.0,2,2,1,710.0,2360.0,2004,7,Bom,sim,Elevador;Sacada;Salão de festas,2026-06-22
+AUR-0291,Casa,Bela Vista,Centro,90450620,"Avenida do Lago, 1297",2904000.0,263.0,4,4,1,0.0,10810.0,1970,,Ótimo,sim,Churrasqueira,2026-08-12
+AUR-0292,Apartamento,Cidade Baixa,Centro,90050308,"Rua dos Jacarandás, 1944",369000.0,69.0,2,2,1,500.0,1050.0,1963,13,Precisa de reforma,não,Churrasqueira;Elevador,2026-04-11
+AUR-0293,Casa,Centro Histórico,Centro,90010258,"Avenida das Palmeiras, 1454",987000.0,189.5,3,3,1,0.0,3540.0,2021,,Bom,sim,,2026-02-12
+AUR-0294,Apartamento,Partenon,Leste,90610867,"Avenida do Lago, 196",,110.0,3,2,1,850.0,2190.0,1989,10,Regular,não,Bicicletário;Elevador,2026-03-31
+AUR-0295,Cobertura,Jardim Botânico,Leste,90690368,"Rua do Farol, 1081",2557000.0,183.0,4,4,2,2050.0,8340.0,2013,10,Ótimo,sim,Bicicletário;Elevador;Piscina;Portaria 24h;Sacada;Salão de festas,2026-03-17
+AUR-0296,Apartamento,Cristal,Sul,90820507,"Rua do Mirante, 1135",539000.0,82.0,2,2,2,720.0,2420.0,1991,16,Regular,sim,Academia;Churrasqueira;Elevador;Salão de festas,2026-09-02
+AUR-0297,Apartamento,Jardim Botânico,Leste,90690870,"Rua Quatro Ventos, 1073",651000.0,107.0,3,3,1,1050.0,1850.0,1993,10,Bom,sim,Sacada,2026-01-28
+AUR-0298,Apartamento,Cristal,Sul,90820215,"Travessa da Aurora, 2374",395000.0,60.0,2,2,3,670.0,1100.0,1988,5,Precisa de reforma,não,Academia;Bicicletário;Elevador;Piscina,2026-02-14
+AUR-0299,Apartamento,Sarandi,Norte,91140197,"Rua dos Ipês, 1418",337000.0,83.0,2,1,1,770.0,1460.0,1979,17,Regular,não,Academia;Churrasqueira;Elevador,2026-06-01
+AUR-0300,Apartamento,Cristal,Sul,90820444,"Avenida das Palmeiras, 1042",523000.0,82.1,2,2,1,650.0,2160.0,2018,2,Bom,não,Churrasqueira;Portaria 24h;Sacada;Salão de festas,2026-01-29

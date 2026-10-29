@@ -156,3 +156,24 @@ grep -Po 'mailto:\K[^"]+' index.html | sort | wc -l                  # contar e-
 python -m http.server 8000      # na raiz do repositório
 wget http://localhost:8000/aula1/site/
 ```
+
+
+---
+
+## Prática do encontro síncrono 1
+
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula1/pratica/encontro1.ipynb)
+
+`pratica/encontro1.ipynb` — notebook da atividade conduzida pelo mediador. O gabarito **não** fica
+neste repositório (é distribuído ao mediador junto com os slides do encontro).
+
+**Conserte a leitura** (15 min, em duplas): cinco leituras de arquivo escritas por um "colega" que
+saem erradas. Para cada uma, o aluno observa o sintoma, explica a causa e corrige.
+
+| Caso | Arquivo | Sintoma | Correção |
+| --- | --- | --- | --- |
+| 1 | `csv/pessoas_iso8859_1.csv` | `UnicodeDecodeError` | `encoding='iso-8859-1'` |
+| 2 | `csv/produtos_ptbr.csv` | 3 linhas × 1 coluna | `sep=';', decimal=','` |
+| 3 | `csv/pessoas_utf8_bom.csv` lido como latin-1 | `ï»¿nome`, `matemÃ¡tico` | `encoding='utf-8-sig'` |
+| 4 | `json/cientistas.json` | `dict` dentro da célula | `pd.json_normalize` |
+| 5 | `xml/filme.xml` | 4 linhas cheias de `NaN` | percorrer a árvore com `ElementTree` |

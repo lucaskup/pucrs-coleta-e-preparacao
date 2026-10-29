@@ -197,10 +197,10 @@ html.fromstring(r.content)                # ou entregue bytes: o lxml lê o <met
 
 [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula3/pratica/encontro3.ipynb)
 
-`pratica/encontro3.ipynb` — notebook da atividade conduzida pelo mediador. O gabarito **não** fica
-neste repositório (é distribuído ao mediador junto com os slides do encontro).
+`pratica/encontro3.ipynb`: notebook da atividade conduzida pelo mediador. O gabarito fica fora
+deste repositório e é distribuído ao mediador junto com os slides do encontro.
 
-**Raspando a Aurora Imóveis.** Alvo novo, para não repetir o catálogo da videoaula:
+**Raspando a Aurora Imóveis.** Alvo próprio da prática, separado do catálogo usado na videoaula:
 
 ```
 pratica/imoveis/index.html, pagina-2.html … pagina-5.html   12 anúncios por página, link a[rel=next]

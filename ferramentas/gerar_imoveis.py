@@ -355,8 +355,8 @@ def titulo_anuncio(im: dict) -> str:
 
 
 AVISO = ('    <p class="aviso"><strong>Site fictício.</strong> Imobiliária, anúncios, endereços e preços foram '
-         'inventados para a disciplina Coleta e Preparação de Dados (PUCRS Online). Os bairros existem; os '
-         'valores, não.</p>')
+         'inventados para a disciplina Coleta e Preparação de Dados (PUCRS Online). Os nomes dos bairros são reais; '
+         'os valores são inventados.</p>')
 N_PAG = 5
 for p in range(1, N_PAG + 1):
     itens = DESTAQUES[(p - 1) * 12: p * 12]
@@ -387,7 +387,7 @@ for p in range(1, N_PAG + 1):
     nav.append(f'      <li class="atual">página {p} de {N_PAG}</li>')
     if p < N_PAG:
         nav.append(f'      <li class="proxima"><a href="pagina-{p + 1}.html" rel="next">próxima →</a></li>')
-    corpo = f"""    <h1>Aurora Imóveis — Porto Alegre</h1>
+    corpo = f"""    <h1>Aurora Imóveis, Porto Alegre</h1>
     <p class="sub">{len(DESTAQUES)} imóveis à venda · página {p} de {N_PAG}</p>
 {AVISO}
     <section class="resultados">
@@ -398,7 +398,7 @@ for p in range(1, N_PAG + 1):
     </ul>"""
     nome = "index.html" if p == 1 else f"pagina-{p}.html"
     with open(os.path.join(SITE, nome), "w", encoding="utf-8") as f:
-        f.write(pagina(f"Aurora Imóveis — página {p}", corpo, "Anúncios fictícios de imóveis para praticar web scraping."))
+        f.write(pagina(f"Aurora Imóveis · página {p}", corpo, "Anúncios fictícios de imóveis para praticar web scraping."))
 
 for im in DESTAQUES:
     cond = "Isento" if im["tipo"] == "Casa" else f"{brl(im['condominio'])}/mês"
@@ -413,8 +413,8 @@ for im in DESTAQUES:
              ("Anunciado em", date.fromisoformat(im["data_anuncio"]).strftime("%d/%m/%Y"))]
     dl = "\n".join(f"      <dt>{html.escape(k)}</dt><dd>{html.escape(v)}</dd>" for k, v in ficha)
     com = "\n".join(f"      <li>{html.escape(c)}</li>" for c in im["comodidades"]) or "      <li>Nenhuma informada</li>"
-    desc = (f"{titulo_anuncio(im)}, com {fmt_area(im['area_m2'])} de área privativa. "
-            f"Imóvel {im['conservacao'].lower()}, construído em {im['ano_construcao']}. "
+    desc = (f"{titulo_anuncio(im)}, com {fmt_area(im['area_m2'])} de área privativa, construído em "
+            f"{im['ano_construcao']}. Conservação: {im['conservacao'].lower()}. "
             f"Para visitar, fale com a Aurora Imóveis pelo e-mail contato@aurora-imoveis.example.com "
             f"informando o código {im['codigo']}.")
     corpo = f"""    <nav class="trilha"><a href="../index.html">Aurora Imóveis</a> › {html.escape(im['bairro'])} › {im['codigo']}</nav>
@@ -432,7 +432,7 @@ for im in DESTAQUES:
     <h2>Descrição</h2>
     <p id="descricao">{html.escape(desc)}</p>"""
     with open(os.path.join(SITE, "imovel", f"{im['codigo'].lower()}.html"), "w", encoding="utf-8") as f:
-        f.write(pagina(f"{titulo_anuncio(im)} — Aurora Imóveis", corpo, "Anúncio fictício de imóvel."))
+        f.write(pagina(f"{titulo_anuncio(im)} · Aurora Imóveis", corpo, "Anúncio fictício de imóvel."))
 
 urls = ["index.html"] + [f"pagina-{p}.html" for p in range(2, N_PAG + 1)] + \
        [f"imovel/{im['codigo'].lower()}.html" for im in DESTAQUES]

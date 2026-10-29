@@ -1,4 +1,4 @@
-# Aula 4 — KDD, tipos de dados e estatística descritiva
+# Aula 4: KDD, tipos de dados e estatística descritiva
 
 Publicado em `https://lucaskup.github.io/pucrs-coleta-e-preparacao/aula4/`.
 
@@ -15,7 +15,7 @@ existem; preços, endereços, CEPs e anúncios são inventados. Gerada por `ferr
 | `endereco` | texto | nominal (texto livre) |
 | `preco`, `area_m2`, `iptu_anual` | float | razão |
 | `quartos`, `banheiros`, `vagas` | inteiro | razão (contagem) |
-| `condominio` | float | razão — `0` nas casas é zero estrutural (isenta), vazio é ausência |
+| `condominio` | float | razão; `0` nas casas é zero estrutural (isenta) e vazio é ausência |
 | `ano_construcao` | inteiro | intervalar |
 | `andar` | float | ordinal/intervalar (discutível); vazio nas casas |
 | `conservacao` | texto | ordinal |
@@ -43,9 +43,9 @@ AUR-0060 e 0,96 sem ele.
 
 [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula4/pratica/encontro4.ipynb)
 
-`pratica/encontro4.ipynb` — notebook da atividade conduzida pelo mediador. O gabarito **não** fica
-neste repositório (é distribuído ao mediador junto com os slides do encontro).
+`pratica/encontro4.ipynb`: notebook da atividade conduzida pelo mediador. O gabarito fica fora
+deste repositório e é distribuído ao mediador junto com os slides do encontro.
 
 Classificar os atributos, revisar a análise de um colega (CEP médio, idade média com sentinela,
 média de ordinal, CV de atributo intervalar, Pearson sobre códigos de bairro…) e seguir o roteiro de
-EDA da videoaula, com cada grupo aprofundando uma etapa.
+EDA em cinco etapas, com cada grupo aprofundando uma delas.

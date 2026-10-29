@@ -164,7 +164,7 @@ O repositório é publicado via **GitHub Pages** em
 - Mapeamento: **encontro N = aula N** para N = 1…6 (o encontro 1 também tem a ambientação, por isso
   a prática dele dura só 15 min); o encontro 7 é revisão.
 - Ambiente dos alunos: **Google Colab**. Cada encontro tem `aulaN/pratica/encontroN.ipynb`, que lê os
-  dados direto do GitHub Pages. Os **gabaritos não ficam no repositório** (é público); vão para o
+  dados direto do GitHub Pages. Os **gabaritos ficam fora do repositório**, que é público, e vão para o
   mediador junto com os slides.
 - Formato das atividades varia por aula, sempre com código: corrigir código de colega (E1, E2, E4,
   E6), escrever código com revisão cruzada por checklist (E3), refazer gráficos e comparar medidas

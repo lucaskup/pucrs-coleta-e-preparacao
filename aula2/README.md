@@ -166,12 +166,12 @@ exercício não depender dela.
 
 [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula2/pratica/encontro2.ipynb)
 
-`pratica/encontro2.ipynb` — notebook da atividade conduzida pelo mediador. O gabarito **não** fica
-neste repositório (é distribuído ao mediador junto com os slides do encontro).
+`pratica/encontro2.ipynb`: notebook da atividade conduzida pelo mediador. O gabarito fica fora
+deste repositório e é distribuído ao mediador junto com os slides do encontro.
 
 **O log da Aurora Imóveis e o coletor do colega.**
 
-`pratica/acessos.log` — 420 linhas de log de acesso fictício (formato *combined* do Apache/Nginx
+`pratica/acessos.log`: 420 linhas de log de acesso fictício (formato *combined* do Apache/Nginx
 com `rt=NNNms` no fim). IPs das faixas de documentação (RFC 5737) e e-mails em domínios `example.*`.
 Gerado por `ferramentas/gerar_log_acessos.py` (determinístico).
 

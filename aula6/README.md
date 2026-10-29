@@ -1,11 +1,11 @@
-# Aula 6 — Limpeza, integração, redução e transformação
+# Aula 6: Limpeza, integração, redução e transformação
 
 Publicado em `https://lucaskup.github.io/pucrs-coleta-e-preparacao/aula6/`. Tudo sintético, gerado
 por `ferramentas/gerar_imoveis.py`.
 
 | Arquivo | Conteúdo |
 | --- | --- |
-| `imoveis_aurora.csv` | cópia da base da aula 4 (mesmos problemas plantados) |
+| `imoveis_aurora.csv` | cópia de `aula4/imoveis_aurora.csv` (mesmos problemas plantados) |
 | `casa_sul.json` | 80 anúncios de outra imobiliária fictícia, com `dicionario` de campos |
 | `bairros_poa.csv` | bairro → zona → cidade → UF (zona é um agrupamento didático simplificado) |
 
@@ -27,8 +27,8 @@ por `ferramentas/gerar_imoveis.py`.
 
 [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula6/pratica/encontro6.ipynb)
 
-`pratica/encontro6.ipynb` — notebook da atividade conduzida pelo mediador. O gabarito **não** fica
-neste repositório (é distribuído ao mediador junto com os slides do encontro).
+`pratica/encontro6.ipynb`: notebook da atividade conduzida pelo mediador. O gabarito fica fora
+deste repositório e é distribuído ao mediador junto com os slides do encontro.
 
 Estações (limpeza, outliers, integração, transformação e redução) com diário de decisões, e uma
 caça a vazamentos de dados em um pipeline de colega (estatísticas calculadas antes da divisão

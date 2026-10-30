@@ -24,6 +24,7 @@ Uma pasta por encontro síncrono, com `index.html` (navegação para os alunos) 
 ```
 index.html        landing page do GitHub Pages
 .nojekyll
+assets/           estilo.css e tema.js compartilhados pela landing page e pelos index.html das aulas
 aula1/
   index.html      índice dos arquivos da aula
   README.md       o que é cada arquivo, de qual slide vem, comandos
@@ -111,6 +112,17 @@ O repositório é publicado via **GitHub Pages** em
   diretório** — toda pasta que o aluno precisa acessar tem seu próprio `index.html`
   (`/index.html`, `/aula1/index.html`).
 - Ao adicionar arquivos novos, incluir o link no `index.html` da aula correspondente.
+
+## Páginas de navegação
+
+- A landing page e os `aulaN/index.html` usam o mesmo `assets/estilo.css` (tokens de cor, cartões,
+  tabelas, rodapé) e `assets/tema.js` (botão que alterna automático, claro e escuro, guardado em
+  `localStorage`). O visual segue o programa do ERAMIA-RS 2026
+  (`https://lucaskup.github.io/eramia-rs-2026/`). As páginas-alvo de scraping (`aula1/site/`,
+  `aula3/*`) mantêm estilo próprio: a marcação delas faz parte do exercício.
+- Para conferir o resultado localmente: `python -m http.server` na raiz e
+  `chromium --headless=new --screenshot=... http://127.0.0.1:8000/`; `--force-dark-mode` testa o
+  tema escuro automático.
 
 ## Decisões já tomadas (aula 1)
 

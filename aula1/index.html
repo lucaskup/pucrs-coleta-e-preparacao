@@ -3,42 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aula 1 — Texto, CSV, XML e JSON</title>
+  <title>Aula 1: Texto, CSV, XML e JSON</title>
   <meta name="description" content="Arquivos da aula 1 da disciplina Coleta e Preparação de Dados.">
-  <style>
-    :root { --fundo:#f5f6f8; --cartao:#fff; --texto:#1b1f24; --suave:#5a636e; --borda:#dfe3e8; --marca:#8c1d40; }
-    @media (prefers-color-scheme: dark) {
-      :root:not([data-theme="light"]) {
-        --fundo:#14171b; --cartao:#1d2126; --texto:#eceff3; --suave:#a4adb8; --borda:#2c323a; --marca:#e8879f;
-      }
-    }
-    * { box-sizing: border-box; }
-    body { margin:0; background:var(--fundo); color:var(--texto); line-height:1.55;
-           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-    main { max-width: 860px; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
-    a { color: var(--marca); }
-    h1 { font-size: 1.6rem; margin: 0 0 .3rem; }
-    .sub { color: var(--suave); margin: 0 0 2rem; }
-    section { background: var(--cartao); border: 1px solid var(--borda); border-radius: 10px;
-              padding: 1.1rem 1.25rem; margin-bottom: 1.1rem; }
-    h2 { font-size: 1.05rem; margin: 0 0 .2rem; }
-    p.tema { color: var(--suave); margin: 0 0 .8rem; font-size: .92rem; }
-    table { width: 100%; border-collapse: collapse; font-size: .9rem; }
-    td { padding: .35rem .5rem .35rem 0; border-bottom: 1px solid var(--borda); vertical-align: top; }
-    tr:last-child td { border-bottom: none; }
-    td.arq { white-space: nowrap; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
-    td.obs { color: var(--suave); }
-    pre { background: var(--fundo); border: 1px solid var(--borda); border-radius: 8px;
-          padding: .8rem; overflow-x: auto; font-size: .85rem; }
-    .voltar { display: inline-block; margin-bottom: 1.2rem; font-size: .9rem; }
-    @media (max-width: 520px) { td.arq { white-space: normal; word-break: break-all; } }
-  </style>
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="../assets/estilo.css">
+  <script src="../assets/tema.js"></script>
 </head>
 <body>
-  <main>
-    <a class="voltar" href="../">← Todas as aulas</a>
-    <h1>Aula 1 — Arquivos de Texto, CSV, XML e JSON</h1>
-    <p class="sub">Coleta e Preparação de Dados · PUCRS Online</p>
+<header class="top">
+  <div class="wrap narrow brand">
+    <div>
+      <a class="voltar" href="../">← Todas as aulas</a>
+      <h1>Aula 1: Arquivos de Texto, CSV, XML e JSON <small>Coleta e Preparação de Dados · PUCRS Online</small></h1>
+    </div>
+    <button class="theme-btn" id="theme-btn" type="button" aria-label="Alternar tema">
+      <span class="ico" aria-hidden="true"></span><span class="lbl"></span>
+    </button>
+  </div>
+</header>
+
+<main class="wrap narrow">
 
     <section>
       <h2>Página estática de corpo docente</h2>
@@ -53,7 +37,7 @@ grep -Po '&lt;h3 class="docente__nome"&gt;\K[^&lt;]+' index.html | wc -l</pre>
 
     <section>
       <h2>Arquivos de texto e codificação</h2>
-      <p class="tema">Mesmo conteúdo, bytes diferentes — comparar com <code>xxd</code>.</p>
+      <p class="tema">Mesmo conteúdo, bytes diferentes: comparar com <code>xxd</code>.</p>
       <table>
         <tr><td class="arq"><a href="txt/primeiro_arquivo.txt">txt/primeiro_arquivo.txt</a></td><td class="obs">slide 11</td></tr>
         <tr><td class="arq"><a href="txt/segundo_arquivo.txt">txt/segundo_arquivo.txt</a></td><td class="obs">slide 11</td></tr>
@@ -109,6 +93,12 @@ grep -Po '&lt;h3 class="docente__nome"&gt;\K[^&lt;]+' index.html | wc -l</pre>
       <h2>Baixar tudo de uma vez</h2>
       <pre>git clone https://github.com/lucaskup/pucrs-coleta-e-preparacao.git</pre>
     </section>
-  </main>
+</main>
+
+<footer>
+  <div class="wrap narrow">
+    <p><a href="https://github.com/lucaskup/pucrs-coleta-e-preparacao">Repositório no GitHub</a> · publicado via GitHub Pages.</p>
+  </div>
+</footer>
 </body>
 </html>

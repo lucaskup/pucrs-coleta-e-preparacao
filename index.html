@@ -3,105 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>Coleta e Preparação de Dados</title>
-  <meta name="description" content="Arquivos práticos da disciplina Coleta e Preparação de Dados — PUCRS Online.">
-  <style>
-    :root { --fundo:#f5f6f8; --cartao:#fff; --texto:#1b1f24; --suave:#5a636e; --borda:#dfe3e8; --marca:#8c1d40; }
-    @media (prefers-color-scheme: dark) {
-      :root:not([data-theme="light"]) {
-        --fundo:#14171b; --cartao:#1d2126; --texto:#eceff3; --suave:#a4adb8; --borda:#2c323a; --marca:#e8879f;
-      }
-    }
-    * { box-sizing: border-box; }
-    body { margin:0; background:var(--fundo); color:var(--texto); line-height:1.55;
-           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-    main { max-width: 820px; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
-    h1 { font-size: 1.7rem; margin: 0 0 .3rem; }
-    .sub { color: var(--suave); margin: 0 0 2rem; }
-    section { background: var(--cartao); border: 1px solid var(--borda); border-radius: 10px;
-              padding: 1.25rem 1.25rem .5rem; margin-bottom: 1.25rem; }
-    h2 { font-size: 1.1rem; margin: 0 0 .25rem; }
-    h2 a { color: var(--marca); text-decoration: none; }
-    h2 a:hover { text-decoration: underline; }
-    p.tema { color: var(--suave); margin: 0 0 .75rem; font-size: .92rem; }
-    ul { margin: 0 0 1rem; padding-left: 1.15rem; }
-    li { margin: .15rem 0; }
-    a { color: var(--marca); }
-    code { background: rgba(140,29,64,.08); padding: .1rem .3rem; border-radius: 4px; font-size: .85em; }
-    .pendente { color: var(--suave); font-style: italic; }
-  </style>
+  <meta name="description" content="Arquivos práticos da disciplina Coleta e Preparação de Dados (PUCRS Online): dados, páginas para scraping e notebooks dos encontros síncronos.">
+  <link rel="stylesheet" href="assets/estilo.css">
+  <script src="assets/tema.js"></script>
 </head>
 <body>
-  <main>
-    <h1>Coleta e Preparação de Dados</h1>
-    <p class="sub">Arquivos práticos da disciplina · PUCRS Online · Prof. Lucas Kupssinskü</p>
+<header class="top">
+  <div class="wrap brand">
+    <div>
+      <h1>Coleta e Preparação de Dados <small>PUCRS Online · Prof. Lucas Kupssinskü</small></h1>
+      <p>Arquivos de dados, páginas para scraping e notebooks usados nos exercícios da disciplina.
+         Todo o material é sintético e autocontido: pode ser lido direto destas URLs ou baixado de uma vez.</p>
+    </div>
+    <button class="theme-btn" id="theme-btn" type="button" aria-label="Alternar tema">
+      <span class="ico" aria-hidden="true"></span><span class="lbl"></span>
+    </button>
+  </div>
+</header>
 
-    <section>
-      <h2><a href="aula1/">Aula 1 — Arquivos de Texto, CSV, XML e JSON</a></h2>
+<main class="wrap">
+  <h2 class="grupo">Aulas</h2>
+  <div class="grid">
+
+    <section class="card">
+      <span class="kind">Aula 1</span>
+      <h2><a href="aula1/">Arquivos de texto, CSV, XML e JSON</a></h2>
       <p class="tema">Codificação de caracteres, <code>open</code>, <code>read_csv</code>,
          <code>read_xml</code>, <code>read_json</code> e normalização.</p>
       <ul>
-        <li><a href="aula1/site/">Página estática de corpo docente</a> — alvo do exercício de <code>wget</code> + <code>grep</code></li>
-        <li><a href="aula1/">Índice dos arquivos da aula</a> — txt, csv, xml e json, com o que cada um exercita</li>
+        <li><a href="aula1/site/">Página estática de corpo docente</a>: alvo do exercício de <code>wget</code> + <code>grep</code></li>
+        <li><a href="aula1/">Índice dos arquivos</a>: txt, csv, xml e json, com o que cada um exercita</li>
       </ul>
-      <p class="tema"><a href="https://github.com/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula1/README.md">Descrição de cada arquivo e comandos da aula →</a></p>
+      <a class="more" href="https://github.com/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula1/README.md">Descrição dos arquivos e comandos da aula</a>
     </section>
 
-    <section>
-      <h2><a href="aula2/">Aula 2 — Expressões Regulares e APIs REST</a></h2>
+    <section class="card">
+      <span class="kind">Aula 2</span>
+      <h2><a href="aula2/">Expressões regulares e APIs REST</a></h2>
       <p class="tema">Regex para extrair informação de texto; coleta em APIs REST com
          <code>requests</code>, paginação e proveniência.</p>
       <ul>
-        <li><a href="aula2/testador/">Testador de expressões regulares</a> — escreva a regex e veja os casamentos destacados</li>
+        <li><a href="aula2/testador/">Testador de expressões regulares</a>: escreva a regex e veja os casamentos destacados</li>
         <li><a href="aula2/regex/mbox-short.txt">mbox-short.txt</a> e os três exercícios de regex dos slides</li>
-        <li><a href="aula2/">API estática</a> — 497 municípios do IBGE, paginados, para praticar <code>requests</code></li>
+        <li><a href="aula2/">API estática</a>: 497 municípios do IBGE, paginados, para praticar <code>requests</code></li>
       </ul>
-      <p class="tema"><a href="https://github.com/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula2/README.md">Descrição de cada arquivo e comandos da aula →</a></p>
+      <a class="more" href="https://github.com/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula2/README.md">Descrição dos arquivos e comandos da aula</a>
     </section>
 
-    <section>
-      <h2><a href="aula3/">Aula 3 — Web scraping</a></h2>
+    <section class="card">
+      <span class="kind">Aula 3</span>
+      <h2><a href="aula3/">Web scraping</a></h2>
       <p class="tema">HTTP, HTML e DOM; seletores CSS; XPath; BeautifulSoup; robots.txt e sitemap.</p>
       <ul>
-        <li><a href="aula3/catalogo/">Livraria Aurora</a> — 24 livros em 3 páginas, com paginação e páginas de detalhe</li>
-        <li><a href="aula3/paises/">Países</a> — alvo dos exemplos de XPath</li>
-        <li><a href="aula3/dinamica/">Painel dinâmico</a> — conteúdo montado por JavaScript</li>
+        <li><a href="aula3/catalogo/">Livraria Aurora</a>: 24 livros em 3 páginas, com paginação e páginas de detalhe</li>
+        <li><a href="aula3/paises/">Países</a>: alvo dos exemplos de XPath</li>
+        <li><a href="aula3/dinamica/">Painel dinâmico</a>: conteúdo montado por JavaScript</li>
         <li><a href="aula3/">Índice completo das páginas da aula</a></li>
       </ul>
-      <p class="tema"><a href="https://github.com/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula3/README.md">Descrição de cada página e comandos da aula →</a></p>
+      <a class="more" href="https://github.com/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula3/README.md">Descrição das páginas e comandos da aula</a>
     </section>
 
-    <section>
-      <h2><a href="aula4/">Aula 4: KDD, tipos de dados e estatística descritiva</a></h2>
+    <section class="card">
+      <span class="kind">Aula 4</span>
+      <h2><a href="aula4/">KDD, tipos de dados e estatística descritiva</a></h2>
       <p class="tema">Níveis de medição, medidas de localização, dispersão, forma e associação; roteiro de EDA.</p>
       <ul>
         <li><a href="aula4/imoveis_aurora.csv">imoveis_aurora.csv</a>: base de anúncios fictícios com problemas plantados</li>
       </ul>
+      <a class="more" href="https://github.com/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula4/README.md">Descrição dos arquivos da aula</a>
     </section>
 
-    <section>
-      <h2><a href="aula5/">Aula 5: Visualização, similaridade e pré-processamento</a></h2>
+    <section class="card">
+      <span class="kind">Aula 5</span>
+      <h2><a href="aula5/">Visualização, similaridade e pré-processamento</a></h2>
       <p class="tema">Escolha e integridade de gráficos; Minkowski, cosseno, SMC, Jaccard, Gower.</p>
-    </section>
-
-    <section>
-      <h2><a href="aula6/">Aula 6: Limpeza, integração, redução e transformação</a></h2>
-      <p class="tema">Ausentes, outliers, integração de duas fontes, normalização, discretização e PCA.</p>
-    </section>
-
-    <section>
-      <h2>Práticas dos encontros síncronos</h2>
-      <p class="tema">Um notebook por encontro, para abrir no Google Colab. A imobiliária fictícia Aurora Imóveis
-         acompanha as práticas de scraping, análise exploratória, visualização e preparação de dados.</p>
       <ul>
-        <li><a href="aula1/#encontro1">Encontro 1</a>: Conserte a leitura</li>
-        <li><a href="aula2/#encontro2">Encontro 2</a>: O log da Aurora Imóveis e o coletor do colega</li>
-        <li><a href="aula3/#encontro3">Encontro 3</a>: Raspando a Aurora Imóveis</li>
-        <li><a href="aula4/#encontro4">Encontro 4</a>: Descreva os dados antes de modelar</li>
-        <li><a href="aula5/#encontro5">Encontro 5</a>: Integridade de gráficos e imóveis parecidos</li>
-        <li><a href="aula6/#encontro6">Encontro 6</a>: Da base suja à base pronta para o modelo</li>
+        <li><a href="aula4/imoveis_aurora.csv">imoveis_aurora.csv</a>: a mesma base da aula 4</li>
       </ul>
+      <a class="more" href="https://github.com/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula5/README.md">Descrição dos arquivos da aula</a>
     </section>
-  </main>
+
+    <section class="card">
+      <span class="kind">Aula 6</span>
+      <h2><a href="aula6/">Limpeza, integração, redução e transformação</a></h2>
+      <p class="tema">Ausentes, outliers, integração de duas fontes, normalização, discretização e PCA.</p>
+      <ul>
+        <li><a href="aula6/">Índice dos arquivos</a>: base de imóveis, anúncios em JSON e tabela de bairros para integrar</li>
+      </ul>
+      <a class="more" href="https://github.com/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula6/README.md">Descrição dos arquivos da aula</a>
+    </section>
+
+  </div>
+
+  <h2 class="grupo">Práticas dos encontros síncronos</h2>
+  <p class="intro">Um notebook por encontro, para abrir no Google Colab. A imobiliária fictícia Aurora Imóveis
+     acompanha as práticas de scraping, análise exploratória, visualização e preparação de dados.</p>
+  <section class="card wide">
+    <table>
+      <tr><td class="k"><a href="aula1/#encontro1">Encontro 1</a></td><td>Conserte a leitura</td><td class="obs"><a href="https://colab.research.google.com/github/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula1/pratica/encontro1.ipynb">Abrir no Colab</a></td></tr>
+      <tr><td class="k"><a href="aula2/#encontro2">Encontro 2</a></td><td>O log da Aurora Imóveis e o coletor do colega</td><td class="obs"><a href="https://colab.research.google.com/github/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula2/pratica/encontro2.ipynb">Abrir no Colab</a></td></tr>
+      <tr><td class="k"><a href="aula3/#encontro3">Encontro 3</a></td><td>Raspando a Aurora Imóveis</td><td class="obs"><a href="https://colab.research.google.com/github/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula3/pratica/encontro3.ipynb">Abrir no Colab</a></td></tr>
+      <tr><td class="k"><a href="aula4/#encontro4">Encontro 4</a></td><td>Descreva os dados antes de modelar</td><td class="obs"><a href="https://colab.research.google.com/github/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula4/pratica/encontro4.ipynb">Abrir no Colab</a></td></tr>
+      <tr><td class="k"><a href="aula5/#encontro5">Encontro 5</a></td><td>Integridade de gráficos e imóveis parecidos</td><td class="obs"><a href="https://colab.research.google.com/github/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula5/pratica/encontro5.ipynb">Abrir no Colab</a></td></tr>
+      <tr><td class="k"><a href="aula6/#encontro6">Encontro 6</a></td><td>Da base suja à base pronta para o modelo</td><td class="obs"><a href="https://colab.research.google.com/github/lucaskup/pucrs-coleta-e-preparacao/blob/main/aula6/pratica/encontro6.ipynb">Abrir no Colab</a></td></tr>
+    </table>
+  </section>
+
+  <h2 class="grupo">Baixar tudo de uma vez</h2>
+  <section class="card wide">
+    <pre>git clone https://github.com/lucaskup/pucrs-coleta-e-preparacao.git</pre>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><a href="https://github.com/lucaskup/pucrs-coleta-e-preparacao">Repositório no GitHub</a> · publicado via GitHub Pages.</p>
+    <p>Pessoas, instituições e imóveis são fictícios. Os dois insumos externos (mbox-short.txt e a API de Localidades do IBGE) têm atribuição no README da aula 2.</p>
+    <p>Conteúdo sob licença <a href="https://creativecommons.org/licenses/by/4.0/deed.pt-br">CC BY 4.0</a>.</p>
+  </div>
+</footer>
 </body>
 </html>
